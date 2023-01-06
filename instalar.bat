@@ -33,7 +33,7 @@ CLS
 ECHO Instalando arquivos. . .
 XCOPY "%STALKERPATH%\gamedata" "%STALKERPATH%\gamedata_backup\" /E /Y
 XCOPY "files" "%STALKERPATH%" /E /Y
-XCOPY "Desinstalar_Traducao+InGameCC.bat" "%STALKERPATH%" /Y
+XCOPY "desinstalar.bat" "%STALKERPATH%" /Y
 XCOPY "InGameCC_Leia-me.txt" "%STALKERPATH%" /Y
 XCOPY "TriboGamer_Creditos.txt" "%STALKERPATH%" /Y
 IF EXIST "%STALKERPATH%\bin\msvcr80.dll" GOTO :version10004
@@ -87,7 +87,7 @@ ECHO.
 ECHO NOTA: No entanto, a instalacao pode ser feita copiando todos os arquivos da pasta
 ECHO       "files" para a pasta do jogo instalado.
 ECHO.
-ECHO       Se voce usa a vers„o do jogo 1.0003 ou anterior, deve executar o arquivo em
+ECHO       Se voce usa a vers√£o do jogo 1.0003 ou anterior, deve executar o arquivo em
 ECHO       lote chamado "InGameCC_v10003.bat" para permitir que as legendas tambem
 ECHO       aparecam nas cenas. Infelizmente v1.0004 e versoes posteriores do jogo nao tem
 ECHO       este recurso.
