@@ -35,7 +35,7 @@ ECHO.
 ECHO Traducao e InGameCC removidos.
 ECHO.
 PAUSE
-DEL "%STALKERPATH%\Desinstalar_Traducao+InGameCC.bat" /Q
+DEL "%STALKERPATH%\desinstalar.bat" /Q
 EXIT
 
 :noFileList
