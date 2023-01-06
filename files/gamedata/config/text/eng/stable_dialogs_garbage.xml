@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<string_table>
+	<string id="gar_dolg_blokpost_11">
+		<text>Pare, stalker. Você não pode passar por aqui!</text>
+	</string>
+	<string id="gar_dolg_blokpost_111">
+		<text>Por que?</text>
+	</string>
+	<string id="gar_dolg_blokpost_1111">
+		<text>Porque esse é o nosso território - território da Duty; e somos muito exigentes sobre quem deixamos entrar em nossa base. Se você não tem nada importante para discutir com nossos líderes, vire-se e volte de onde veio.</text>
+	</string>
+	<string id="gar_dolg_blokpost_11111">
+		<text>Entendido.</text>
+	</string>
+	<string id="gar_dolg_blokpost_111111">
+		<text>Essas são as regras.</text>
+	</string>
+	<string id="gar_dolg_blokpost_11112">
+		<text>Eu preciso passar, tenho alguns negócios com o Barkeep.</text>
+	</string>
+	<string id="gar_dolg_blokpost_111121">
+		<text>Você é o Marked One ?Barkeep nos contou sobre você. Então você pode passar, acesso liberado.</text>
+	</string>
+	<string id="gar_dolg_blokpost_1111211">
+		<text>Eu prefiro pagar. Aqui, pegue.</text>
+	</string>
+	<string id="gar_dolg_blokpost_11112111">
+		<text>Boa! Você pode passar, mas é melhor você ter negócios realmente importantes com o Barkeep, ouviu? E tenha cuidado - há muitas anomalias no caminho.</text>
+	</string>
+	<string id="gar_dolg_blokpost_1111212">
+		<text>Qual é o favor?</text>
+	</string>
+	<string id="gar_dolg_blokpost_11112121">
+		<text>Nada de mais. Há um rebanho de javalis vagando por perto que precisam ser mortos. Acabe com eles e você terá sua passagem garantida.</text>
+	</string>
+	<string id="gar_dolg_blokpost_111121211">
+		<text>Combinado.</text>
+	</string>
+	<string id="gar_dolg_blokpost_1111212111">
+		<text>Boa sorte, stalker.</text>
+	</string>
+	<string id="gar_dolg_blokpost_111121212">
+		<text>Eu não tenho tanto dinheiro.</text>
+	</string>
+	<string id="gar_dolg_blokpost_1111212121">
+		<text>Bem, então é melhor você começar juntar!</text>
+	</string>
+	<string id="gar_dolg_blokpost_111122">
+		<text>Eu não tenho dinheiro.</text>
+	</string>
+	<string id="gar_dolg_blokpost_111123">
+		<text>Então você não pode ir até o bar.</text>
+	</string>
+	<string id="gar_dolg_blokpost_1231">
+		<text>Obrigado por nos ajudar a acabar com esses malditos javalis, tome aqui está sua recompensa</text>
+	</string>
+	<string id="gar_dolg_blokpost_12311">
+		<text>Obrigado!</text>
+	</string>
+	<string id="gar_dolg_blokpost_22">
+		<text>Então, você matou esses javalis?</text>
+	</string>
+	<string id="gar_dolg_blokpost_221">
+		<text>Ainda não.</text>
+	</string>
+	<string id="gar_dolg_blokpost_2211">
+		<text>Que vergonha. Quando você começar a cortá-los, traga-me um pedaço de costela?</text>
+	</string>
+	<string id="gar_dolg_blokpost_222">
+		<text>Sim, eu matei todos eles.</text>
+	</string>
+	<string id="gar_dolg_blokpost_2221">
+		<text>OK, vá andando. E diga "oi" ao Barkeep por mim, ok?</text>
+	</string>
+	<string id="gar_dolg_blokpost_33">
+		<text>Diga "oi" para o Barkeep por mim quando você o ver. Ah, e não se esqueça - há muitas anomalias no caminho, tenha cuidado.</text>
+	</string>
+	<string id="gar_dramm_novice_start_0">
+		<text>Obrigado cara, você realmente me ajudou. Eu não vou esquecer isso.</text>
+	</string>
+	<string id="gar_dramm_novice_start_1">
+		<text>Oque esta acontecendo aqui?</text>
+	</string>
+	<string id="gar_dramm_novice_start_11">
+		<text>OK.</text>
+	</string>
+	<string id="gar_dramm_novice_start_2">
+		<text>Estamos tentando limpar Garbage dos bandidos. Meus amigos vão emboscar um esquadrão de bandidos nas proximidades. Se não os pararmos, eles assumirão o controle de Garbage e ninguém poderá aprofundar mais na Zona.
+			Fale com o nosso comandante. Ele e seus homens estão aqui perto, no cemitério de carros. Eu estou indo para lá - nós podemos ir juntos se você quiser.</text>
+	</string>
+	<string id="gar_dramm_novice_start_21">
+		<text>Claro, Vamos nessa.</text>
+	</string>
+	<string id="gar_dramm_novice_start_3">
+		<text>Você pode me dizer alguma coisa sobre Garbage?</text>
+	</string>
+	<string id="gar_dramm_novice_start_31">
+		<text>Não há muito a dizer, cara. Garbage você sabe né ... é um lixo cara. Os combatentes da Duty guardam a estrada norte que leva ao Bar. Você deve evita-los - A Duty é cheio de soldados desagradáveis.
+			À direita estão os caminhos para o Dark Valley, os níveis de radiação são muito altos lá. Um pouco mais perto está o Grimpen Mire - pântanos terríveis cheios de anomalias.
+			Eles dizem que é fácil encontrar alguns artefatos decentes lá, mas é ainda mais fácil encontrar muitos problemas. Bem, pelo menos não há cachorros Baskervilles (da zona) no Mire!</text>
+	</string>
+	<string id="gar_dramm_novice_start_311">
+		<text>Continue.</text>
+	</string>
+	<string id="gar_dramm_novice_start_3111">
+		<text>À direita, nos pântanos, há um esconderijo secreto. Você verá uma construção metálica sobre uma poça.
+			Meu esconderijo está logo abaixo ... Eu coloquei lá há um tempo atrás, mas você salvou minha vida e provavelmente precisará mais do que eu de qualquer maneira. Então sinta-se livre para pega-lo.</text>
+	</string>
+	<string id="gar_dramm_novice_start_31111">
+		<text>Obrigado cara, isso é informação útil.</text>
+	</string>
+	<string id="gar_dramm_novice_start_312">
+		<text>Isso é interessante, obrigado.</text>
+	</string>
+	<string id="gar_hellcar_start_11">
+		<text>Ei stalker, você chegou na hora! Nós precisamos muito da sua ajuda. Aqueles bandidos bastardos estão tentando assumir o controle de Garbage.
+			Tivemos um tiroteio aqui há meia hora e conseguimos derrubar três dos desgraçados. Os outros recuaram, mas estou certo de que eles vão voltar com reforços a qualquer momento.
+			Não há muitos de nós e quanto mais se juntar a nós, melhor será o combate.</text>
+	</string>
+	<string id="gar_hellcar_start_111">
+		<text>Continue.</text>
+	</string>
+	<string id="gar_hellcar_start_1111">
+		<text>Nós preparamos uma emboscada para eles aqui. Eles virão do Ocidente, do Agroprom Research Institute. Ajude-nos a destruir seus reforços e você não vai se arrepender!</text>
+	</string>
+	<string id="gar_hellcar_start_11111">
+		<text>OK, eu vou-lhes ajudar.</text>
+	</string>
+	<string id="gar_hellcar_start_111111">
+		<text>Ótimo.</text>
+	</string>
+	<string id="gar_hellcar_start_11112">
+		<text>Não é da minha conta e não quero me envolver.</text>
+	</string>
+	<string id="gar_hellcar_start_111121">
+		<text>Como quiser. Você estará amaldiçoando por causa da sua arrogância, e você se lembrará deste campo quando olhar os ossos secos que ficarão aqui.</text>
+	</string>
+	<string id="gar_hellcar_start_11113">
+		<text>Eu matei todos eles.</text>
+	</string>
+	<string id="gar_hellcar_start_111131">
+		<text>Você é o cara! Mas eu vou ficar de olho mesmo assim, sabe lá oque mais pode vim aqui.</text>
+	</string>
+	<string id="gar_hellcar_start_21">
+		<text>Não temos nada para conversar.</text>
+	</string>
+	<string id="gar_hellcar_start_3111">
+		<text>Obrigado cara, você realmente nos ajudou. Aceita um pouco de dinheiro? Isso vai mostrar a nossa gratidão.</text>
+	</string>
+	<string id="gar_hellcar_start_31111">
+		<text>Claro.</text>
+	</string>
+	<string id="gar_hellcar_start_311111">
+		<text>Aqui, isso deve bastar para você comprar bandages e medkit's para recuperar sua saúde.</text>
+	</string>
+	<string id="gar_hellcar_start_3111111">
+		<text>Muito Obrigado.</text>
+	</string>
+	<string id="gar_hellcar_start_31113">
+		<text>Fale-me sobre você.</text>
+	</string>
+	<string id="gar_hellcar_start_311131">
+		<text>Meu nome é Bes. Eu cheguei a Zona há três anos. Como muitos dos caras da Zona, sou um fugitivo, procurado por dois assassinatos e venda de GBH (Droga).
+			Alguns anos atrás, um amigo meu foi espancado - eles  literalmente tiveram que reconstruí-lo no hospital.
+			Então eu fui fazer uma "visita" aos bastardos. Quando os policiais apareceram, tive que atirar em um deles e pular de uma janela do terceiro andar - estou aqui desde então.
+			Eu me sai bem neste lugar, mas a lista dos meus crimes não é pequena. Eu tento lutar contra os foras da lei, da mesma maneira quando eu matei os filhos da puta que espancaram meu amigo.
+			Eu treino novatos e ensino-os a sobreviver na Zona.</text>
+	</string>
+	<string id="gar_hellcar_start_3111311">
+		<text>Então, por que você não se junta ao Duty?</text>
+	</string>
+	<string id="gar_hellcar_start_31113111">
+		<text>A Duty luta contra a Zona, eu luto pelo povo. Além disso, eles estão ligados ao governo e ao exército. Eu não quero acordar em uma cela fria em um dia desses.</text>
+	</string>
+	<string id="gar_hellcar_start_311131111">
+		<text>Boa sorte para você.</text>
+	</string>
+	<string id="gar_hellcar_start_31114">
+		<text>O que é esse lugar?</text>
+	</string>
+	<string id="gar_hellcar_start_311141">
+		<text>O lixo, enfim, estamos bem em casa aqui. Você vê os montes de lixo? Você não vai querer ir lá, confie em mim. Tem tanto lixo radioativo, que os contadores Geiger ficam loucos.
+			Este é o único caminho decente para a Zona e os bandidos têm estado cada vez mais ativos aqui ultimamente. Eles estão com medo de aprofundar na Zona, lá está cheio de membros da Duty e stalker's experientes.
+			Mas essas hienas adoram roubar os novatos daqui. Então, se ninguém mais se importa, temos que nos manter firmes e resistir contra eles.</text>
+	</string>
+	<string id="gar_hellcar_start_3111411">
+		<text>Continue.</text>
+	</string>
+	<string id="gar_hellcar_start_31114111">
+		<text>Em toda parte, e especialmente aqui, você tem que agir como um ser humano, não como um animal impulsionado pela ganância. Esse é o meu jeito de ver.</text>
+	</string>
+	<string id="gar_hellcar_start_311141112">
+		<text>Existem grandes edifícios em Garbage?</text>
+	</string>
+	<string id="gar_hellcar_start_31114111211">
+		<text>Obrigado.</text>
+	</string>
+	<string id="gar_hellcar_start_31115">
+		<text>Obrigado, eu não preciso de nada de você.</text>
+	</string>
+	<string id="gar_hellcar_start_3112">
+		<text>Eu sei de muita coisa, eu poderia compartilhar algumas informações com você.</text>
+	</string>
+	<string id="gar_hellcar_start_41">
+		<text>O trabalho não está feito. Vamos terminar e conversar depois.</text>
+	</string>
+	<string id="gar_hellcar_start_51">
+		<text>Ei, Marked One.</text>
+	</string>
+	<string id="gar_seriy_start_11">
+		<text>Droga, cara, isso não é hora de falar! Em poucos segundos as únicas coisas falando serão as armas. Ajude-me a combatê-los e podemos conversar depois.</text>
+	</string>
+	<string id="gar_seriy_start_22">
+		<text>Obrigado pela ajuda, as coisas ficaram bem cabeludas por aqui. Enfim o que você está fazendo aqui ?</text>
+	</string>
+	<string id="gar_seriy_start_221">
+		<text>Eu estou procurando informações sobre Strelok. Fox me contou que você sabe sobre ele, então eu vim para uma conversa.</text>
+	</string>
+	<string id="gar_seriy_start_2211">
+		<text>OK, você me ajudou de graça, então eu lhe passar informações. Um dos caras, um antigo "escavador" chamado Mole está me esperando em Agropom. Ele desenterrou o esconderijo de Strelok, mas não sei se ele encontrou alguma coisa lá.
+			Aqui estão as coordenadas do nosso local de encontro. Diga a ele que eu te enviei. Os bandidos vão me caçar, então eu vou desaparecer por um tempo. Aqui está um pouco de dinheiro para te ajudar.</text>
+	</string>
+	<string id="gar_seriy_start_2212">
+		<text>Obrigado pela informação.</text>
+	</string>
+	<string id="gar_seriy_start_222">
+		<text>Estou procurando informações sobre o Strelok, talvez você saiba de alguma coisa?</text>
+	</string>
+	<string id="gar_seriy_start_2221">
+		<text>OK, você me ajudou de graça, então vou lhe passar informações. Um dos caras, um ex-escavador chamado Mole, está me esperando. Ele desenterrou o estoque de Strelok e encontrou documentos que explicam algumas coisas.
+			Ele tinha alguns bandidos em sua cola, então ele teve que deixar os documentos, mas ele se lembra do lugar. Os bandidos vão me caçar, então eu vou desaparecer por um tempo.
+			Aqui estão as coordenadas do nosso local de encontro. Diga a ele que eu te enviei. Vou mandar algumas informações para o seu PDA. Aqui está um pouco de dinheiro para te ajudar.</text>
+	</string>
+	<string id="gar_seriy_start_2222">
+		<text>Obrigado pela informação.</text>
+	</string>
+	<string id="gar_seriy_start_33">
+		<text>E aí cara! As coisas aqui ficaram bem tensas alguns minutos atrás. Enfim o que você está fazendo aqui ?</text>
+	</string>
+	<string id="gar_seriy_start_44">
+		<text>Um caminho seguro, stalker. Um caminho seguro entre as anomalias para pegar os artefatos.</text>
+	</string>
+	<string id="gar_seriy_start_441">
+		<text>O que pode-se encontrar em Garbage?</text>
+	</string>
+	<string id="gar_seriy_start_4411">
+		<text>Aqui facilmente você encontrara problemas . Mas se você é um explorador, eu vou te dizer o que eu sei. Para o leste há uma pequena floresta.
+			Não há nada de interessante e está cheio de cachorros, então tenha cuidado. A ferrovia leva você a um túnel.
+			Há muitas anomalias lá, talvez outras coisas também, não sei muito sobre o túnel - nunca decidi entrar. Você provavelmente sabe sobre o posto de controle dos Duty no Norte.
+			Isso é basicamente tudo que eu sei sobre esse lugar.</text>
+	</string>
+	<string id="gar_seriy_start_44112">
+		<text>Obrigado pela informação.</text>
+	</string>
+	<string id="gar_seryi_about_garbage_0">
+		<text>Ouça cara, o que posso encontrar aqui em Garbage ?</text>
+	</string>
+	<string id="gar_seryi_about_garbage_1">
+		<text>Aqui facilmente você encontrara problemas . Mas se você é um explorador, eu vou te dizer o que eu sei. Para o leste há uma pequena floresta.
+			Não há nada de interessante e está cheio de cachorros, então tenha cuidado. A ferrovia leva você a um túnel.
+			Há muitas anomalias lá, talvez outras coisas também, não sei muito sobre o túnel - nunca decidi entrar. Você provavelmente sabe sobre o posto de controle dos Duty no Norte.
+			Isso é basicamente tudo que eu sei sobre esse lugar.</text>
+	</string>
+	<string id="gar_seryi_about_garbage_11">
+		<text>Obrigado pela informação. Vou manter isso em mente.</text>
+	</string>
+	<string id="gar_stalker_about_level_0">
+		<text>Você pode me dizer alguma coisa sobre esse lugar?</text>
+	</string>
+	<string id="gar_stalker_about_level_1">
+		<text>Bem, escute. Onde quer que você olhe, você encontrara um grande depósito radioativo e nojento. Depois do acidente em 1986, o governo trouxe resíduos radioativos, guindastes e todo o maquinário destruído aqui.
+			Basicamente, é cheio de lixo inútil e algumas anomalias aqui e ali. Você pode até encontrar alguns artefatos, mas eles não são espetaculares, e é por isso que você encontrará muitos novatos neste lugar.
+			Muitos novatos significam muitos bandidos, então é melhor não ficar por muito tempo. Mais para o leste há campos repletos de radiação; você não pode ir lá sem proteção.
+			Indo para o sul, você alcançará a fronteira da zona. Vá para o norte e você chegará à fábrica de Rostok e à barreira dos Duty. Para o leste está o Dark Valley, é um lugar sombrio e fácil para dizer "oi senhora morte".
+			Para o Ocidente é o Agroprom Research Institute. Vou marcar caminhos seguros no seu mapa.</text>
+	</string>
+	<string id="gar_hellcar_start_3111411121">
+		<text>No centro há um grande hangar, geralmente é bem tranquilo lá. Não é muito seguro lá, mas você pode passar a noite lá.
+			Se você for para o oeste, na direção do Agroprom, há um acampamento de bandidos lá, e é daí que vêm aqueles malucos que matamos.
+			Mas tenho a sensação de que há mais deles lá.</text>
+	</string>
+</string_table>

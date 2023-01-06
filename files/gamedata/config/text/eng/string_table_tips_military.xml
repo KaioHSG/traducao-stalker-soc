@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="windows-1252" ?>		
+	<string id="mil_actor_blockpost">
+		<text>Você está se aproximando da Barreira. Nem pense em brincar por aqui. Nós estamos ajudando qualquer ajuda, exceto os Inimigos.</text>
+	</string>
+	<string id="mil_after_sniper_dead">
+		<text>Marked One, venha aqui para receber mais instruções</text>
+	</string>
+	<string id="mil_fblockpost_warning">
+		<text>Marked One, volte para sua posição</text>
+	</string>
+	<string id="mil_info_freedom_radio">
+		<text>Se você passar a noite toda na Torre da aldeia, provavelmente vai acontecer alguma COISA .</text>
+	</string>
+	<string id="mil_info_max_mines">
+		<text>Não esqueça das minas! Um erro e você ficara em pedaços ...</text>
+	</string>
+	<string id="mil_info_max_village">
+		<text>Tenha cuidado, Marked. Aparentemente há uma nova anomalia na aldeia. O bastardo é rápido e invisível!</text>
+	</string>
+	<string id="mil_info_to_all">
+		<text>Atenção a todos aqueles que desejam morrer ou virar zumbi: o caminho para Red Forest é protegido por uma unidade Monolith e como você provavelmente sabe, esses caras atiram primeiro em vez de dialogar. Boa sorte.</text>
+	</string>
+	<string id="mil_max_attack_signal">
+		<text>Carregando! Vamos arrebentar com esses idiotas!</text>
+	</string>
+	<string id="mil_mission_complete">
+		<text>Nosso trabalho aqui está feito. Volte para fazenda. Nós vamos discutir o pagamento lá.</text>
+	</string>
+	<string id="mil_scull_attack_signal">
+		<text>Movam Guerreiros! O caminho esta limpo!</text>
+	</string>
+	<string id="mil_scull_info">
+		<text>Marked One, Elimine os Snipers!</text>
+	</string>
+	<string id="mil_sniper_to_player_warning">
+		<text>Tenha cuidado, Marked One, ou você vai chupar uma bala 7x62 bem gostosa ...</text>
+	</string>

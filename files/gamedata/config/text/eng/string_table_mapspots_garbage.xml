@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="windows-1252" ?>		
+	<string id="gar_angar">
+		<text>Hangar Abandonado.</text>
+	</string>
+	<string id="gar_bandit_agr">
+		<text>Acampamento de Bandidos pela Saída de Agroprom.</text>
+	</string>
+	<string id="gar_bandit_post">
+		<text>Base dos Bandidos na Estrada para Agroprom.</text>
+	</string>
+	<string id="gar_bandits_leader">
+		<text>Ataque de Bandidos Liderado pelo Líder.</text>
+	</string>
+	<string id="gar_boars_nest">
+		<text>Horda de Javalis.</text>
+	</string>
+	<string id="gar_car_graveyard">
+		<text>Sucata de Veículo.</text>
+	</string>
+	<string id="gar_dogs_in_forest">
+		<text>Floresta Infestada de Cães</text>
+	</string>
+	<string id="gar_dolg_blokpost">
+		<text>Posto Avançado da Duty na Estrada para o Bar.</text>
+	</string>
+	<string id="gar_hellcar">
+		<text>Um Grupo de Stalker's Neutrais Pedindo Ajuda.</text>
+	</string>
+	<string id="gar_newbie">
+		<text>Um Novato Assustado e Cansado.</text>
+	</string>
+	<string id="gar_secret1">
+		<text>O Esconderijo Secreto do Novato.</text>
+	</string>
+	<string id="gar_seriy">
+		<text>Grupo de Sery.</text>
+	</string>
+	<string id="gar_swamp">
+		<text>The Grimpen Mire.</text>
+	</string>
+	<string id="gar_trash1">
+		<text>Pilhas de Lixo com Anomalias e Artefatos.</text>
+	</string>
+	<string id="gar_tunnel">
+		<text>Túnel Ferroviário.</text>
+	</string>
+	<string id="gar_wounded_help">
+		<text>SOS. Provavelmente um Stalker Ferido.</text>
+	</string>

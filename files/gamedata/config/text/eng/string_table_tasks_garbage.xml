@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="windows-1252" ?>	
+	<string id="gar_car_graveyard_quest">
+		<text>Responda ao Pedido de Ajuda</text>
+	</string>
+	<string id="gar_defend_garbage">
+		<text>Ajude os Stalker's Defenderem o Ataque dos Bandidos.</text>
+	</string>
+	<string id="gar_dialog_hellcar">
+		<text>Ajude o Líder do Pelotão dos Stalker's.</text>
+	</string>
+	<string id="gar_dialog_hellcar_1">
+		<text>Ajude Bes.</text>
+	</string>
+	<string id="gar_hellcar_alive">
+		<text>Fale com Bes.</text>
+	</string>
+	<string id="gar_help_dymon">
+		<text>Ajude os Stalker's Defenderem o Ataque dos Bandidos.</text>
+	</string>
+	<string id="gar_help_tunnel_newbie">
+		<text>Ajude o Novato em Garbage</text>
+	</string>
+	<string id="gar_kill_bandits">
+		<text>Acabe com o Ataque dos Bandidos</text>
+	</string>
+	<string id="gar_kill_boars">
+		<text>Ajude o Posto Avançado da Duty</text>
+	</string>
+	<string id="gar_kill_boars_1">
+		<text>Mate os Javalis.</text>
+	</string>
+	<string id="gar_kill_boars_2">
+		<text>Fale com o Comandante do Posto Avançado</text>
+	</string>
+	<string id="gar_kill_boars_descr">
+		<text>Duty: "Olá, a facção Duty pede ajuda. Há uma onda de mutantes vindo do Dark Valley para o Bar.
+			Nós garantimos respeito a todos que ajudarem a matar essas bestas. Dou a palavra de honra dos Dutyers ".</text>
+	</string>
+	<string id="gar_kill_boars_main">
+		<text>The quest to get through to the bar.</text>
+	</string>
+	<string id="garbage_meet_stalker_1">
+		<text>Busque informações de Strelok com Seriy.</text>
+	</string>
+	<string id="graveyard_raid_text">
+		<text>Bes: "Os bandidos estão tentando tomar o controle de Garbage. Houve um combate aqui meia hora atrás. Nós matamos três dos otários.
+			O restante deles recuarão, mas tenho certeza de que eles voltarão a qualquer momento com reforços. Há poucos de nós e um stalker a mais, é um passo para a vitoria.
+			Se você nos ajudar a destruir seus reforços, eu estarei em divida com você. "</text>
+	</string>
+	<string id="help_for_neitrals_text">
+		<text>Houve uma batalha no cemitério de veículos entre Stalker's e Bandidos. Os Stalker's conseguiram acabar com o pelotão deles, mas estão pedindo ajuda.</text>
+	</string>

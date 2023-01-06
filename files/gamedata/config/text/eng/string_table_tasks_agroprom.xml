@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="windows-1252" ?>		
+	<string id="agr_find_ghost">
+		<text>Descubra o que Aconteceu com o Ghost</text>
+	</string>
+	<string id="agr_gunslinger_cache">
+		<text>Esconderijo do Strelok</text>
+	</string>
+	<string id="agr_help_krot">
+		<text>Salve Mole</text>
+	</string>
+	<string id="agr_help_krot_0">
+		<text>Ajude Mole a Combater os Soldados</text>
+	</string>
+	<string id="agr_help_krot_1">
+		<text>Mate os Soldados</text>
+	</string>
+	<string id="agr_help_krot_2">
+		<text>Salve Mole</text>
+	</string>
+	<string id="agr_help_stalker's">
+		<text>Ajude os Stalker's</text>
+	</string>
+	<string id="agr_help_stalker's_0">
+		<text>Ajude os Stalker's a Combater os Soldados</text>
+	</string>
+	<string id="agr_help_stalker's_1">
+		<text>Mate os Soldados</text>
+	</string>
+	<string id="agr_help_stalker's_2">
+		<text>Ajude os Stalker's a Combater os Soldados</text>
+	</string>
+	<string id="agr_krot">
+		<text>Reúne-se com os Stalker's</text>
+	</string>
+	<string id="agr_meet_krot_band">
+		<text>Obtenha Informações sobre Strelok</text>
+	</string>
+	<string id="agr_meet_krot_band_0">
+		<text>Obtenha Informações de Mole</text>
+	</string>
+	<string id="agr_meet_krot_band_1">
+		<text>Reúne-se com o Grupo de Mole</text>
+	</string>
+	<string id="agr_meet_krot_band_2">
+		<text>Obtenha Informações de Mole</text>
+	</string>
+	<string id="agroprom_find_gunslinger_cache">
+		<text>Encontre o Esconderijo do Grupo de Strelok</text>
+	</string>
+	<string id="agroprom_find_gunslinger_cache_0">
+		<text>Encontre o Esconderijo do Grupo de Strelok</text>
+	</string>
+	<string id="agroprom_find_gunslinger_cache_1">
+		<text>Encontre o Esconderijo</text>
+	</string>
+	<string id="agroprom_find_gunslinger_cache_2">
+		<text>Encontre Informações sobre Strelok no Esconderijo</text>
+	</string>
+	<string id="agroprom_find_gunslinger_cache_3">
+		<text>Encontre um Caminho para Sair do Subterrâneo</text>
+	</string>
+	<string id="agroprom_find_stalker_phantom">
+		<text>Encontre Ghost</text>
+	</string>
+	<string id="agroprom_find_stalker_phantom_0">
+		<text>Ghost sabe onde está Strelok.</text>
+	</string>
+	<string id="agroprom_get_military_documents">
+		<text>Encontre os Documentos Militares</text>
+	</string>
+	<string id="agroprom_get_military_documents_0">
+		<text>Agroprom Research Institute</text>
+	</string>
+	<string id="agroprom_get_military_documents_1">
+		<text>Roube os Documentos dos Militares</text>
+	</string>
+	<string id="agroprom_get_military_documents_2">
+		<text>Leve os Documentos para Barkeep</text>
+	</string>

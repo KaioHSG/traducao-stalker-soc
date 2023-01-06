@@ -1,0 +1,1329 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<string_table>
+	<string id="artefact">
+		<text>Consiga o artefato.</text>
+	</string>
+	<string id="barmen_defend_camp_1">
+		<text>Proteja dos bandidos o acampamento que os stalkers possuem no Lixão</text>
+	</string>
+	<string id="barmen_defend_camp_1_descr">
+		<text>Proteja dos bandidos o acampamento que os stalkers possuem no Lixão</text>
+	</string>
+	<string id="barmen_defend_camp_1_text">
+		<text>Um grupo de stalkers vêm me visitar e estou particularmente interessado em que cheguem sãos e salvos. 
+		Ficarão nas imediações do bar. Um delinqüente arrependido nos informou quase voluntariamente de que em breve eles serão atacados. 
+		Então vá nessa direção e proteja o acampamento de qualquer assalto.</text>
+	</string>
+	<string id="barmen_defend_camp_2">
+		<text>Ajude os stalkers a acabar com os bandidos em Agroprom</text>
+	</string>
+	<string id="barmen_defend_camp_2_descr">
+		<text>Ajude os stalkers a acabar com os bandidos em Agroprom</text>
+	</string>
+	<string id="barmen_defend_camp_2_text">
+		<text>Esta é a situação. Há pouco, um grupo de stalkers foi a Agroprom. 
+		A última vez que tivemos contato, disseram que havia algo valioso no subsolo, mas estavam muito pressionados pelos bandidos. 
+		Eles estão mantendo a posição, mas não podem desocupar a área. Vai ajuda-los?</text>
+	</string>
+	<string id="barmen_eliminate_camp_1">
+		<text>Elimine os bandidos do Lixão.</text>
+	</string>
+	<string id="barmen_eliminate_camp_1_descr">
+		<text>Acabe com o grupo de bandidos situados no Lixão. Tem que ser uma operação rápida e eficaz.</text>
+	</string>
+	<string id="barmen_eliminate_camp_1_text">
+		<text>Um trabalho é? Vamos ver o que temos... Ahá! Aqui está: pode acabar com esse grupo de bandidos do Lixão? 
+		A Duty, com todos esses discursos sobre a lei e a ordem, não são capazes. São um monte de bundões. 
+		Não vai demorar muito. Mas quem conseguir primeiro pontuará muito alto... e a bebida será por minha conta, claro.</text>
+	</string>
+	<string id="barmen_eliminate_camp_2">
+		<text>Elimine os mercenários e bandidos em Rostok.</text>
+	</string>
+	<string id="barmen_eliminate_camp_2_descr">
+		<text>Acabe com o grupo de mercenários e bandidos que bloqueiam o caminho para Rostok.</text>
+	</string>
+	<string id="barmen_eliminate_camp_2_text">
+		<text>Existe um bando de mercenários não muito longe, em Rostok. 
+		Fizeram amizade com os bandidos e agora querem bloquear a passagem pela planta. 
+		Não preciso nem dizer o quanto isso é ruim. Tem que ser resolvido imediatamente. 
+		Membros da Duty e alguns veteranos foram dar-lhes uma lição, mas não temos notícias deles há muito tempo. 
+		Assim, porque não...eh...vai ver o que está acontecendo? A recompensa será boa.</text>
+	</string>
+	<string id="barmen_eliminate_camp_3">
+		<text>Elimine os bandidos da Granja.</text>
+	</string>
+	<string id="barmen_eliminate_camp_3_descr">
+		<text>É muito simples: limpe a Granja de bandidos.</text>
+	</string>
+	<string id="barmen_eliminate_camp_3_text">
+		<text>A Granja fica perto dos velhos armazéns. Era um lugar perfeito para encontros, intercâmbio de produtos, enfim..., esse tipo de coisas. 
+		Mas agora os bandidos a ocuparam e, segundo parece, não pensam em sair. Isso não me convêm. Preciso dessa Granja o quanto antes. 
+		Não me importa o que aconteça com os ocupantes.</text>
+	</string>
+	<string id="barmen_eliminate_camp_4">
+		<text>Acabe com o acampamento dos bandidos no Wild Territory</text>
+	</string>
+	<string id="barmen_eliminate_camp_4_descr">
+		<text>Acabe com o acampamento dos bandidos no Wild Territory</text>
+	</string>
+	<string id="barmen_eliminate_camp_4_text">
+		<text>Há bandidos acampados no Wild Territory. Não podemos permitir que esses párias da sociedade continuem deixando carniça perto do bar. É essencial acabar com esse acampamento.</text>
+	</string>
+	<string id="barmen_eliminate_camp_5">
+		<text>Destrua o esconderijo dos cachorros mutantes no Wild Territory</text>
+	</string>
+	<string id="barmen_eliminate_camp_5_descr">
+		<text>Destrua o esconderijo dos cachorros mutantes no Wild Territory</text>
+	</string>
+	<string id="barmen_eliminate_camp_5_text">
+		<text>Alguns de nossos homens partiram em uma expedição e voltaram derrotados, esfarrapados, ensanguentados e com os olhos vidrados. 
+		Seguramente toparam com essas bestas. Ali existe um grande número delas. Encontre seu esconderijo e não deixe nenhuma viva.</text>
+	</string>
+	<string id="barmen_eliminate_camp_6">
+		<text>Acabe com o grupo de bandidos de Agroprom.</text>
+	</string>
+	<string id="barmen_eliminate_camp_6_descr">
+		<text>Acabe com o grupo de bandidos de Agroprom.</text>
+	</string>
+	<string id="barmen_eliminate_camp_6_text">
+		<text>Em 94 esses mafiosos me agarraram e me roubaram. Deus, aquilo foi um inferno. Eu tinha um restaurante naquela época. 
+		Não pude fazer nada contra eles. E agora eu encontrei a mesma gangue trabalhando em Agroprom beneficiando-se dos artefatos que existem ali. 
+		Mas agora posso fazer algo. Sei exatamente onde se escondem. Faça-me um favor, castigue-os. </text>
+	</string>
+	<string id="barmen_eliminate_camp_7">
+		<text>Destrua o esconderijo dos snorks de Dark Valley</text>
+	</string>
+	<string id="barmen_eliminate_camp_7_descr">
+		<text>Destrua o esconderijo dos snorks de Dark Valley</text>
+	</string>
+	<string id="barmen_eliminate_camp_7_text">
+		<text>Sim... Parece que quem diz que a Zona está se expandindo tem razão. Snorks foram vistos em Dark Valley onde nunca tinham sido visto antes. 
+		Alguns começaram a ter medo. Os membros da Duty prometeram destruir as bestas, mas parece que não estão conseguindo. Pode fazer isso?</text>
+	</string>
+	<string id="barmen_find_artefact_1">
+		<text>Encontre o artefato Meat Chunk.</text>
+	</string>
+	<string id="barmen_find_artefact_1_descr">
+		<text>Encontre o artefato Meat Chunk que cura feridas e doenças.</text>
+	</string>
+	<string id="barmen_find_artefact_1_text">
+		<text>Passaram por aqui uns padres que queriam um artefato Meat Chunk. Enfim, têm certo interesse nesse artefato curador... Esses milagreiros corruptos! Bem... vai fazer? Você decide.</text>
+	</string>
+	<string id="barmen_find_artefact_2">
+		<text>Encontre o artefato Crystal Thorn</text>
+	</string>
+	<string id="barmen_find_artefact_2_descr">
+		<text>Encontre o artefato Crystal Thorn que protege contra psicoataques.</text>
+	</string>
+	<string id="barmen_find_artefact_2_text">
+		<text>Um "crone"? Não, não é isso. Um "Crystal corn"? Não, errado outra vez... Idiota! "Crystal Thorn", é isso. Bem, essa é a situação: 
+		tenho um pedido do artefato "Crystal Thorn". Já ouviu falar dele? Dizem que quando se tem um desses, não há criatura capaz de manipular o seu cérebro. O que me diz?</text>
+	</string>
+	<string id="barmen_find_artefact_3">
+		<text>Encontre o artefato Night Star</text>
+	</string>
+	<string id="barmen_find_artefact_3_descr">
+		<text>Encontre o artefato Night Star para contribuir com a investigação militar nacional.</text>
+	</string>
+	<string id="barmen_find_artefact_3_text">
+		<text>Necessito do artefato Night Star. Lamentavelmente, não concede nenhum desejo, mas pode torna-lo rico. Os cientistas pagam um bom preço por ele. 
+		Dizem que serve para fabricar artigos militares... Te interessa?</text>
+	</string>
+	<string id="barmen_find_artefact_4">
+		<text>Encontre o artefato Flash</text>
+	</string>
+	<string id="barmen_find_artefact_4_descr">
+		<text>Encontre o artefato Flash</text>
+	</string>
+	<string id="barmen_find_artefact_4_text">
+		<text>A missão é simples e a recompensa de primeira. Tem que encontrar o artefato Flash. Não pergunte quem o quer nem o porquê. Bem, vai fazer?</text>
+	</string>
+	<string id="barmen_find_artefact_5">
+		<text>Encontre o artefato Goldfish</text>
+	</string>
+	<string id="barmen_find_artefact_5_descr">
+		<text>Encontre o artefato Goldfish</text>
+	</string>
+	<string id="barmen_find_artefact_5_text">
+		<text>Marked One, conhece a história do Goldfish? Sim, sim, essa. Fizeram muitas piadas sobre o tema. Enfim, há um ancião empenhado em capturá-lo. 
+		Resumindo, necessito de um artefato único em sua espécie que se chama Goldfish. O cliente é extrangeiro e muito respeitável. Vai me ajudar?</text>
+	</string>
+	<string id="barmen_find_item_1">
+		<text>Encontre o traje protetor psíquico.</text>
+	</string>
+	<string id="barmen_find_item_1_descr">
+		<text>Encontre o traje que protege eficazmente das emissões psíquicas. Deve procurar nos laboratórios abandonados em Dark Valley.</text>
+	</string>
+	<string id="barmen_find_item_1_text">
+		<text>Nos laboratórios em Dark Valley, os cientistas investigaram um modo de proteger o cérebro humano das emissões psíquicas. 
+		Levou muito tempo, mas, finalmente um de seus experimentos obteve êxito, e o resultado é um traje que quando usado permitiria inclusive beijar o controlador. 
+		Sim, é excelente. Se me trouxer essa maravilha, nunca esquecerei.</text>
+	</string>
+	<string id="barmen_find_item_2">
+		<text>Encontre a arma do estrangeiro.</text>
+	</string>
+	<string id="barmen_find_item_2_descr">
+		<text>Uma missão interessante. O nome não me é estranho..., mas de onde o conheço?</text>
+	</string>
+	<string id="barmen_find_item_2_text">
+		<text>Faz tempo havia um estrangeiro por aqui... Se chamava Gordon? Sua habilidades eram as próprias de um stalker experiente, mas nunca admitiu ter estado na Zona. 
+		Bem, de qualquer forma isso não interessa. Ao final desapareceu em algum lugar da Zona. Mas tinha essa coisa tão curiosa, o Black Kite. Se pudesse dar uma olhada mais de perto...</text>
+	</string>
+	<string id="barmen_find_item_3">
+		<text>Encontre a Vintar modificada.</text>
+	</string>
+	<string id="barmen_find_item_3_descr">
+		<text>Encontre a Vintar modificada. Aparentemente, se encontra na área da Red Forest. </text>
+	</string>
+	<string id="barmen_find_item_3_text">
+		<text>É uma história estranha. Em um belo dia apareceu um sujeito com os bolsos cheios de dinheiro e contratou uma gangue, não de veteranos, mas de caras preparados. 
+		Comprou um monte de equipamentos... Eu tinha uma Vintar novinha. Uma arma incrível! E fui tão imbecil que a vendi. Não mentirei, ganhei bastante dinheiro... 
+		Mas o que aconteceu é que derrotaram toda a gangue perto da Red Forest. O que posso dizer, morreram por nada... 
+		Bem, foi uma boa lição para todos: não se consegue entrar na Zona só tendo dinheiro. Enfim... Não consigo deixar de pensar na Vintar. 
+		Uma arma como essa enferrujando em algum lugar! Pode busca-la pra mim? Pagarei bem!</text>
+	</string>
+	<string id="barmen_kill_stalker_1">
+		<text>Mate o soldado</text>
+	</string>
+	<string id="barmen_kill_stalker_1_descr">
+		<text>Tem um soldado que deve virar presunto. É uma tarefa fácil. Bem..., é estranho que o objetivo seja um homem uniformizado e que o cliente esteja fora de suas casinhas.</text>
+	</string>
+	<string id="barmen_kill_stalker_1_text">
+		<text>Preciso que mate o soldado... Não me pergunte quem é, não importa nem um pouco! Apenas faça. Então? Pode se encarregar dessa missão?</text>
+	</string>
+	<string id="barmen_kill_stalker_2">
+		<text>Mate o stalker</text>
+	</string>
+	<string id="barmen_kill_stalker_2_descr">
+		<text>Você tem que acabar com um stalker. Morte ao traidor: é a vingança do comerciante.</text>
+	</string>
+	<string id="barmen_kill_stalker_2_text">
+		<text>Imagine o tipo de homem de quem nunca podera dizer nada de ruim... Confia nele mais que em você mesmo, certo? Conta com ele e, de repente, descobre que é um maldito desgraçado... 
+		O negócio é o seguinte: esse caso precisa de solução. Se o fizer eu me ocuparei do resto.</text>
+	</string>
+	<string id="barmen_kill_stalker_3">
+		<text>Mate o stalker do grupo Monolith.</text>
+	</string>
+	<string id="barmen_kill_stalker_3_descr">
+		<text>Encontre o ex-amigo do comerciante e ajude-o a morrer.</text>
+	</string>
+	<string id="barmen_kill_stalker_3_text">
+		<text>Antes tinha um amigo... Difícil de acreditar, eh? Viemos a Zona juntos quando não havia nada disso tudo... 
+		Faziamos coisas, íamos a lugares... Ah, éramos jovens e superávamos tudo... Mas para ele não era suficiente. 
+		Queria ir ao centro da Zona e tratou de me convencer para que o acompanhasse, mas eu recusei e fiz a coisa certa... 
+		Brigamos feio e ele partiu sozinho... E agora alguém o viu por ali... Está com os Monolith. Bem, Marked One, o trato é... 
+		Faça isto por mim como um amigo: encontre-o e não o faça sofrer, apenas o justo e necessário... Era como um irmão pra mim, sabe? </text>
+	</string>
+	<string id="barmen_kill_stalker_4">
+		<text>Mate o stalker chamado Vampiro</text>
+	</string>
+	<string id="barmen_kill_stalker_4_descr">
+		<text>Encontre e mate o stalker chamado Vampiro.</text>
+	</string>
+	<string id="barmen_kill_stalker_4_text">
+		<text>Já basta! Estou farto desse monte de merda! Me refiro a Vampiro, conhece? É um filho da puta! Rouba a sorte das pessoas ao invés de sangue. 
+		Todos que vão com ele morrem, e ele sempre volta são e salvo! Já fez isso cinco vezes. 
+		É o demônio! Acredita? Gostaria muito de ir colocar flores na tumba do vampiro... Aceita o trabalho?</text>
+	</string>
+	<string id="barmen_kill_stalker_5">
+		<text>Mate o stalker chamado Sparrow</text>
+	</string>
+	<string id="barmen_kill_stalker_5_descr">
+		<text>Encontre Sparrow e vingue a morte de outro stalker.</text>
+	</string>
+	<string id="barmen_kill_stalker_5_text">
+		<text>Malditos mosqueteiros! Brincando de ser D’Artagnan... Palhaços! Como se andar entre anomalías e balas não fosse suficiente, agora estes estúpidos se dedicam a duelar! 
+		O negócio é o seguinte: começou uma briga..., ninguém sabe como. Este par de idiotas decidiram derramar um pouco de sangre. 
+		E conseguiram: um deles caiu morto... era um ótimo stalker! E o outro, Sparrow, fugiu, porque eu teria sido o primeiro a meter um bala na sua cabeça. 
+		Encontre-o. Estou convencido de que continua na Zona. Aceita?</text>
+	</string>
+	<string id="barmen_monster_part_1">
+		<text>Consiga um olho de porco mutante</text>
+	</string>
+	<string id="barmen_monster_part_1_descr">
+		<text>Consiga um olho de porco mutante</text>
+	</string>
+	<string id="barmen_monster_part_1_text">
+		<text>Em breve vamos ter uma festa. Será um jantar divertido, e uns gourmets bastante grosseiros (não custa nada dizer) vão querer provar minha receita especial: 
+		olho de "carne" ao molho de porco. Isto é, no seu próprio caldo, e com maionese. Enfim, preciso de um olho de porco mutante, e rápido.</text>
+	</string>
+	<string id="barmen_monster_part_2">
+		<text>Traga um casco de javali</text>
+	</string>
+	<string id="barmen_monster_part_2_descr">
+		<text>Traga um casco de javali</text>
+	</string>
+	<string id="barmen_monster_part_2_text">
+		<text>Sabe que preparamos cascos e chifres? É algo muito raro. Fabricam jóias excelentes com cascos mutantes: conheço um joalheiro que está interessado. 
+		Então vá em frente, encontre um casco de javali e encherá o bolso de grana.</text>
+	</string>
+	<string id="dolg_defend_lager_1">
+		<text>Proteja o posto de segurança da Duty.</text>
+	</string>
+	<string id="dolg_defend_lager_1_descr">
+		<text>Proteja o posto de segurança da Duty no Lixão.</text>
+	</string>
+	<string id="dolg_defend_lager_1_text">
+		<text>O mais provável é que se encontre com os nossos caras no Lixão. Estão ali como uma espécie de posto avançado para proteger o bar dos mutantes que chegam de Dark Valley. 
+		Fomos informados de que se aproxima uma manada de javalis. Ajude-os a acabar com os mutantes e ficarei te devendo uma.</text>
+	</string>
+	<string id="dolg_eliminate_lager_1">
+		<text>Acabe com o zumbi</text>
+	</string>
+	<string id="dolg_eliminate_lager_1_descr">
+		<text>Acabe com o zumbi longlivers em Yantar.</text>
+	</string>
+	<string id="dolg_eliminate_lager_1_text">
+		<text>Enviamos recentemente um grupo a Yantar. Infelizmente ninguém voltou. Perto do laboratório móvel, em Yantar, foram avistados alguns stalkers do grupo convertidos em zumbi. 
+		Não podemos permitir que continuem nesse estado tão espantoso. Sua tarefa consiste em encontrar e destruir essas coisas em que se transformaram.</text>
+	</string>
+	<string id="dolg_eliminate_lager_10">
+		<text>Acabe com a matilha de cachorros.</text>
+	</string>
+	<string id="dolg_eliminate_lager_10_descr">
+		<text>Acabe com a matilha de cachorros do Lixão.</text>
+	</string>
+	<string id="dolg_eliminate_lager_10_text">
+		<text>Naturalmente, não designamos tarefas a stalkers estrangeiros. Mas, por outro lado, trata-se de um trabalho simples, e não há necessidade de que nossos homens se ocupem dele. 
+		Então escuta. Deve destruir um pequeno esconderijo de bestas no Lixão. Um dos nossos grupos já esta lá pronto para agir, assim que houver problemas, encontrará um lugar para se retirar. 
+		De qualquer forma, não deverá haver problemas, já que não há muitas bestas: não mais que dez. O mais certo é que sejam cachorros: há pouco nos informaram da migração de uma grande matilha de cachorros nos arredores. 
+		Já pode começar sua tarefa.</text>
+	</string>
+	<string id="dolg_eliminate_lager_11">
+		<text>Destrua o acampamento dos stalkers</text>
+	</string>
+	<string id="dolg_eliminate_lager_11_descr">
+		<text>Destrua o acampamento dos stalkers em Agroprom</text>
+	</string>
+	<string id="dolg_eliminate_lager_11_text">
+		<text>É um assunto delicado, mas nossos homens não devem ser envolvidos. A presença de neutros na fábrica de Agroprom não é vantajosa para os nossos aliados. Esta é a sua tarefa: 
+		limpe a Promzone de stalkers, não importa quem sejam ou a que grupo pertençam. Entendido?</text>
+	</string>
+	<string id="dolg_eliminate_lager_12">
+		<text>Destrua o destacamento de mercenarios.</text>
+	</string>
+	<string id="dolg_eliminate_lager_12_descr">
+		<text>Destrua o destacamento de mercenarios de Rostok.</text>
+	</string>
+	<string id="dolg_eliminate_lager_12_text">
+		<text>Esta é a tarefa: você deve destruir o destacamento de franco atiradores mercenários. O que acontece é que os franco atiradores ocupam o último andar do complexo. 
+		Devem ser não menos que dois e não mais que cinco. Parece que estão armados com fuzis. Sugestão: não apareça lá enquanto estiver de dia.</text>
+	</string>
+	<string id="dolg_eliminate_lager_13">
+		<text>Proteja a base dos bandidos.</text>
+	</string>
+	<string id="dolg_eliminate_lager_13_descr">
+		<text>Proteja a base principal dos bandidos em Dark Valley.</text>
+	</string>
+	<string id="dolg_eliminate_lager_13_text">
+		<text>É crucial que realize uma incursão na base principal dos bandidos e elimine a maior quantidade possível de inimigos. Ela fica em Dark Valley, 
+		onde existe um centro científico inacabado. O inimigo possui trinta lutadores com armas automáticas rápidas, pistolas e escopetas. Está claro?</text>
+	</string>
+	<string id="dolg_eliminate_lager_14">
+		<text>Elimine os snorks.</text>
+	</string>
+	<string id="dolg_eliminate_lager_14_descr">
+		<text>Proteja dos snorks os túneis do setor Yantar. </text>
+	</string>
+	<string id="dolg_eliminate_lager_14_text">
+		<text>Desta vez terá que massacrar. Os túneis de Yantar estão cheios de snorks: tem uns dez. Sim, já não se pode refugiar da chuva lá como antes...</text>
+	</string>
+	<string id="dolg_eliminate_lager_2">
+		<text>Aniquile a manada de porcos mutantes</text>
+	</string>
+	<string id="dolg_eliminate_lager_2_descr">
+		<text>Aniquile a manada de porcos mutantes em Wild Territory.</text>
+	</string>
+	<string id="dolg_eliminate_lager_2_text">
+		<text>Detectamos a migração de um grande manada de horrorosos porcos mutantes que todos chamam de "carne". Agora estão na área do Lixão. Todos os nossos homens estão ocupados, 
+		mas temos que acabar com essas bestas. É um trabalho especial, te pagaremos por ele. </text>
+	</string>
+	<string id="dolg_eliminate_lager_3">
+		<text>Elimine os pseudocachorros</text>
+	</string>
+	<string id="dolg_eliminate_lager_3_descr">
+		<text>Destrua o esconderijo de pseudocachorros próximo aos armazéns militares.</text>
+	</string>
+	<string id="dolg_eliminate_lager_3_text">
+		<text>Nossos aliados nos informaram o descobrimento de um esconderijo de monstros no território, perto dos armazéns militares. 
+		Acreditamos que se trata de um matilha de pseudocachorros. Não devemos aparecer nessa zona nesse momento. 
+		É um trabalho para alguém neutro. Se candidata?</text>
+	</string>
+	<string id="dolg_eliminate_lager_4">
+		<text>Destrua o posto de segurança dos mercenários.</text>
+	</string>
+	<string id="dolg_eliminate_lager_4_descr">
+		<text>Destrua o posto de segurança dos mercenários próximo aos armazéns militares.</text>
+	</string>
+	<string id="dolg_eliminate_lager_4_text">
+		<text>Ultimamente houve um aumento da atividade dos grupos de mercenários. Atacaram os cientistas e os investigadores que trabalham na zona. 
+		Não podemos deixar as coisas assim. Temos que realizar um pequena operação de castigo. Alvo: 
+		o posto de segurança dos mercenários próximo aos armazéns militares, atrás do povoado abandonado.</text>
+	</string>
+	<string id="dolg_eliminate_lager_5">
+		<text>Acabe com os mercenários de Wild Territory.</text>
+	</string>
+	<string id="dolg_eliminate_lager_5_descr">
+		<text>Acabe com os mercenários de Wild Territory.</text>
+	</string>
+	<string id="dolg_eliminate_lager_5_text">
+		<text>Um grupo de cientistas está planejando estudar o Wild Territory. Mas ultimamente este lugar não tem sido muito seguro já que os  mercenários voltaram a atividade. 
+		Assegure-se de que todos os mercenários de Wild Territory sejam eliminados.</text>
+	</string>
+	<string id="dolg_eliminate_lager_6">
+		<text>Mate os bandidos</text>
+	</string>
+	<string id="dolg_eliminate_lager_6_descr">
+		<text>Mate os bandidos que entraram no Wild Territory.</text>
+	</string>
+	<string id="dolg_eliminate_lager_6_text">
+		<text>Direi em poucas palavras. Os bandidos atravessaram nosso postos de segurança da área do bar e agora estão no Wild Territory. Eles têm que ser eliminados.</text>
+	</string>
+	<string id="dolg_eliminate_lager_7">
+		<text>Acabe com o controle</text>
+	</string>
+	<string id="dolg_eliminate_lager_7_descr">
+		<text>Acabe com o controle de Yantar.</text>
+	</string>
+	<string id="dolg_eliminate_lager_7_text">
+		<text>Para realizar esta tarefa deve-se ter habilidades especiais. Os cientistas nos informaram de que há um controle em Yantar, 
+		perto da entrada do laboratório subterrâneo (no edifício central). Os controles são muito perigosos, mas estou certo de que poderá com eles.</text>
+	</string>
+	<string id="dolg_eliminate_lager_8">
+		<text>Elimine os membros da Freedom</text>
+	</string>
+	<string id="dolg_eliminate_lager_8_descr">
+		<text>Elimine os membros da Freedom do povoado abandonado próximo aos armazéns militares.</text>
+	</string>
+	<string id="dolg_eliminate_lager_8_text">
+		<text>Houve um aumento de atividade da patrulha da Freedom no povoado abandonado próximo aos armazéns militares. Limpe o povoado de lutadores. Ao terminar sua tarefa, te espera uma recompensa especial.</text>
+	</string>
+	<string id="dolg_eliminate_lager_9">
+		<text>Destrua os bandidos</text>
+	</string>
+	<string id="dolg_eliminate_lager_9_descr">
+		<text>Destrua os bandidos do Lixão.</text>
+	</string>
+	<string id="dolg_eliminate_lager_9_text">
+		<text>A situação atual não é favorável. Os bandidos estão se concentrando nas áreas do Lixão e Dark Valley. 
+		A melhor solução é realizar dois ataques preventivos simultâneos. Nossos homens irão ao Dark Valley e você ao Lixão.</text>
+	</string>
+	<string id="dolg_find_item_1">
+		<text>Encontre o fuzil melhorado</text>
+	</string>
+	<string id="dolg_find_item_1_descr">
+		<text>Encontre a amostra do TRs 301 melhorado próximo aos armazéns militares.</text>
+	</string>
+	<string id="dolg_find_item_1_text">
+		<text>Alguém está ajudando os mercenários. Há pouco receberam metralhadoras melhoradas para disparar à distância com precisão. 
+		Consegue perceber que isso é um jogo perigoso? Bem, me interessa uma arma como essa. Serei grato eternamente, esteja certo disso.</text>
+	</string>
+	<string id="dolg_kill_stalker_1">
+		<text>Neutralize o bandido</text>
+	</string>
+	<string id="dolg_kill_stalker_1_descr">
+		<text>Neutraliza o bandido Poker.</text>
+	</string>
+	<string id="dolg_kill_stalker_1_text">
+		<text>Apelido do cara: Poker. Um dos líderes mais cruéis dos bandidos, um canalha e marginal. 
+		Evidentemente não está bem da cabeça: dizem que se contagiou com uma estranha doença na Zona. 
+		Agora sofre pequenos lapsos de memória e ao recobrar a consciência, não se lembra quem é nem onde está. 
+		Não obstante, sempre está armado e muito agressivo. Suposta localização: Dark Valley. Preparado para a tarefa?</text>
+	</string>
+	<string id="drunk_dolg_find_item">
+		<text>Encontre a arma do membro da Duty.</text>
+	</string>
+	<string id="drunk_dolg_find_item_descr">
+		<text>O membro da Duty pede que encontre sua arma. Ele a perdeu em algum lugar do Dark Valley durante uma expedição de exploração.</text>
+	</string>
+	<string id="drunk_dolg_find_item_text">
+		<text>Sucumbi ao pânico sem poder evitá-lo. Como a Zona deixa nossa cabeça confusa! 
+		Acreditei que tinha nervos de aço, não sabia o que era medo, e olha agora. Que uivos horríveis nos ouvidos! Tudo ia como sempre. 
+		Havia uma expedição de exploração ao Dark Valley. Nós descemos até a trincheira com Krivoi para cobrir o resto do grupo, e então, ouvi os uivos e o medo me invadiu. 
+		Maldita seja, nem sequer me lembro como cheguei à coordenada. Quando voltei à base, Voronin quase me mata: tinha me dado uma arma melhorada como prêmio por bons serviços. 
+		Mas com o pânico fugi tão rápido que deixei a arma lá. Pode traze-la para mim? Porque... o que farei sem uma arma decente?</text>
+	</string>
+	<string id="ecolog_eliminate_lager_1">
+		<text>Destrua o esconderijo dos snorks</text>
+	</string>
+	<string id="ecolog_eliminate_lager_1_descr">
+		<text>Destrua o esconderijo dos snorks em Yantar</text>
+	</string>
+	<string id="ecolog_eliminate_lager_1_text">
+		<text>Quero oferecer a você uma pequena soma em dinheiro. Vai receber se os Snorks que habitam os pântanos deixarem de incomodar a mim e a meus colegas. 
+		Às vezes não podemos nem nos concentrar para realizar os experimentos.</text>
+	</string>
+	<string id="ecolog_eliminate_lager_2">
+		<text>Destrua o esconderijo de Cachorros Selvagens</text>
+	</string>
+	<string id="ecolog_eliminate_lager_2_descr">
+		<text>Destrua o esconderijo de Cachorros Selvagens no Wild Territory</text>
+	</string>
+	<string id="ecolog_eliminate_lager_2_text">
+		<text>Existe um esconderijo de Cachorros mutantes no Wild Territory. Quero que va ate lá e acabe com ele. Esses mutantes são especialmente perigosos para nossas expedições. 
+		Sei que os Zoólogos não aprovarão isso, mas não estamos em um zoológico. Essas bestas trazem pragas, raiva e Deus sabe que coisas mais.</text>
+	</string>
+	<string id="ecolog_find_artefact_1">
+		<text>Leve o artefato Fireball.</text>
+	</string>
+	<string id="ecolog_find_artefact_1_descr">
+		<text>Leve o artefato Fireball para as pesquisas dos cientistas.</text>
+	</string>
+	<string id="ecolog_find_artefact_1_text">
+		<text>Conseguimos obter o artefato em condições de laboratório! Este é um grande passo! Agora o mundo todo saberá de nosso êxito e estaremos às portas do prêmio Nobel! 
+		Este é um artefato único, se chama "Pellicle". Sua função principal é proteger das queimaduras químicas. Quer que eu dê a você em nome da ciência? 
+		Mas tenho um pedido: em troca, preciso do artefato Fireball. Conhece? As qualidades térmicas únicas de sua superfície requerem uma investigação minuciosa.</text>
+	</string>
+	<string id="ecolog_find_artefact_2">
+		<text>Encontre o artefato Gravi</text>
+	</string>
+	<string id="ecolog_find_artefact_2_descr">
+		<text>Leve o artefato Gravi aos cientistas.</text>
+	</string>
+	<string id="ecolog_find_artefact_2_text">
+		<text>Estamos muito perto de compreender a natureza da gravitação. 
+		Logo poderemos criar uma nova geração de motores com base na antigravidade e, muito provavelmente, se abrirá ante nós o caminho até as estrelas. 
+		Por isso necessitamos do artefato Gravi urgentemente.</text>
+	</string>
+	<string id="ecolog_find_artefact_3">
+		<text>Encontre o artefato Jellyfish.</text>
+	</string>
+	<string id="ecolog_find_artefact_3_descr">
+		<text>Os cientistas precisam do artefato Jellyfish para realizar investigacões no espaço-tempo.</text>
+	</string>
+	<string id="ecolog_find_artefact_3_text">
+		<text>Nossa equipe de investigação está a ponto de descobrir o mistério do espaço-tempo. A possibilidade de se teletransportar deixa de ser uma fantasia! 
+		O Vortex é uma anomalia que comprime o espaço ao invés de simplesmente afetar os objetos gravitacionalmente, como acreditam alguns teóricos ultrapassados que passam o dia vegetando nos centros de investigação. 
+		Mas seus queixos cairão quando descobrirem os resultados que a ciência pode lograr ao se trabalhar em campo. Me consiga o artefato Jellyfish, por favor.</text>
+	</string>
+	<string id="ecolog_find_artefact_4">
+		<text>Encontre o artefato Moonlight</text>
+	</string>
+	<string id="ecolog_find_artefact_4_descr">
+		<text>Leve o Moonlight aos cientistas de Yantar. Um bom artefato...</text>
+	</string>
+	<string id="ecolog_find_artefact_4_text">
+		<text>Necessitamos desesperadamente de materiais para seguir com a investigação no campo dos energéticos. Como verá, aprendemos a gerar energia com a ajuda dos artefatos. 
+		Garantido, isto funciona se o fator de eficiência não é muito alto. Conseguimos os melhores resultados com o artefato Moonlight. Traga-nos uma amostra para os experimentos, por favor.</text>
+	</string>
+	<string id="ecolog_find_artefact_5">
+		<text>Encontre o artefato Sea Urchin.</text>
+	</string>
+	<string id="ecolog_find_artefact_5_descr">
+		<text>Os cientistas precisam do artefato Sea Urchin para melhorar os trajes.</text>
+	</string>
+	<string id="ecolog_find_artefact_5_text">
+		<text>Seguramente você é consciente de que nossos trajes proporcionam a melhor defesa contra a radiação. 
+		O segredo está em saturar os trajes com uma loção feita a partir de um artefato muito especial. 
+		Para fabricar uma nova série de trajes, precisamos desse artefato. Chama-se Sea Urchin.</text>
+	</string>
+	<string id="ecolog_find_item_1">
+		<text>Traga o traje especial</text>
+	</string>
+	<string id="ecolog_find_item_1_descr">
+		<text>Traga o traje incomum do laboratório subterrâneo X16.</text>
+	</string>
+	<string id="ecolog_find_item_1_text">
+		<text>Temos um trabalho. Há pouco contratamos os serviços de um stalker para que entrasse no laboratório. 
+		Já então me dei conta de que seu traje incomum desprendia um calor perceptível. 
+		O stalker disse que o próprio traje podia curar as feridas. Resumindo, o stalker não voltou do laboratório. 
+		Oh, não! Nem pense isso! Não tivemos nada a ver! O traje seguramente esta lá. Gostaria de tê-lo para investigá-lo.</text>
+	</string>
+	<string id="ecolog_monster_part_1">
+		<text>Traga uma parte do corpo de um snork</text>
+	</string>
+	<string id="ecolog_monster_part_1_descr">
+		<text>É muito fácil conseguir um pedaço do corpo de um snork</text>
+	</string>
+	<string id="ecolog_monster_part_1_text">
+		<text>Eh, jovem! Sabe? Precisamos de uma parte do corpo de uma criatura em particular. 
+		Seus colegas a chamam de zumbi e devo dizer que não é um nome muito apropriado para um corpo que sofreu mutações com o objetivo de... 
+		Enfim, precisamos de um braço. Nossa equipe trabalha implantando extremidades de... é... zumbis nas pessoas que perderam um braço ou uma perna por alguma razão. 
+		Além disso queremos ir mais além e transplantar também orgão vitais. Mas no momento, isso é pura teoria. Portanto somente o braço por agora. Te interessa jovem?</text>
+	</string>
+	<string id="ecolog_monster_part_2">
+		<text>Traga o olho de um Porco Mutante</text>
+	</string>
+	<string id="ecolog_monster_part_2_descr">
+		<text>Será melhor que tenha cuidado com estes cabeças de vento. Conseguirei-lhes o olho e que façam o que quiser com seus voluntários.</text>
+	</string>
+	<string id="ecolog_monster_part_2_text">
+		<text>Boas notícias, jovem: Temos uma tarefa muito interessante para você! Acredito que como ser pensante que é poderá não valorizar as teorias de meus colegas. 
+		O caso é que nossa investigação revelou que os olhos das criaturas que chamam de "carne" estão providos de...acompanha meu raciocínio?...de receptores olfativos! 
+		Portanto, além de ver podem cheirar com os olhos. Estamos nos preparando para transplantar este olho milagroso em um de nossos... voluntários. 
+		Creio que estamos perto de começar uma moda! De qualquer maneira, gostaria de ser receptor deste orgão fascinante?</text>
+	</string>
+	<string id="ecolog_monster_part_3">
+		<text>Traga o rabo de um cachorro cego</text>
+	</string>
+	<string id="ecolog_monster_part_3_descr">
+		<text>Sim, senhores, a ciência! Pode o ser humano ter um segundo cérebro? Pobres cachorros, um deles terá que ficar sem rabo.</text>
+	</string>
+	<string id="ecolog_monster_part_3_text">
+		<text>Bem-Vindo, eh... viajante! Fico feliz que tenha passado por aqui: precisamos de alguém para participar de um experimento de grande importância. 
+		Meu colega Brenter quer tentar cozinhar uma refeição utilizando a fauna do lugar para um experimento prático sobre a influência das proteínas mutantes no corpo humano. 
+		Decidimos começar pelos javalis. Necessitamos de presunto. Uma pata de javali, entende? Se está de acordo, escolha o exemplar mais saudável.</text>
+	</string>
+	<string id="ecolog_monster_part_4">
+		<text>Traga a pata de um javali</text>
+	</string>
+	<string id="ecolog_monster_part_4_descr">
+		<text>Gourmets aventureiros... Bem, conseguirei um poco de presunto.</text>
+	</string>
+	<string id="ecolog_monster_part_4_text">
+		<text>Bom dia! Espero que saiba que os cachorros são vertebrados, isto é, que sua coluna vertebral começa na cabeça e termina no rabo. O negócio é o seguinte! 
+		Um de meus jovens colegas demonstrou teoricamente que a espinha dorsal dos cachorros cegos - assim são chamados esse tipo de animal - começam no rabo, não na cabeça. 
+		Ou seja, uma revolução total do que sempre se acreditou neste campo do conhecimento. Também existem algumas teorias que afirmam que os seres humanos têm ao redor do sacro um... bem, 
+		este é um assunto muito discutido. Definitivamente precisamos da cabeça de um cachorro cego, que, em nossa ignorância, pensávamos que estava no rabo.</text>
+	</string>
+	<string id="ecolog_monster_part_5">
+		<text>Traga a mandíbula de um Sanguessuga.</text>
+	</string>
+	<string id="ecolog_monster_part_5_descr">
+		<text>O que fazem com a mandíbula dos Sanguessugas não me interessa. O que importa é quanto vão me dar por essa raridade.</text>
+	</string>
+	<string id="ecolog_monster_part_5_text">
+		<text>Oh, Stalker, fico feliz em vê-lo! Escuta... já encontrou Sanguessugas em suas aventuras? Não? Se não, gostaríamos que acontecesse. 
+		Traga-nos a mandíbula de um representante desta espécie, com todos seus dentes. Infelizmente, 
+		não posso revelar os detalhes do experimento, e além disso poderia ter um impacto negativo na sua psique. Estaremos esperando.</text>
+	</string>
+	<string id="eliminate_lager">
+		<text>Elimine o acampamento</text>
+	</string>
+	<string id="find_item">
+		<text>Encontre o objeto.</text>
+	</string>
+	<string id="freedom_defend_lager_1">
+		<text>Proteja os stalkers de Agroprom</text>
+	</string>
+	<string id="freedom_defend_lager_1_descr">
+		<text>Ajude o acampamento de stalkers de Agroprom a defender-se dos bandidos.</text>
+	</string>
+	<string id="freedom_defend_lager_1_text">
+		<text>Há um grupo de stalkers que vive em Agroprom. São caras normais, acreditam que a Zona é um lugar de liberdade onde não deve haver leis e 
+		simplesmente vive-se corretamente segundo a moralidade de cada um. Agora estão pensando em unir-se a nós. Bem, ajude-os a acabar com os bandidos, lhe enviaremos munição.</text>
+	</string>
+	<string id="freedom_defend_lager_2">
+		<text>Proteja a fronteira</text>
+	</string>
+	<string id="freedom_defend_lager_2_descr">
+		<text>Proteja dos monstros a fronteira próxima aos armazéns militares. </text>
+	</string>
+	<string id="freedom_defend_lager_2_text">
+		<text>Os montros da área do cauterizador já voltarão. Ajude os caras a conter-lhes. Te darei uma recompensa.</text>
+	</string>
+	<string id="freedom_eliminate_camp_1">
+		<text>Destrua o acampamento militar</text>
+	</string>
+	<string id="freedom_eliminate_camp_1_descr">
+		<text>Destrua o acampamento militar próximo ao Instituto Agroprom.</text>
+	</string>
+	<string id="freedom_eliminate_camp_1_text">
+		<text>Os militares estão planejando uma ocupação militar gradual da Zona. Temos que impedir ou a Zona se converterá em um zoológico de investigação. 
+		Um dos acampamentos militares está próximo de Agroprom. Se conseguir esvaziar um pouco o lugar, a ocupação militar da Zona ficará mais lenta.</text>
+	</string>
+	<string id="freedom_eliminate_camp_2">
+		<text>Destrua o acampamento mercenário</text>
+	</string>
+	<string id="freedom_eliminate_camp_2_descr">
+		<text>Destrua o acampamento mercenário próximo aos armazéns.</text>
+	</string>
+	<string id="freedom_eliminate_camp_2_text">
+		<text>Este é o trato. O acampamento mercenário tem que ser destruído. Podíamos deixa-los ficar porque são bons atiradores... 
+		Mas a verdade é que estão entrando em nosso território e tentando subornar minha gente. Já é hora de dar-lhes um lição. Pode fazer isso?</text>
+	</string>
+	<string id="freedom_eliminate_camp_3">
+		<text>Destrua o destacamento da Duty.</text>
+	</string>
+	<string id="freedom_eliminate_camp_3_descr">
+		<text>Destrua o destacamento da Duty em Rostok.</text>
+	</string>
+	<string id="freedom_eliminate_camp_3_text">
+		<text>O que acha de ir caçar? Um destacamento da Duty em Rostok foi visto. É uma oportunidade muito boa para fazer-lhes uma surpresa. 
+		A Duty continua mandando homens caçar monstros, mas enquanto fazem não hesitam em disparar contra qualquer coisa que não gostem. 
+		O destacamento da Duty tem que ser eliminado antes que chegue a rostok. Não deve haver muita gente: três ou quatro veteranos e um par de novatos.</text>
+	</string>
+	<string id="freedom_eliminate_camp_4">
+		<text>Destrua o grupo da Duty</text>
+	</string>
+	<string id="freedom_eliminate_camp_4_descr">
+		<text>Destrua o quanto antes o grupo da Duty no Lixão.</text>
+	</string>
+	<string id="freedom_eliminate_camp_4_text">
+		<text>É uma missão urgente. O caminho do Lixão ao bar deve ser limpo de unidades da Duty... Se escondem por lá e roubam qualquer um que passa. 
+		Estamos esperando uma encomenda muito importante, mas não devemos descartar a hipótese de que a Duty já saiba do nosso mensageiro e tente interceptá-lo. 
+		Temos que limpar o caminho nem que seja só durante o tempo necessário. De acordo?</text>
+	</string>
+	<string id="freedom_eliminate_camp_5">
+		<text>Esvazie o povoado.</text>
+	</string>
+	<string id="freedom_eliminate_camp_5_descr">
+		<text>Esvazie o povoado de Sanguessugas e, se puder, acabe com o controlador.</text>
+	</string>
+	<string id="freedom_eliminate_camp_5_text">
+		<text>Vai dar um jeito nesse fervedouro de monstros Sanguessugas que há no povoado? Ninguém se aproxima a menos de cem metros, só os idiotas. 
+		As pessoas dizem que viram coisas lá... O único que nos falta é um controlador! Enfim, já é hora de acabar com isso. Não estou te obrigando. 
+		Pra dizer a verdade, eu não iria. Mas se não tem medo, te agradecerei eternamente.</text>
+	</string>
+	<string id="freedom_eliminate_camp_6">
+		<text>Acabe com a manada de javalis e porcos mutantes.</text>
+	</string>
+	<string id="freedom_eliminate_camp_6_descr">
+		<text>Acabe com a manada de javalis e porcos mutantes próximo aos armazéns militares.</text>
+	</string>
+	<string id="freedom_eliminate_camp_6_text">
+		<text>Nosso franco-atirador está na entrada da base. Senta-se lá na torre à noite... Tudo está calmo, reina a escuridão... 
+		De repente acontece uma explosão, um grito selvagem e um clarão. Que diabos! 
+		Acontece que os javalis e os porcos mutantes se acostumaram a passear pelos campos minados. Quase sistematicamente, ao menos uma vez por semana, uma mina arrebenta uma dessas bestas. A tarefa é simples: acabe com todos esses bichos. Aceita?</text>
+	</string>
+	<string id="freedom_eliminate_camp_7">
+		<text>Acabe com a manada de roedores</text>
+	</string>
+	<string id="freedom_eliminate_camp_7_descr">
+		<text>Acabe com a manada de roedores do Wild Territory.</text>
+	</string>
+	<string id="freedom_eliminate_camp_7_text">
+		<text>Não existem roedores perto de nossa base, mas essas criaturas podem chegar a qualquer lugar. Há pouco tempo atrás estiveram muitos por aqui. 
+		Você não acreditaria! Em dois meses acabamos com eles, hehehe. Verificamos de onde foi que vieram até nossa base. Vieram desde Wild Territory, sacou? 
+		Temos medo que esses ratos saltitantes se multipliquem e voltem. Precisamos de alguém que dê conta disso. Pode fazer?</text>
+	</string>
+	<string id="freedom_find_item_1">
+		<text>Roube o fuzil dos franco-atiradores</text>
+	</string>
+	<string id="freedom_find_item_1_descr">
+		<text>Roube o SVDm 2 modificado do armazém da Duty.</text>
+	</string>
+	<string id="freedom_find_item_1_text">
+		<text>Temos uma tarefa especial. E também muito difícil... Terá que pegar um Dragunov melhorado do armazém da Duty. 
+		Esta peça tem nome próprio, mas não se preocupe por isso. O principal é que com sua excelente mira e seu eliminador de retrocesso, 
+		poderá disparar no olho de um esquilo a 400 metros de distância. Confio que irá conseguir!</text>
+	</string>
+	<string id="freedom_find_item_2">
+		<text>Obtenha o Chaser 13 modificado.</text>
+	</string>
+	<string id="freedom_find_item_2_descr">
+		<text>Obtenha dos cientistas o Chaser 13 modificado.</text>
+	</string>
+	<string id="freedom_find_item_2_text">
+		<text>Ouvi que os sabidões melhoraram a escopeta Chaser usando um artefato. A potência de destruição desse troço é a mesma de um morteiro. 
+		Por que não os visita para ver se podem fazer um trato? Eu cobrirei todos os gastos!</text>
+	</string>
+	<string id="freedom_find_item_3">
+		<text>Traga o colete à prova de balas.</text>
+	</string>
+	<string id="freedom_find_item_3_descr">
+		<text>Traga o novo modelo de colete à prova de balas.</text>
+	</string>
+	<string id="freedom_find_item_3_text">
+		<text>Esses caras estão desenhando um novo modelo de colete à prova de balas. 
+		O forro interno é tratado com algum tipo de ungüento curador ou algo parecido que faz com que as feridas superficiais se curem muito rápido. 
+		Imagine que sorte: outro dia, dez desses homens foram até Yantar e somente seis voltaram vivos, com três no ombro. 
+		Sacou? Um deles ficou para trás. Se nos trouxer esse colete à prova de balas, o examinaremos e fabricaremos muitos iguais.</text>
+	</string>
+	<string id="freedom_kill_stalker_1">
+		<text>Mate o chefe de segurança da Duty.</text>
+	</string>
+	<string id="freedom_kill_stalker_1_descr">
+		<text>Mate o chefe de segurança da Duty o mais sigilosamente possível. </text>
+	</string>
+	<string id="freedom_kill_stalker_1_text">
+		<text>Seria muito bom se o chefe de segurança da Duty desaparecesse silenciosamente. 
+		E quando eles estiverem muito confusos poderei infiltrar alguns de meus homens no grupo deles. E então aprontaríamos uma boa... 
+		Enfim, será melhor que me cale. Sugiro que vigie de longe para não chamar a atenção.</text>
+	</string>
+	<string id="freedom_kill_stalker_2">
+		<text>Mate o capitão Ivantsov.</text>
+	</string>
+	<string id="freedom_kill_stalker_2_descr">
+		<text>Mate o capitão Ivantsov, o assessor mais próximo do líder da Duty. </text>
+	</string>
+	<string id="freedom_kill_stalker_2_text">
+		<text>É uma missão difícil, te aviso, mas vale a pena. Ivantsov, um assessor próximo do líder da Duty, faz os trabalhos mais sujos: operações punitivas, incursões... 
+		Se soubesse quantos de nossos homens ele matou! Já é hora de acabar com esse cara. Se aceitar fazê-lo recomendo que vá armado até os dentes.</text>
+	</string>
+	<string id="freedom_kill_stalker_3">
+		<text>Mate o coronel Petrenko.</text>
+	</string>
+	<string id="freedom_kill_stalker_3_descr">
+		<text>Mate o coronel Petrenko, um dos fundadores da facção Duty.</text>
+	</string>
+	<string id="freedom_kill_stalker_3_text">
+		<text>Coronel Petrenko... Não sei se já ouviu esse nome ou o conhece, mas seria bom se ficassem cara a cara. Esse homem é um dos fundadores da Duty e um de nossos piores inimigos. 
+		Cuide para que a conversa termine o mais rápido possível... para ele. Vai fazer?</text>
+	</string>
+	<string id="freedom_kill_stalker_4">
+		<text>Acabe com o stalker neutro</text>
+	</string>
+	<string id="freedom_kill_stalker_4_descr">
+		<text>Encontre o stalker neutro e acabe com ele.</text>
+	</string>
+	<string id="freedom_kill_stalker_4_text">
+		<text>Tem um cara rodeando não muito longe daqui. Há pouco disparou contra um dos nossos, e algo assim não se pode perdoar. 
+		Aceita a missão? Nós pagaremos, não se preocupe.</text>
+	</string>
+	<string id="freedom_kill_stalker_5">
+		<text>Mate um dos comandantes da Duty</text>
+	</string>
+	<string id="freedom_kill_stalker_5_descr">
+		<text>Mate um dos comandantes da Duty</text>
+	</string>
+	<string id="freedom_kill_stalker_5_text">
+		<text>Te pagarei se me trouxer a cabeça de um líder da Duty! Acabe com um deles e volte para pegar a recompensa.</text>
+	</string>
+	<string id="freedom_kill_stalker_6">
+		<text>Mate o stalker chamado Scarecrow</text>
+	</string>
+	<string id="freedom_kill_stalker_6_descr">
+		<text>Elimine o stalker chamado Scarecrow</text>
+	</string>
+	<string id="freedom_kill_stalker_6_text">
+		<text>É verdade que matamos monstros, mas para nós não é uma questão de benefícios e sim de sobrevivência. 
+		As populações mutantes não são tão numerosas. Além disso também são seres vivos e não podemos permitir que os aniquilem. 
+		Alguns não querem entender isso. Um claro exemplo é o stalker chamado Scarecrow. Ganhou o apelido porque vendia mutantes dissecados. 
+		Já o avisamos antes, mas nada mudou. Portanto, pode fazer um favor à mãe natureza?</text>
+	</string>
+	<string id="freedom_kill_stalker_7">
+		<text>Mate o stalker chamado Barin. </text>
+	</string>
+	<string id="freedom_kill_stalker_7_descr">
+		<text>Mate o stalker chamado Barin, chefe de gerência da Duty.</text>
+	</string>
+	<string id="freedom_kill_stalker_7_text">
+		<text>O stalker Barin é um canalha, um lambe-botas, um hipócrita e um covarde. Estas estupendas qualidades o ajudaram a chegar ao topo da Duty. 
+		Agora dedica-se a fornecer provisões à facção, mas também participa de incursões de vez em quando. Temos que nos desfazer dele, sobretudo por seu papel fundamental na logística da Duty.</text>
+	</string>
+	<string id="freedom_monster_part_1">
+		<text>Traga uma pata de javali.</text>
+	</string>
+	<string id="freedom_monster_part_1_descr">
+		<text>Traga uma pata de javali.</text>
+	</string>
+	<string id="freedom_monster_part_1_text">
+		<text>Estamos pensando em montar uma festa para celebrar o aniversário de Bob Marley. Por que não nos trás um pouco desse presunto tão delicioso? Quanto mais melhor! Ficaremos muito agradecidos!</text>
+	</string>
+	<string id="hunter_eliminate_lager">
+		<text>Destrua o esconderijo dos sanguessugas.</text>
+	</string>
+	<string id="hunter_eliminate_lager_descr">
+		<text>O caçador quer que alguém ataque o esconderijo dos sanguessugas no povoado, próximo aos armazéns militares. Como recompensa ele promete um artefato pouco comum.</text>
+	</string>
+	<string id="hunter_eliminate_lager_text">
+		<text>Alguma vez deu de cara com um sanguessuga? São horríveis, não é? Outro dia fui ao povoado para buscar uns artefatos nos armazéns militares. 
+		Imagine: de repente vi um sanguessuga, negro e todo cheio de cicatrizes. Estava distraido e não me viu, então fui saindo com cautela. 
+		Não deveria ter começado a correr, porque me viu e começou a correr atrás de mim. Ouvia uivos vindos de todos os lados, então me dei conta de que o sanguessuga não estava sozinho. 
+		Acredito que tenham um esconderijo por ali. Livre-se deles e te darei um artefato pouco comum que encontrei faz um par de dias.</text>
+	</string>
+	<string id="kill_stalker">
+		<text>Mate o stalker.</text>
+	</string>
+	<string id="lisiy_kill_stalker">
+		<text>Mate o traidor.</text>
+	</string>
+	<string id="lisiy_kill_stalker_descr">
+		<text>O Bald One quer que você mate um stalker que fugiu com um artefato raro.</text>
+	</string>
+	<string id="lisiy_kill_stalker_text">
+		<text>Faz algum tempo, outro stalker e eu fomos a uma zona próxima ao Cauterizador em busca de um artefato. 
+		Encontramos muitas coisas, inclusive um par de artefatos que nunca tinhamos visto, nem em fotos. Depois esse desgraçado me enganou. 
+		Durante a última noite escondeu os artefatos mais valiosos e tentou me fazer acreditar que haviam desaparecido sozinhos. 
+		Faz um par de dias vi um desses artefatos na taberna. Fiquei muito puto... Enfim, stalker, se o encontrar faça com que se lembre de mim e, enquanto o fizer, 
+		trate de averiguar onde está seu esconderijo secreto e encontre o segundo artefato. É muito valioso, acredite.</text>
+	</string>
+	<string id="mercenary_kill_stalker">
+		<text>Mate o stalker mestre.</text>
+	</string>
+	<string id="mercenary_kill_stalker_descr">
+		<text>O mercenário está disposto a pagar bem por cada mestre morto. Quanto menos existam, mais fácil será para os mercenários.</text>
+	</string>
+	<string id="mercenary_kill_stalker_text">
+		<text>Não nos interessa que haja tanques andantes - stalkers equipados com exoesqueletos e armados até os dentes - perambulando pela Zona. Quanto menos existam, melhor para nós. Se matar algum será recompensado.</text>
+	</string>
+	<string id="monster_part">
+		<text>Consiga um pedaço do corpo de um monstro.</text>
+	</string>
+	<string id="petrenko_kill_stalker">
+		<text>Acabe com o stalker da Freedom.</text>
+	</string>
+	<string id="petrenko_kill_stalker_descr">
+		<text>Um stalker, antigo membro da Duty, que tem muita informação valiosa sobre os objetos de Pripyat, passou recentemente para o bando da Freedom. deve mata-lo antes que fale.</text>
+	</string>
+	<string id="petrenko_kill_stalker_text">
+		<text>Escute. Temos mapas de Pripyat; não estão atualizados, foram elaborados no princípio dos anos 90. Mas o importante é que estão marcados todos os elementos militares: armazéns subterrâneos, abrigos antibombas. 
+		Agora já não são de muita utilidade, eu sei, mas se encontrarmos uma estrada que leve a Pripyat esta informação será inestimável. Aí está o problema, de qualquer maneira.
+		Um dos oficiais passou para o bando da Freedom e está sabendo de todas as informações. Resumindo, você tem que silencia-lo antes que fale.</text>
+	</string>
+	<string id="return_for_reward">
+		<text>Volte para buscar a recompensa.</text>
+	</string>
+	<string id="return_for_reward_bring">
+		<text>Leve ao cliente o que foi prometido.</text>
+	</string>
+	<string id="shustriy_find_item">
+		<text>Encontre o traje aperfeiçoado.</text>
+	</string>
+	<string id="shustriy_find_item_descr">
+		<text>Nimble nos falou do esconderijo dos bandidos, onde escondem o produto do roubo. Ele pede que lhe traga o traje roubado e, claro, te dará uma recompensa.</text>
+	</string>
+	<string id="shustriy_find_item_text">
+		<text>Quando estava prisioneiro, ouvi os bandidos falarem sobre o esconderijo secreto dos produtos de roubos. Diziam que haviam escondido um traje lá e 
+		que, no dia seguinte, um monstro havia ficado de olho no esconderijo. Portanto, agora têm medo de ir até lá. Faça-me um favor, me traga o traje e te pagarei bem.</text>
+	</string>
+	<string id="tm_barman_has_no_job">
+		<text>Não posso oferecer nada neste momento.</text>
+	</string>
+	<string id="tm_barman_job_ask">
+		<text>E do que você quer falar?</text>
+	</string>
+	<string id="tm_barman_job_complete">
+		<text>Bom trabalho, merece uma recompensa!</text>
+	</string>
+	<string id="tm_barman_job_what">
+		<text>O que está acontecendo?</text>
+	</string>
+	<string id="tm_barman_list_job">
+		<text>Olha o que temos agora.</text>
+	</string>
+	<string id="tm_defend_camp_1">
+		<text>Proteja o destacamento da Duty dos bandidos em Dark Valley.</text>
+	</string>
+	<string id="tm_defend_camp_1_descr">
+		<text>Proteja o destacamento da Duty do ataque dos bandidos em Dark Valley.</text>
+	</string>
+	<string id="tm_defend_camp_1_text">
+		<text>Finalmente consegui convencer os retardados da Duty de que é um bom momento para limpar o Lixão de bandidos. Eles ampliarão seu território e os 
+		bandidos não incomodarão meus clientes habituais, como de costume. Bem esse é o trato: os chefes da Duty decidiram deter o fluxo de bandidos de Dark Valley, 
+		isso apenas para início de conversa. Para tanto, enviaram um destacamento de bloqueio, e os bandidos não gostaram. Quem imaginaria! 
+		Me pergunto se pode ajudar-lhes a proteger a entrada de Dark Valley. Te agradecerei generosamente.</text>
+	</string>
+	<string id="tm_dolg_has_no_job">
+		<text>Neste momento não há trabalhos disponiveis.</text>
+	</string>
+	<string id="tm_dolg_job_ask">
+		<text>Do que você quer falar?</text>
+	</string>
+	<string id="tm_dolg_job_complete">
+		<text>Muito bem rapaz! Bom trabalho!</text>
+	</string>
+	<string id="tm_dolg_job_what">
+		<text>Estou escutando.</text>
+	</string>
+	<string id="tm_dolg_list_job">
+		<text>Este é o novo trabalho.</text>
+	</string>
+	<string id="tm_drunk_dolg_has_no_job">
+		<text>Não há nada por agora.</text>
+	</string>
+	<string id="tm_drunk_dolg_job_ask">
+		<text>De que missões quer falar?</text>
+	</string>
+	<string id="tm_drunk_dolg_job_complete">
+		<text>Você cumpriu a missão... e aqui está sua recompensa.</text>
+	</string>
+	<string id="tm_drunk_dolg_job_what">
+		<text>O que há com a missão?</text>
+	</string>
+	<string id="tm_drunk_dolg_list_job">
+		<text>Há algo.</text>
+	</string>
+	<string id="tm_ecolog_has_no_job">
+		<text>Sinto muito, nesse momento não temos nenhum trabalho.</text>
+	</string>
+	<string id="tm_ecolog_job_ask">
+		<text>Sobre qual trabalho quer falar? </text>
+	</string>
+	<string id="tm_ecolog_job_complete">
+		<text>Fez um bom trabalho! Vou te dar sua recompensa.</text>
+	</string>
+	<string id="tm_ecolog_job_what">
+		<text>Estou escutando.</text>
+	</string>
+	<string id="tm_ecolog_list_job">
+		<text>Isso é o que posso oferecer a você. </text>
+	</string>
+	<string id="tm_eliminate_camp_1">
+		<text>Destrua o acampamento dos bandidos no Lixão.</text>
+	</string>
+	<string id="tm_eliminate_camp_1_descr">
+		<text>Elimine do lixão os bandidos que roubam os stalkers quando regressam da Zona. O comerciante ficará contente.</text>
+	</string>
+	<string id="tm_eliminate_camp_1_text">
+		<text>Ultimamente os bandidos estão se reorganizando e assaltando honrados comerciantes... 
+		Então verifique o Lixão, me disseram que esses merdas se instalaram junto aos detroços. 
+		Cuide desse problema e todos lhe agradecerão. Eu serei generoso com a recompensa. Trato feito?</text>
+	</string>
+	<string id="tm_eliminate_camp_2">
+		<text>Destrua o acampamento dos bandidos no estacionamento.</text>
+	</string>
+	<string id="tm_eliminate_camp_2_descr">
+		<text>Elimine os bandidos do estacionamento. Parece que são novos na Zona, portanto será muito fácil.</text>
+	</string>
+	<string id="tm_eliminate_camp_2_text">
+		<text>Os bandidos estão perambulando pelo estacionamento outra vez. Já adivinhou em que consiste o trabalho? Muito bem... 
+		Vamos lá! Envie a eles nosso mais cordial cumprimento, e volte para receber a recompensa. Aceita?</text>
+	</string>
+	<string id="tm_eliminate_camp_3">
+		<text>Elimine os bandidos instalados próximo ao Instituto Agroprom.</text>
+	</string>
+	<string id="tm_eliminate_camp_3_descr">
+		<text>Elimine os bandidos instalados próximo ao Instituto Agroprom. Será melhor permanecer amigo do comerciante.</text>
+	</string>
+	<string id="tm_eliminate_camp_3_text">
+		<text>Apareceram uns bandidos próximo ao Instituto Agroprom. Incomodam meus escavadores quando vasculham o lixo. Resolva o problema e ficarei te devendo uma.</text>
+	</string>
+	<string id="tm_eliminate_camp_4">
+		<text>Limpe a área de mutantes.</text>
+	</string>
+	<string id="tm_eliminate_camp_4_descr">
+		<text>Limpe a área de mutantes.</text>
+	</string>
+	<string id="tm_eliminate_camp_4_text">
+		<text>É uma tarefa simples. Querem trazer um turista estrangeiro. Pagou algum dinheiro a meus homens para que lhe mostrem a Zona. Temos que limpar de mutantes a Zona que vão mostrar a ele. Pode fazer?</text>
+	</string>
+	<string id="tm_eliminate_camp_5">
+		<text>Encarregue-se dos bandidos do Lixão.</text>
+	</string>
+	<string id="tm_eliminate_camp_5_descr">
+		<text>Faça com que a estrada que leva a um dos melhores lugares da Zona seja acessível a todos.</text>
+	</string>
+	<string id="tm_eliminate_camp_5_text">
+		<text>Recentemente, um dos melhores lugares da Zona ficou inacessível para os amantes do extraordinário. O Lixão... Sim, o Lixão, 
+		um pequeno e pitoresco lugar onde as tristezas são esquecidas e não há que se preocupar com a sujeira, o dinheiro ou o sangue. 
+		Agora já não é o que era, porque tem dois caras lá instalados que ameaçam matar todos que não paguem para entrar. Livre-se deles, não sei a que outro lugar poderia levar os turistas.</text>
+	</string>
+	<string id="tm_eliminate_camp_6">
+		<text>Mate o sanguessuga de Dark Valley</text>
+	</string>
+	<string id="tm_eliminate_camp_6_descr">
+		<text>Mate o sanguessuga de Dark Valley</text>
+	</string>
+	<string id="tm_eliminate_camp_6_text">
+		<text>Contam que quando as tropas marcharam para fora de Dark Valley, os monstros começaram a sair de cada fenda existente. 
+		Os stalkers já avistaram um sanguessuga lá, que além do mais é diferente dos outros: não tem medo de espaços abertos. 
+		Enfim, quando os cientistas souberem, se empenharão em estudar essa criatura. Quero ser a pessoa que vai entregar o corpo a eles. 
+		Seu trabalho consiste em matar o sanguessuga, e eu me encarregarei do resto.</text>
+	</string>
+	<string id="tm_find_artefact_1">
+		<text>Encontre o artefato Jellyfish</text>
+	</string>
+	<string id="tm_find_artefact_1_descr">
+		<text>Encontre o artefato Jellyfish, formado na anomalia Springboard.</text>
+	</string>
+	<string id="tm_find_artefact_1_text">
+		<text>Um cara do exterior me pediu um jellyfish. Não oferece muito dinheiro, mas é um trabalho rotineiro. Ocupe-se dele!</text>
+	</string>
+	<string id="tm_find_artefact_2">
+		<text>Encontre o artefato Stone Flower</text>
+	</string>
+	<string id="tm_find_artefact_2_descr">
+		<text>Encontre o artefcto Stone Flower, formado na anomalia Springboard.</text>
+	</string>
+	<string id="tm_find_artefact_2_text">
+		<text>Tenho um pedido da Stone Flower. O pedido é de uns joalheiros, portanto vamos fazer felizes as mulheres bonitas, certo? Se conseguir, te darei dinheiro e uma garrafa para beber à saúde das damas...</text>
+	</string>
+	<string id="tm_find_artefact_3">
+		<text>Encontre o artefato Night Star</text>
+	</string>
+	<string id="tm_find_artefact_3_descr">
+		<text>Encontre o artefato Night Star, um artefato valioso e raro.</text>
+	</string>
+	<string id="tm_find_artefact_3_text">
+		<text>Temos um pequeno trabalho... algo desagradável. Aparentemente vem dos militares, que estão trabalhando em novo dispositivo de proteção. 
+		Enfim, me pediram o Night Star. É um artefato raro, mas proporciona uma excelente proteção contra as balas. Aceita? Pagarei bem.</text>
+	</string>
+	<string id="tm_find_artefact_4">
+		<text>Encontre o artefato chamado Chunk of Meat</text>
+	</string>
+	<string id="tm_find_artefact_4_descr">
+		<text>Encontre o artefato curativo chamado Chunk of Meat</text>
+	</string>
+	<string id="tm_find_artefact_4_text">
+		<text>Tenho um pedido de um artefato que cura as feridas; se chama Chunk of Meat. 
+		Ao que parece eles têm uma espécie de hospital. Se o encontrar, ganhará sua parte e além disso ajudará as pessoas.</text>
+	</string>
+	<string id="tm_find_item_1">
+		<text>Encontre a pistola aperfeiçoada</text>
+	</string>
+	<string id="tm_find_item_1_descr">
+		<text>Consiga a arma chamada Fort, que, segundo contam, comporta mais munição no carregador. 
+		Seu último proprietário conhecido foi o comandante do ponto de controle do exército, localizado debaixo da ponte em ruínas.</text>
+	</string>
+	<string id="tm_find_item_1_text">
+		<text>Agora está na moda usar armas manipuladas, e ninguém sabe como disparar com armas normais, nem mesmo os novatos. 
+		Enfim, tenho um pedido de uma metralhadora melhorada. Há rumores que o comandante dos soldados, o que cobra pedágio para passar por baixo da ponte, tem uma "Fort" com um carregador de munição enorme. 
+		A conseguirá para mim?</text>
+	</string>
+	<string id="tm_freedom_has_no_job">
+		<text>Não há nenhum trabalho por agora...</text>
+	</string>
+	<string id="tm_freedom_job_ask">
+		<text>Sobre o que quer falar?</text>
+	</string>
+	<string id="tm_freedom_job_complete">
+		<text>Isso é que é um cara gente fina! Excelente trabalho, toma seu dinheiro!</text>
+	</string>
+	<string id="tm_freedom_job_what">
+		<text>O que está acontecendo?</text>
+	</string>
+	<string id="tm_freedom_list_job">
+		<text>Isso é o que tenho.</text>
+	</string>
+	<string id="tm_hunter_has_no_job">
+		<text>Não há nada por agora.</text>
+	</string>
+	<string id="tm_hunter_job_ask">
+		<text>De que missão quer falar?</text>
+	</string>
+	<string id="tm_hunter_job_complete">
+		<text>Cumpriu a missão...aqui está a sua recompensa.</text>
+	</string>
+	<string id="tm_hunter_job_what">
+		<text>O que há com a missão?</text>
+	</string>
+	<string id="tm_hunter_list_job">
+		<text>Tem trabalho.</text>
+	</string>
+	<string id="tm_job_nothing">
+		<text>Está tudo certo. Em outra ocasião talvez.</text>
+	</string>
+	<string id="tm_job_refuse">
+		<text>Não quero fazer este trabalho.</text>
+	</string>
+	<string id="tm_kill_stalker_1">
+		<text>Mate o líder dos bandidos</text>
+	</string>
+	<string id="tm_kill_stalker_1_descr">
+		<text>Mate o líder dos bandidos que incomodou o comerciante. O mais provável é que não esteja sozinho...
+		É um trabalho difícil, mas a recompensa vale a pena. O encontrará no Lixão.</text>
+	</string>
+	<string id="tm_kill_stalker_1_text">
+		<text>Terá que acabar com esse espertalhão, um dos líderes dos bandidos. Outro dia ordenou a seus homens que interceptassem meu menssageiro e o espancassem. 
+		Eu não desperdiço palavras com os que encostam na minha gente... Em uma palavra, se fizer o que lhe peço, devolverei o favor. Aceita? </text>
+	</string>
+	<string id="tm_kill_stalker_2">
+		<text>Mate o stalker comerciante</text>
+	</string>
+	<string id="tm_kill_stalker_2_descr">
+		<text>Mate o stalker... Sim, já sei que não é um trabalho agradável levantar a mão contra um companheiro. Mas a recompensa é estupenda e, no fim das contas, isso é o que importa.</text>
+	</string>
+	<string id="tm_kill_stalker_2_text">
+		<text>Estou tendo problemas com um comerciante. Bem, já que não quer cooperar, que vá para o inferno! Mas não quero começar nenhum rumor. 
+		Resumindo, ele deve morrer para que os demais não saiam de controle. Faça-os saber quem manda aqui...</text>
+	</string>
+	<string id="tm_kill_stalker_3">
+		<text>Mate o stalker novato</text>
+	</string>
+	<string id="tm_kill_stalker_3_descr">
+		<text>Acabe com um stalker novato que supostamente não é novato... Então quem é? Quem se importa? Desde que o trabalho não seja complicado...</text>
+	</string>
+	<string id="tm_kill_stalker_3_text">
+		<text>Aí está o cara de quem falei, fingindo ser um novato; um cara bastante esquisito... Enfim, se desaparecesse de repente me faria um grande favor. Entendeu?</text>
+	</string>
+	<string id="tm_kill_stalker_4">
+		<text>Mate o stalker chamado Fiend</text>
+	</string>
+	<string id="tm_kill_stalker_4_descr">
+		<text>Elimine um dos inimigos do comerciante Sidorovich, um stalker chamado Fiend. </text>
+	</string>
+	<string id="tm_kill_stalker_4_text">
+		<text>Oleg Gusarov, "The Fiend",... esteve a serviço em Spetsnaz. Enquanto se meteu com seus próprios assuntos não tinha nada contra ele: um solitário é um solitário. 
+		Mas fiquei sabendo que estava formando um bando para atacar o Cordon e tomar o controle das operações de contrabando da Zona. 
+		Agora se converteu em um problema maior que deve ser solucionado rapidamente. Pode fazer?</text>
+	</string>
+	<string id="tm_kill_stalker_5">
+		<text>Mate o padre Diodor</text>
+	</string>
+	<string id="tm_kill_stalker_5_descr">
+		<text>Matar um homem que prega pela Zona contra a coleta e venda de artefatos? Exatamente.</text>
+	</string>
+	<string id="tm_kill_stalker_5_text">
+		<text>Sempre pensei que a religião e os negócios não devem misturar-se, e que a pior coisa é a intromissão nos assuntos dos outros. Mas este padre... 
+		que Deus me perdoe... Diodor... pois... parece que não entende esta verdade tão simples. Continua pregando e dizendo a todos que a coleta de artefatos conduz os homens ao pecado, não somente na Zona, 
+		mas em todo o mundo. O negócio é que prega a destruição de todos os artefatos! Percebe o que ele está tentando? E o pior é que já converteu algumas pessoas! Fiz de tudo para faze-lo voltar a razão, mas continua igual. 
+		Este é o trato: você vai manda-lo para o céu, onde vai poder pregar para quem quiser... Sacou? E te darei um artefato fantástico. Fechado?</text>
+	</string>
+	<string id="tm_kill_stalker_6">
+		<text>Mata al "agente comercial"</text>
+	</string>
+	<string id="tm_kill_stalker_6_descr">
+		<text>Mate o "representante de vendas". O comerciante quer proteger sua reputacão.</text>
+	</string>
+	<string id="tm_kill_stalker_6_text">
+		<text>O negócio é o seguinte: tem um cara esquisito por aí que se apresenta como meu "representante de vendas", aproveitando-se da minha reputação, 
+		e acaba vendendo mercadorias de segunda. Canhões quebrados, coletes a prova de balas caindo aos pedaços, latas de comidas vencidas. 
+		Já recebi reclamações de clientes insatisfeitos. Resumindo, preciso que alguém tenha um pequena conversa com esse "representante de vendas".</text>
+	</string>
+	<string id="tm_lisiy_has_no_job">
+		<text>Não tem nada por agora.</text>
+	</string>
+	<string id="tm_lisiy_job_ask">
+		<text>De que missão quer falar?</text>
+	</string>
+	<string id="tm_lisiy_job_complete">
+		<text>Cumpriu a missão...aqui está a sua recompensa.</text>
+	</string>
+	<string id="tm_lisiy_job_what">
+		<text>O que há com a missão?</text>
+	</string>
+	<string id="tm_lisiy_list_job">
+		<text>Tem algo.</text>
+	</string>
+	<string id="tm_mercenary_has_no_job">
+		<text>Não tem nada por agora</text>
+	</string>
+	<string id="tm_mercenary_job_ask">
+		<text>De que missão quer falar?</text>
+	</string>
+	<string id="tm_mercenary_job_complete">
+		<text>Cumpriu a missão...aqui está a sua recompensa.</text>
+	</string>
+	<string id="tm_mercenary_job_what">
+		<text>O que há com a missão?</text>
+	</string>
+	<string id="tm_mercenary_list_job">
+		<text>Tem algo.</text>
+	</string>
+	<string id="tm_monster_part_1">
+		<text>Traga uma mandíbula de sanguessuga.</text>
+	</string>
+	<string id="tm_monster_part_1_descr">
+		<text>Então os dentes do sanguessuga trazem boa sorte? Vejamos se vão trazer para o sanguessuga.</text>
+	</string>
+	<string id="tm_monster_part_1_text">
+		<text>Existe uma supertição que diz que os dentes do sanguessuga trazem boa sorte. 
+		Parece que usando os dentes ao redor do pescoço, se pode atravessar as anomalias e conseguir os artefatos sem problema. 
+		Enfim, é uma idiotice, mas os imbecís que acreditam nisso estão dispostos a pagar bem. Se me trouxer a mandíbula de um sanguessuga te recompensarei.</text>
+	</string>
+	<string id="tm_monster_part_2">
+		<text>Busque o rabo de um pseudocachorro.</text>
+	</string>
+	<string id="tm_monster_part_2_descr">
+		<text>Busque o rabo de um pseudocachorro</text>
+	</string>
+	<string id="tm_monster_part_2_text">
+		<text>O inverno está chegando. O que as garotas do exterior gostam de usar no inverno? Sim: peles. E agora tem uma nova moda de acessórios fabricados com rabos de pseudocachorros. 
+		Parece que é uma pele especial. Resumindo, tenho um pedido destes rabos. Se ocupará disto?</text>
+	</string>
+	<string id="tm_petrenko_has_no_job">
+		<text>Não tem nada por agora.</text>
+	</string>
+	<string id="tm_petrenko_job_ask">
+		<text>De que missão quer falar?</text>
+	</string>
+	<string id="tm_petrenko_job_complete">
+		<text>Cumpriu a missão...aqui está a sua recompensa.</text>
+	</string>
+	<string id="tm_petrenko_job_what">
+		<text>O que há com a missão?</text>
+	</string>
+	<string id="tm_petrenko_list_job">
+		<text>Tem algo.</text>
+	</string>
+	<string id="tm_reward_job">
+		<text>Venho pelo trabalho.</text>
+	</string>
+	<string id="tm_seek_job_abandon">
+		<text>Não estou interessado nesse tipo de trabalhos.</text>
+	</string>
+	<string id="tm_seek_job_no">
+		<text>Em outra ocasião. </text>
+	</string>
+	<string id="tm_seek_job_yes">
+		<text>Me interessa.</text>
+	</string>
+	<string id="tm_seek_new_job">
+		<text>Preciso de trabalho. Tem algo para mim?</text>
+	</string>
+	<string id="tm_shustriy_has_no_job">
+		<text>Não tem nada por agora. </text>
+	</string>
+	<string id="tm_shustriy_job_ask">
+		<text>De que missão quer falar?</text>
+	</string>
+	<string id="tm_shustriy_job_complete">
+		<text>Cumpriu a missão...aqui está a sua recompensa!</text>
+	</string>
+	<string id="tm_shustriy_job_what">
+		<text>O que há com a missão?</text>
+	</string>
+	<string id="tm_shustriy_list_job">
+		<text>Tem algo.</text>
+	</string>
+	<string id="tm_trader_has_no_job">
+		<text>Não tem nada por agora.</text>
+	</string>
+	<string id="tm_trader_job_ask">
+		<text>De que missão quer falar?</text>
+	</string>
+	<string id="tm_trader_job_complete">
+		<text>Cumpriu a missão...aqui está a sua recompensa.</text>
+	</string>
+	<string id="tm_trader_job_what">
+		<text>O que há com a missão?</text>
+	</string>
+	<string id="tm_trader_list_job">
+		<text>Tem algo.</text>
+	</string>
+	<string id="tm_wolf_has_no_job">
+		<text>Não tem nada por agora.</text>
+	</string>
+	<string id="tm_wolf_job_ask">
+		<text>De que missão quer falar?</text>
+	</string>
+	<string id="tm_wolf_job_complete">
+		<text>Cumpriu a missão...aqui está a sua recompensa.</text>
+	</string>
+	<string id="tm_wolf_job_what">
+		<text>O que há com a missão?</text>
+	</string>
+	<string id="tm_wolf_list_job">
+		<text>Tem algo.</text>
+	</string>
+	<string id="tm_zastava_commander_has_no_job">
+		<text>Não tem nada por agora.</text>
+	</string>
+	<string id="tm_zastava_commander_job_ask">
+		<text>De que missão quer falar?</text>
+	</string>
+	<string id="tm_zastava_commander_job_complete">
+		<text>Cumpriu a missão...aqui está a sua recompensa.</text>
+	</string>
+	<string id="tm_zastava_commander_job_what">
+		<text>O que há com a missão?</text>
+	</string>
+	<string id="tm_zastava_commander_list_job">
+		<text>Tem algo.</text>
+	</string>
+	<string id="wolf_eliminate_lager_1">
+		<text>Destrua o esconderijo dos javalis</text>
+	</string>
+	<string id="wolf_eliminate_lager_1_descr">
+		<text>Os javalis fizeram um esconderijo perto do lugar onde Wolf e seu amigo têm um armazém. Wolf quer destruir o esconderijo e prometeu que o recompensará generosamente.</text>
+	</string>
+	<string id="wolf_eliminate_lager_1_text">
+		<text>Meu amigo e eu temos um armazém próximo ao estacionamento, onde o bosque é mais denso. 
+		É tudo que precisamos. Mas há pouco tempo os javalis fizeram um esconderijo e agora não podemos entrar no armazém. 
+		Ajude-nos; mate os javalis e o agradecerei por meu amigo e por mim.</text>
+	</string>
+	<string id="wolf_eliminate_lager_2">
+		<text>Destrua os mutantes da granja</text>
+	</string>
+	<string id="wolf_eliminate_lager_2_descr">
+		<text>Wolf quer limpar de mutantes a granja para estabelecer um posto avançado por lá.</text>
+	</string>
+	<string id="wolf_eliminate_lager_2_text">
+		<text>Ainda que esta seja a fronteira da Zona, os novatos têm dificuldade inclusive aqui. Os bandidos são somente parte do problema; pelos menos entendem russo. Mas os mutantes... 
+		Aí a história é outra. Fizeram um esconderijo na fábrica abandonada, ocupando o único lugar que serve para um posto avançado. Se eliminar os mutantes da granja, ficarei te devendo uma.</text>
+	</string>
+	<string id="zastava_commander_eliminate_lager">
+		<text>Acabe com a matilha de cachorros.</text>
+	</string>
+	<string id="zastava_commander_eliminate_lager_descr">
+		<text>Tem uma matilha de cachorros perto do ponto de controle sul, no bar. O chefe do ponto de controle quer que acabemos com seu esconderijo. Ele promete recompensa.</text>
+	</string>
+	<string id="zastava_commander_eliminate_lager_text">
+		<text>Apesar de nossos esforços, alguns monstros conseguem passar pelo Lixão. Você deve ter visto uma matilha de cachorros ao sul. Se os matar será recompensado.</text>
+	</string>
+	<string id="defend_lager">
+		<text>Defesa do acampamento.</text>
+	</string>
+</string_table>

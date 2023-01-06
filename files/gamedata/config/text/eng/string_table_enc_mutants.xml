@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<string_table>
+	<string id="Blind">
+		<text>Cão cego</text>
+	</string>
+	<string id="Bloodsucker">
+		<text>Bloodsucker</text>
+	</string>
+	<string id="Boar">
+		<text>Javali</text>
+	</string>
+	<string id="Crow">
+		<text>Corvo</text>
+	</string>
+	<string id="enc_mutant_blind_general">
+		<text>Várias gerações de espécies caninas viveram e morreram desde a catástrofe. Cada nova geração surge mais afetada pela Zona do que a anterior.
+			A rápida mutação leva à melhoria de várias habilidades periféricas, freqüentemente ao custo das primárias. A mais notável mudança biológica foi a perda da visão, juntamente com um elevado desenvolvimento do olfato. 
+			Percebeu-se que os filhotes cegos sobreviveram à Zona tão bem quanto os outros, quem sabe até melhor. Como resultado, o cão comum foi rapidamente extinto na Zona, dando lugar a uma nova geração - os cães cegos. 
+			Esses animais instintivamente detectam e evitam anomalias, radiação, e outros perigos invisíveis da Zona. Assim como seus ancestrais selvagens - os lobos -, os cães cegos caçam em bando. 
+			Um encontro com um grande grupo desses animais pode ser perigoso até mesmo para um stalker experiente e bem equipado.</text>
+	</string>
+	<string id="enc_mutant_bloodsucker_general">
+		<text>Stalker's experientes descrevem esta besta semi-lendária como um humanóide alto e encurvado, com tentáculos onde sua boca deveria estar. 
+			De acordo com aqueles que a vêem e sobrevivem para contar a história, a criatura usa estes tentáculos para agarrar a garganta da vítima, paralisá-la, e sugar seu sangue. 
+			Após isso, uma casca oca e seca é tudo o que resta do que costumava ser um homem. Entretanto, a mais impressionante habilidade da sanguessuga é a capacidade de ficar invisível. 
+			Incontáveis stalker's morreram ou desapareceram no abraço impiedoso de uma sanguessuga. 
+			Os poucos que tiveram a sorte de sobreviver a um encontro com uma delas contam histórias arrepiantes sobre pântanos e áreas subterrâneas assombradas pela versão do Conde Drácula da Zona.</text>
+	</string>
+	<string id="enc_mutant_boar_general">
+		<text>Um enorme animal mutado que pode chegar a ter 1,5 metros de comprimento. 
+			A agressividade do javali da Zona e sua capacidade de sobrevivência são muito superiores às do javali comum, que vive fora da área contaminada. 
+			A radiação e as anomalias deixaram sua marca na aparência física do animal: sua pele é totalmente inexistente em algumas partes do corpo, porém em outras existe em abundância. 
+			As patas são mais fortes, unhas afiadas, as pupilas perderam a cor e a cabeça do javali, totalmente calva, é marcada por pouca pigmentação e rugas profundas. 
+			Os javalis da Zona são mais resistentes à radiação e podem permanecer em áreas altamente contaminadas por longos períodos de tempo. 
+			Usualmente correm para cima de suas vítimas, tentando derrubá-las para que possam então despedaçá-las.</text>
+	</string>
+	<string id="enc_mutant_crow_general">
+		<text>A única espécie de pássaro que sobreviveu na Zona, resistindo a níveis altos de radiação e efetivamente evitando as anomalias. 
+			Enquanto os pilotos do Exército precisam usar complexos detectores para evitar os distúrbios gravitacionais, o corvo parece confiar em seus próprios sentidos para isso - 
+			um mistério que enlouquece os biólogos e ornitólogos. Existem várias teorias que tentam explicar o fenômeno, mas todas elas apontam para um desenvolvimento especial e muito acentuado do cérebro do corvo.</text>
+	</string>
+	<string id="enc_mutant_flesh_general">
+		<text>Como a maioria das outras criaturas da Zona, o porco doméstico também sofreu drásticas mudanças desde o dia da catástrofe. 
+			Parece que os genes responsáveis pelo metabolismo foram especialmente afetados nesse caso. 
+			Porcos mutantes, conhecidos simplesmente como Porcos, entre os stalker's, são os exemplos mais claros da perversão desastrosa da natureza da Zona. 
+			Os porcos mutantes desenvolveram uma camada protetora em escamas, bem como placas exoesqueléticas. Seu potencial de regeneração foi altamente desenvolvido, assim como a complexidade de seu sistema nervoso. 
+			Da mesma forma que um porco normal, o mutante é onívoro e pode atacar stalker's, caso esteja faminto.</text>
+	</string>
+	<string id="enc_mutant_poltergeist_general">
+		<text>Alguns acham que são sobrenaturais, criaturas invisíveis que assombram as profundezas da Zona, usualmente em edifícios velhos e abandonados. 
+			Nada se sabe sobre sua origem, apesar de rumores apontarem que são espíritos de stalker's atingidos por ondas maciças de radiação. 
+			Seus misteriosos aparecimentos e desaparecimentos lembram a lenda de Poltergeist, por isso o nome. 
+			Encontros com Poltergeist geram vários tipos de relatos: de risadas maliciosas de gelar o sangue, até bolas de fogo mortais que aparecem do nada. 
+			Infelizmente, todas as informações sobre o fenômeno Poltergeist se originam de histórias confusas, contraditórias e de credibilidade duvidosa.</text>
+	</string>
+	<string id="enc_mutant_pseudodog_general">
+		<text>Apesar do nome, os pseudo-cães evoluíram diretamente dos lobos. Os animais que habitavam as florestas na época da catástrofe evoluíram para uma das espécies mutantes mais perigosas da Zona. 
+			Pseudo-cães são diferentes de cães mutantes na mesma proporção que lobos selvagens são diferentes de poodles. 
+			Essas criaturas marcam e guardam seu território cuidadosamente, atacando qualquer um que for estúpido o bastante para se aventurar em seu raio de visão. 
+			Reflexos ultra rápidos, incrível destreza e dentes muito afiados fazem do pseudo-cão um formidável inimigo para mutantes maiores e stalker's bem armados.</text>
+	</string>
+	<string id="enc_mutant_pseudogiant_general">
+		<text>O Pseudo-gigante se assemelha a um abdômen enorme, em forma de gota, com um par de membros desproporcionalmente grandes. 
+			Estes membros são braços e pernas ao mesmo tempo. A criatura os usa para se mover e agarrar suas vítimas. 
+			Um pseudo-gigante adulto pode pesar mais de duas toneladas e ultrapassar os 2 metros de altura. Sua aparência desajeitada é enganosa, já que eles podem se mover muito rapidamente se precisarem. 
+			Seus músculos são excepcionalmente poderosos e seus ossos são duros como aço. 
+			O cérebro da criatura é protegido por um forte crânio (com até 10 cm de espessura), enquanto muitas outras funções complexas são controladas pela medula espinhal. 
+			Outra característica surpreendente desta besta é sua habilidade de criar ondas locais de choque, que causam dano em todas as coisas vivas que estiveram próximas.</text>
+	</string>
+	<string id="enc_mutant_snork_general">
+		<text>Parece que essas criaturas já foram humanas um dia, embora seja difícil imaginar que condições transformam um humano em uma criatura como essa. 
+			Snorks são criaturas insanas cuja vida difere muito pouco de outros monstros carnívoros da Zona. 
+			Movem-se usando os quatro membros e efetuando longos saltos, constantemente farejando o chão na esperança de sentir o cheiro da presa. 
+			Eles caçam cautelosamente, de maneira calculada, freqüentemente instalando armadilhas. 
+			Graças a seus assombrosos reflexos e musculatura poderosa, o snork pode se aproximar da vítima, prendê-la através de um longo salto, e despedaçá-la em questão de segundos. 
+			Tiras de uniformes do exército e outras roupas são freqüentemente encontradas em seus corpos. Isso parece indicar que eles são stalker's militares desaparecidos.</text>
+	</string>
+	<string id="enc_mutant_tushkano">
+		<text>Na verdade, esses animais não estão relacionados aos gerbos, embora haja uma semelhança evidente. 
+			Tentativas de determinar exatamente de qual espécie o Ratwolf é a evolução foram, até o momento, infrutíferas, embora acredite-se que seu ancestral seja um rato gregário. 
+			Chegando a ter 40 cm de comprimento, este animal é mais ágil, agressivo e voraz que seu primo, o rato comum. 
+			Vivem principalmente nos porões de edifícios destruídos, e se alimentam de qualquer coisa na qual botam seus dentes, desde plantas até stalker's descuidados. 
+			Ocasionalmente um grupo de ratwolfs pode atacar e matar grandes animais e até mutantes, destroçando-os antes que possam escapar.</text>
+	</string>
+	<string id="enc_mutant_zombie_general">
+		<text>O Brain Scorcher destrói a mente e a razão de suas vítimas, deixando-as vazias... verdadeiros mortos-vivos. 
+			Os corpos sem cérebro se transformam em zumbis, seguindo somente seus mais básicos instintos, vagando sem rumo pela Zona, sem armas nem roupas. 
+			São pouco mais que cadáveres ambulantes, se importando apenas com comer e dormir. 
+			Comem e bebem qualquer coisa que estiver ao seu alcance, portanto estão praticamente embebidos em radiação e lixo tóxico. 
+			Usualmente circulam pela Zona sem um propósito aparente ou simplesmente deitam cadavericamente em edifícios abandonados. 
+			Entretanto, tão logo sentem a presença de um humano, atacam imediatamente. Stalker's experientes ensinam a evitá-los sempre que possível.</text>
+	</string>
+	<string id="Flesh">
+		<text>Porco</text>
+	</string>
+	<string id="General">
+		<text>Informação Geral</text>
+	</string>
+	<string id="mutant_boar_leg">
+		<text>Pata de Javali</text>
+	</string>
+	<string id="mutant_boar_leg_description">
+		<text>A pata do javali selvagem é usada pelos cientistas para fabricação de alguns medicamentos, na maioria drogas anti-radiação.</text>
+	</string>
+	<string id="mutant_dog_tail">
+		<text>Cauda de Cão</text>
+	</string>
+	<string id="mutant_dog_tail_description">
+		<text>A resistência da pele dos cães mutantes à eletricidade e aos agentes químicos é, a muito tempo, objeto de estudo dos cientistas. 
+			Sendo a cauda desse animal quase completamente livre de tecido adiposo, ela é especialmente usada em pesquisas laboratoriais.</text>
+	</string>
+	<string id="mutant_flesh_eye">
+		<text>Olho de porco</text>
+	</string>
+	<string id="mutant_flesh_eye_description">
+		<text>O olho inchado e mutado do porco adquiriu várias características estranhas, sendo a capacidade de regenerar lentes a mais útil. 
+			As especificações desse processo são desconhecidas, embora sua descoberta poderia certamente revolucionar a medicina. 
+			Você pode fazer sua parte no desenvolvimento científico através da venda de olhos de porco para os cientistas usarem em seus experimentos.</text>
+	</string>
+	<string id="mutant_krovosos_jaw">
+		<text>Mandíbula de Bloodsucker</text>
+	</string>
+	<string id="mutant_krovosos_jaw_description">
+		<text>Os tentáculos do Bloodsucker contém uma glândula especial que produz um fermento capaz de dissolver a pele e simultaneamente prevenir a coagulação sangüínea. 
+			Descobrir a composição desse fermento poderia ser a pedra angular de toda uma série de grandes avanços na medicina.</text>
+	</string>
+	<string id="mutant_psevdodog_tail">
+		<text>Cauda de Pseudo-cão</text>
+	</string>
+	<string id="mutant_psevdodog_tail_description">
+		<text>A resistência da pele dos cães mutantes à eletricidade e aos agentes químicos é, há muito tempo, objeto de estudo dos cientistas. 
+			Sendo a cauda desse animal quase completamente livre de tecido adiposo, ela é especialmente usada em pesquisas laboratoriais.</text>
+	</string>
+	<string id="mutant_snork_leg">
+		<text>Pé de Snork</text>
+	</string>
+	<string id="mutant_snork_leg_description">
+		<text>O pé de um Snork contém um alto número de tendões extremamente elásticos. Isso explica sua capacidade de realizar saltos inacreditáveis.</text>
+	</string>
+	<string id="Mutants">
+		<text>Animais e Mutantes</text>
+	</string>
+	<string id="Poltergeist">
+		<text>Poltergeist</text>
+	</string>
+	<string id="Pseudodog">
+		<text>Pseudo-cão</text>
+	</string>
+	<string id="Pseudogiant">
+		<text>Pseudo-gigante</text>
+	</string>
+	<string id="Snork">
+		<text>Snork</text>
+	</string>
+	<string id="Tushkano">
+		<text>Ratwolf</text>
+	</string>
+	<string id="Zombie">
+		<text>Zumbi</text>
+	</string>
+	<string id="Controller">
+		<text>Controller</text>
+	</string>
+	<string id="enc_mutant_controller_general">
+		<text>Um humano que sofreu mutação devido a prolongada exposição à emissões psíquicas, usualmente visto perto do centro da Zona. 
+			Possui boa percepção e capacidade de controlar a mente de criaturas menos desenvolvidas através de seu neocórtex super desenvolvido. 
+			Espécimes mais maduros podem assumir o controle da mente de vários humanos de uma vez só. É um inimigo feroz, e até mesmo os stalker's mais experientes temem se encontrar com ele.</text>
+	</string>
+</string_table>
