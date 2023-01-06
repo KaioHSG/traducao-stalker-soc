@@ -1,0 +1,1699 @@
+<!-- shameless hackery for VideoCC compatibility with v1.0003 and below
+[before10004]
+-->
+	<intro_logo>
+		<play_each_item>0</play_each_item>
+		<global_wnd x="0" y="0" width="1024" height="768">
+			<auto_static x="0" y="0" width="1024" height="768" stretch="1">
+				<texture>intro\intro_back</texture>
+			</auto_static>
+		</global_wnd>
+
+		<item type="video">
+			<delay>1</delay>
+			<pause_state>on</pause_state>
+			<sound>characters_voice\scenario\video\thq_logo_audio</sound>
+			<video_wnd x="0" y="0" width="1024" height="768" stretch="1">
+				<texture x="0" y="1" width="720" height="484">intro\thq_logo_hyuv</texture>
+			</video_wnd>
+		</item>
+<!--
+FOR RUSSIAN ONLY !!!
+		<item type="video">
+			<delay>1</delay>
+			<pause_state>on</pause_state>
+			<sound>characters_voice\scenario\video\intro_gsc_wp</sound>
+			<video_wnd x="0" y="0" width="1024" height="768" stretch="1">
+				<texture x="0" y="1" width="800" height="358">intro\intro_gsc-wp</texture>
+			</video_wnd>
+		</item>
+		
+-->		
+		<item type="video">
+			<sound>characters_voice\scenario\video\intro_gsc</sound>
+			<delay>1</delay>
+			<pause_state>on</pause_state>
+			<video_wnd x="0" y="0" width="1024" height="768" stretch="1">
+				<texture x="0" y="1" width="800" height="358">intro\intro_gsc</texture>
+			</video_wnd>
+		</item>
+
+		<item type="image">
+			<length_sec>9</length_sec>
+			<pause_state>on</pause_state>
+			<main_wnd>
+				<auto_static start_time="0" length_sec="4"  x="0" y="0" width="1024" height="768" stretch="1" light_anim="asus_logo_01" light_anim_cyclic="0" la_alpha="1" la_texture="1">
+					<window_name>w1</window_name>
+					<texture>ui_asus_01</texture>
+				</auto_static>
+				<auto_static start_time="4" length_sec="4"  x="0" y="0" width="1024" height="768" stretch="1" light_anim="asus_logo_01" light_anim_cyclic="0" la_alpha="1" la_texture="1">
+					<window_name>w2</window_name>
+					<texture>ui_asus_02</texture>
+				</auto_static>
+			</main_wnd>
+		</item>
+		<item type="image">
+			<length_sec>5</length_sec>
+			<pause_state>on</pause_state>
+			<main_wnd>
+				<auto_static start_time="0" length_sec="4"  x="0" y="0" width="1024" height="768" stretch="1" light_anim="asus_logo_01" light_anim_cyclic="0" la_alpha="1" la_texture="1">
+					<window_name>w1</window_name>
+					<texture>ui\ui_nvidia_intro</texture>
+				</auto_static>
+			</main_wnd>
+		</item>
+		<item type="image">
+			<length_sec>5</length_sec>
+			<sound>ambient\underground\hit_2</sound>
+			<pause_state>on</pause_state>
+			<main_wnd>
+				<auto_static start_time="0" length_sec="4"  x="360" y="94" width="304" height="580" stretch="1" light_anim="asus_logo_01" light_anim_cyclic="0" la_alpha="1" la_texture="1">
+					<window_name>w1</window_name>
+					<texture>ui\ui_ficsoport_intro</texture>
+				</auto_static>
+			</main_wnd>
+		</item>
+
+<!--  TEST, DONT DELETE this block		
+		<item type="video">
+			<sound>characters_voice\scenario\video\intro_stalker</sound>
+			<pause_state>on</pause_state>
+			<video_wnd x="0" y="0" width="1024" height="768" stretch="1">
+				<texture x="0" y="1" width="512" height="286">intro\intro_stalker</texture>
+			</video_wnd>
+		</item>
+		<item type="video">
+			<sound>characters_voice\scenario\video\dream_rats</sound>
+			<pause_state>on</pause_state>
+			<video_wnd x="0" y="0" width="1024" height="768" stretch="1">
+				<texture x="0" y="1" width="512" height="286">intro\dream_rats</texture>
+			</video_wnd>
+		</item>
+		<item type="video">
+			<sound>characters_voice\scenario\video\dream_sarcofag</sound>
+			<pause_state>on</pause_state>
+			<video_wnd x="0" y="0" width="1024" height="768" stretch="1">
+				<texture x="0" y="1" width="512" height="286">intro\dream_sarcofag</texture>
+			</video_wnd>
+		</item>
+		<item type="video">
+			<sound>characters_voice\scenario\video\dream_doctor</sound>
+			<pause_state>on</pause_state>
+			<video_wnd x="0" y="0" width="1024" height="768" stretch="1">
+				<texture x="0" y="1" width="512" height="286">intro\dream_doctor</texture>
+			</video_wnd>
+		</item>
+		<item type="video">
+			<sound>characters_voice\scenario\video\final_blind</sound>
+			<pause_state>on</pause_state>
+			<video_wnd x="0" y="0" width="1024" height="768" stretch="1">
+				<texture x="0" y="1" width="512" height="286">intro\final_blind</texture>
+			</video_wnd>
+		</item>
+		<item type="video">
+			<sound>characters_voice\scenario\video\final_gold</sound>
+			<pause_state>on</pause_state>
+			<video_wnd x="0" y="0" width="1024" height="768" stretch="1">
+				<texture x="0" y="1" width="512" height="286">intro\final_gold</texture>
+			</video_wnd>
+		</item>
+		<item type="video">
+			<sound>characters_voice\scenario\video\final_to_monolith</sound>
+			<pause_state>on</pause_state>
+			<video_wnd x="0" y="0" width="1024" height="768" stretch="1">
+				<texture x="0" y="1" width="512" height="286">intro\final_to_monolith</texture>
+			</video_wnd>
+		</item>
+		<item type="video">
+			<sound>characters_voice\scenario\video\final_apocal</sound>
+			<pause_state>on</pause_state>
+			<video_wnd x="0" y="0" width="1024" height="768" stretch="1">
+				<texture x="0" y="1" width="512" height="286">intro\final_apocal</texture>
+			</video_wnd>
+		</item>
+		<item type="video">
+			<sound>characters_voice\scenario\video\final_immortal</sound>
+			<pause_state>on</pause_state>
+			<video_wnd x="0" y="0" width="1024" height="768" stretch="1">
+				<texture x="0" y="1" width="512" height="286">intro\final_immortal</texture>
+			</video_wnd>
+		</item>
+		<item type="video">
+			<sound>characters_voice\scenario\video\dream_doctor_2</sound>
+			<pause_state>on</pause_state>
+			<video_wnd x="0" y="0" width="1024" height="768" stretch="1">
+				<texture x="0" y="1" width="512" height="286">intro\dream_doctor_2</texture>
+			</video_wnd>
+		</item>
+		<item type="video">
+			<sound>characters_voice\scenario\video\final_peace</sound>
+			<pause_state>on</pause_state>
+			<video_wnd x="0" y="0" width="1024" height="768" stretch="1">
+				<texture x="0" y="1" width="512" height="286">intro\final_peace</texture>
+			</video_wnd>
+		</item>
+-->		
+	</intro_logo>
+
+	<intro_game>
+		<play_each_item>1</play_each_item>
+		<global_wnd x="0" y="0" width="1024" height="768">
+			<auto_static x="0" y="0" width="1024" height="768" stretch="1">
+				<window_name>back</window_name>
+				<texture>intro\intro_back</texture>
+			</auto_static>
+		</global_wnd>
+
+		<item type="video">  <!-- precache video file -->
+			<sound>ambient\silence</sound>
+			<pause_state>on</pause_state>
+			<pause_sound>on</pause_sound>
+			<function_on_start>closecaption.before_igm_intro_stalker</function_on_start>
+			<function_on_stop>closecaption.start_igm_intro_stalker</function_on_stop>
+			<video_wnd x="0" y="0" width="1024" height="768" stretch="1">
+				<texture x="0" y="1" width="512" height="286">intro\intro_stalker</texture>
+				<auto_static x="0" y="0" width="1024" height="768" stretch="1">
+					<texture>intro\intro_back</texture>
+				</auto_static>
+				<auto_static start_time="0" length_sec="4.5" x="262" y="270" width="500" height="40">
+					<text align="c" font="graffiti50">cc_title_STALKER</text>
+				</auto_static>
+			</video_wnd>
+		</item>
+		<item>
+			<length_sec>183.3</length_sec>  <!-- 182.3 + 3 -->
+			<pause_state>on</pause_state>
+			<pause_sound>on</pause_sound>
+			<!--disabled_key>quit</disabled_key-->  <!-- Uncomment to allow no skipping -->
+			<sound/>
+			<guard_key/>
+			<cursor_pos/>
+			<pda_section/>
+			<grab_input>1</grab_input>
+			<main_wnd>
+				<auto_static start_time="0" length_sec="182" x="212" y="400" width="600" height="40" light_anim="ui_too_slow_blinking" la_cyclic="1" la_texture="1" la_text="1" la_alpha="1">
+					<text align="c" font="graffiti32">press_esc_twice_to_continue</text>
+				</auto_static>
+			</main_wnd>
+		</item>
+	</intro_game>
+
+	<intro_stalker_cc_skippable>
+		<play_each_item>1</play_each_item>
+		<global_wnd/>
+		<item>
+			<length_sec>183.1</length_sec>  <!-- 182.3 + 2 -->
+			<pause_state>on</pause_state>
+			<pause_sound>on</pause_sound>
+			<!--disabled_key>quit</disabled_key-->  <!-- Uncomment to allow no skipping -->
+			<sound/>
+			<guard_key/>
+			<cursor_pos/>
+			<pda_section/>
+			<grab_input>1</grab_input>
+			<main_wnd>
+				<auto_static start_time="3.5" length_sec="11" x="400" y="736" width="600" height="40" light_anim="" la_cyclic="0" la_texture="1" la_text="1" la_alpha="1">
+					<text align="r" font="graffiti22" a="48">press_esc_to_skip_intro</text>
+				</auto_static>
+
+				<auto_static start_time="103.7" length_sec="2.5" x="312" y="670" width="400" height="40" la_alpha="1">
+					<text align="c" font="graffiti32">cc_intro_stalker_01437</text>
+				</auto_static>
+				<auto_static start_time="106.2" length_sec="2.2" x="312" y="670" width="400" height="40">
+					<text align="c" font="graffiti32">cc_intro_stalker_01462</text>
+				</auto_static>
+				<auto_static start_time="108.6" length_sec="4" x="312" y="670" width="400" height="40">
+					<text align="c" font="graffiti32">cc_intro_stalker_01486</text>
+				</auto_static>
+				<auto_static start_time="113.2" length_sec="5" x="262" y="670" width="500" height="40">
+					<text align="c" font="graffiti32">cc_intro_stalker_01532</text>
+				</auto_static>
+				<auto_static start_time="133" length_sec="1.3" x="312" y="670" width="400" height="40">
+					<text align="c" font="graffiti32">cc_intro_stalker_02130</text>
+				</auto_static>
+				<auto_static start_time="134.4" length_sec="3.6" x="312" y="670" width="400" height="40">
+					<text align="c" font="graffiti32">cc_intro_stalker_02144</text>
+				</auto_static>
+				<auto_static start_time="138.2" length_sec="1.8" x="312" y="670" width="400" height="40">
+					<text align="c" font="graffiti32">cc_intro_stalker_02182</text>
+				</auto_static>
+				<auto_static start_time="140.1" length_sec="1.9" x="312" y="670" width="400" height="40">
+					<text align="c" font="graffiti32">cc_intro_stalker_02201</text>
+				</auto_static>
+				<auto_static start_time="142.2" length_sec="1.7" x="312" y="670" width="400" height="40">
+					<text align="c" font="graffiti32">cc_intro_stalker_02222</text>
+				</auto_static>
+				<auto_static start_time="144" length_sec="2.3" x="312" y="670" width="400" height="40">
+					<text align="c" font="graffiti32">cc_intro_stalker_02240</text>
+				</auto_static>
+				<auto_static start_time="146.5" length_sec="3.4" x="262" y="670" width="500" height="40">
+					<text align="c" font="graffiti32">cc_intro_stalker_02265</text>
+				</auto_static>
+				<auto_static start_time="150.3" length_sec="2.5" x="312" y="670" width="400" height="40">
+					<text align="c" font="graffiti32">cc_intro_stalker_02303</text>
+				</auto_static>
+				<auto_static start_time="161" length_sec="3" x="312" y="670" width="400" height="40">
+					<text align="c" font="graffiti32">cc_intro_stalker_02410</text>
+				</auto_static>
+				<auto_static start_time="164.2" length_sec="4.5" x="302" y="670" width="420" height="40">
+					<text align="c" font="graffiti32">cc_intro_stalker_02442</text>
+				</auto_static>
+			</main_wnd>
+		</item>
+	</intro_stalker_cc_skippable>
+
+	<intro_stalker_nocc_skippable>
+		<play_each_item>1</play_each_item>
+		<global_wnd/>
+		<item>
+			<length_sec>183.1</length_sec>  <!-- 182.3 + 2 -->
+			<pause_state>on</pause_state>
+			<pause_sound>on</pause_sound>
+			<sound/>
+			<guard_key/>
+			<cursor_pos/>
+			<pda_section/>
+			<grab_input>1</grab_input>
+			<main_wnd>
+				<auto_static start_time="3.5" length_sec="11" x="400" y="736" width="600" height="40" light_anim="" la_cyclic="0" la_texture="1" la_text="1" la_alpha="1">
+					<text align="r" font="graffiti22" a="48">press_esc_to_skip_intro</text>
+				</auto_static>
+			</main_wnd>
+		</item>
+	</intro_stalker_nocc_skippable>
+
+	<intro_stalker_igm>
+		<play_each_item>1</play_each_item>
+		<global_wnd/>
+		<item type="video">
+			<sound>characters_voice\scenario\video\intro_stalker</sound>
+			<pause_state>on</pause_state>
+			<pause_sound>on</pause_sound>
+			<function_on_stop>closecaption.end_igm_intro_stalker</function_on_stop>
+			<video_wnd x="0" y="0" width="1024" height="768" stretch="1">
+				<texture x="0" y="1" width="512" height="286">intro\intro_stalker</texture>
+			</video_wnd>
+		</item>
+	</intro_stalker_igm>
+
+	<vp_intro_game>
+		<play_each_item>1</play_each_item>
+		<global_wnd/>
+		<item>
+			<length_sec>184.3</length_sec>  <!-- 182.3 + 2 -->
+			<pause_state>on</pause_state>
+			<disabled_key>quit</disabled_key>
+			<function_on_start>closecaption.start_cc_intro_stalker</function_on_start>
+			<grab_input>1</grab_input>
+			<main_wnd>
+				<auto_static start_time="2" length_sec="5" x="212" y="40" width="600" height="40" light_anim="asus_logo_01" la_cyclic="0" la_texture="0" la_text="1" la_alpha="1">
+					<text align="c" font="graffiti50">cc_title_intro_stalker</text>
+				</auto_static>
+
+				<auto_static start_time="103.7" length_sec="2.5" x="312" y="670" width="400" height="40" la_alpha="1">
+					<text align="c" font="graffiti32">cc_intro_stalker_01437</text>
+				</auto_static>
+				<auto_static start_time="106.2" length_sec="2.2" x="312" y="670" width="400" height="40">
+					<text align="c" font="graffiti32">cc_intro_stalker_01462</text>
+				</auto_static>
+				<auto_static start_time="108.6" length_sec="4" x="312" y="670" width="400" height="40">
+					<text align="c" font="graffiti32">cc_intro_stalker_01486</text>
+				</auto_static>
+				<auto_static start_time="113.2" length_sec="5" x="262" y="670" width="500" height="40">
+					<text align="c" font="graffiti32">cc_intro_stalker_01532</text>
+				</auto_static>
+				<auto_static start_time="133" length_sec="1.3" x="312" y="670" width="400" height="40">
+					<text align="c" font="graffiti32">cc_intro_stalker_02130</text>
+				</auto_static>
+				<auto_static start_time="134.4" length_sec="3.6" x="312" y="670" width="400" height="40">
+					<text align="c" font="graffiti32">cc_intro_stalker_02144</text>
+				</auto_static>
+				<auto_static start_time="138.2" length_sec="1.8" x="312" y="670" width="400" height="40">
+					<text align="c" font="graffiti32">cc_intro_stalker_02182</text>
+				</auto_static>
+				<auto_static start_time="140.1" length_sec="1.9" x="312" y="670" width="400" height="40">
+					<text align="c" font="graffiti32">cc_intro_stalker_02201</text>
+				</auto_static>
+				<auto_static start_time="142.2" length_sec="1.7" x="312" y="670" width="400" height="40">
+					<text align="c" font="graffiti32">cc_intro_stalker_02222</text>
+				</auto_static>
+				<auto_static start_time="144" length_sec="2.3" x="312" y="670" width="400" height="40">
+					<text align="c" font="graffiti32">cc_intro_stalker_02240</text>
+				</auto_static>
+				<auto_static start_time="146.5" length_sec="3.4" x="262" y="670" width="500" height="40">
+					<text align="c" font="graffiti32">cc_intro_stalker_02265</text>
+				</auto_static>
+				<auto_static start_time="150.3" length_sec="2.5" x="312" y="670" width="400" height="40">
+					<text align="c" font="graffiti32">cc_intro_stalker_02303</text>
+				</auto_static>
+				<auto_static start_time="161" length_sec="3" x="312" y="670" width="400" height="40">
+					<text align="c" font="graffiti32">cc_intro_stalker_02410</text>
+				</auto_static>
+				<auto_static start_time="164.2" length_sec="4.5" x="302" y="670" width="420" height="40">
+					<text align="c" font="graffiti32">cc_intro_stalker_02442</text>
+				</auto_static>
+			</main_wnd>
+		</item>
+	</vp_intro_game>
+
+	<intro_stalker_cc>
+		<play_each_item>1</play_each_item>
+		<global_wnd x="0" y="0" width="1024" height="768">
+			<auto_static x="0" y="0" width="1024" height="768" stretch="1">
+				<window_name>back</window_name>
+				<texture>intro\intro_back</texture>
+			</auto_static>
+		</global_wnd>
+		<item type="image">
+			<length_sec>0</length_sec>
+			<main_wnd/>
+		</item>
+		<item type="video">
+			<sound>characters_voice\scenario\video\intro_stalker</sound>
+			<pause_state>on</pause_state>
+			<pause_sound>on</pause_sound>
+			<video_wnd x="0" y="0" width="1024" height="768" stretch="1">
+				<texture x="0" y="1" width="512" height="286">intro\intro_stalker</texture>
+			</video_wnd>
+		</item>
+		<item type="image">
+			<length_sec>1</length_sec>
+			<pause_state>on</pause_state>
+			<main_wnd>
+				<auto_static start_time="0" length_sec="1"  x="0" y="0" width="1024" height="768" stretch="1" light_anim="" light_anim_cyclic="0" la_alpha="1" la_texture="1">
+					<window_name>w1</window_name>
+					<texture>intro\intro_back</texture>
+				</auto_static>
+			</main_wnd>
+		</item>
+	</intro_stalker_cc>
+
+
+
+
+
+	<x18_dream>
+		<play_each_item>1</play_each_item>
+		<global_wnd x="0" y="0" width="1024" height="768">
+			<auto_static x="0" y="0" width="1024" height="768" stretch="1">
+				<window_name>back</window_name>
+				<texture>intro\intro_back</texture>
+			</auto_static>
+		</global_wnd>
+
+		<item type="video">
+			<sound>characters_voice\scenario\video\dream_rats</sound>
+			<pause_state>on</pause_state>
+			<function_on_stop>xr_effects.end_x18_dream</function_on_stop>
+			<pause_sound>on</pause_sound>
+			<video_wnd x="0" y="0" width="1024" height="768" stretch="1">
+				<texture x="0" y="1" width="512" height="286">intro\dream_rats</texture>
+			</video_wnd>
+		</item>
+	</x18_dream>
+
+	<x18_dream_cc>
+		<play_each_item>1</play_each_item>
+		<global_wnd/>
+		<item>
+			<length_sec>35.7</length_sec>  <!-- 33.7 + 2 -->
+			<pause_state>on</pause_state>
+			<disabled_key>quit</disabled_key>
+			<function_on_start>closecaption.start_igm_dream_rats</function_on_start>
+			<grab_input>1</grab_input>
+			<main_wnd>
+				<auto_static start_time="24" length_sec="3" x="212" y="670" width="600" height="40">
+					<text align="c" font="graffiti32">cc_dream_rats_00235</text>
+				</auto_static>
+				<auto_static start_time="27.5" length_sec="3" x="212" y="670" width="600" height="40">
+					<text align="c" font="graffiti32">cc_dream_rats_00270</text>
+				</auto_static>
+			</main_wnd>
+		</item>
+	</x18_dream_cc>
+
+	<vp_x18_dream>
+		<play_each_item>1</play_each_item>
+		<global_wnd/>
+		<item>
+			<length_sec>35.7</length_sec>  <!-- 33.7 + 2 -->
+			<pause_state>on</pause_state>
+			<disabled_key>quit</disabled_key>
+			<function_on_start>closecaption.start_cc_dream_rats</function_on_start>
+			<grab_input>1</grab_input>
+			<main_wnd>
+				<auto_static start_time="1" length_sec="6" x="212" y="40" width="600" height="40" light_anim="asus_logo_01" la_cyclic="0" la_texture="0" la_text="1" la_alpha="1">
+					<text align="c" font="graffiti50">cc_title_dream_rats</text>
+				</auto_static>
+
+				<auto_static start_time="24" length_sec="3" x="212" y="670" width="600" height="40">
+					<text align="c" font="graffiti32">cc_dream_rats_00235</text>
+				</auto_static>
+				<auto_static start_time="27.5" length_sec="3" x="212" y="670" width="600" height="40">
+					<text align="c" font="graffiti32">cc_dream_rats_00270</text>
+				</auto_static>
+			</main_wnd>
+		</item>
+	</vp_x18_dream>
+
+	<dream_rats_cc>
+		<play_each_item>1</play_each_item>
+		<global_wnd x="0" y="0" width="1024" height="768">
+			<auto_static x="0" y="0" width="1024" height="768" stretch="1">
+				<window_name>back</window_name>
+				<texture>intro\intro_back</texture>
+			</auto_static>
+		</global_wnd>
+		<item type="image">
+			<length_sec>0</length_sec>
+			<main_wnd/>
+		</item>
+		<item type="video">
+			<sound>characters_voice\scenario\video\dream_rats</sound>
+			<pause_state>on</pause_state>
+			<pause_sound>on</pause_sound>
+			<video_wnd x="0" y="0" width="1024" height="768" stretch="1">
+				<texture x="0" y="1" width="512" height="286">intro\dream_rats</texture>
+			</video_wnd>
+		</item>
+		<item type="image">
+			<length_sec>1</length_sec>
+			<pause_state>on</pause_state>
+			<main_wnd>
+				<auto_static start_time="0" length_sec="1"  x="0" y="0" width="1024" height="768" stretch="1" light_anim="" light_anim_cyclic="0" la_alpha="1" la_texture="1">
+					<window_name>w1</window_name>
+					<texture>intro\intro_back</texture>
+				</auto_static>
+			</main_wnd>
+		</item>
+	</dream_rats_cc>
+
+
+
+
+
+	<radar_dream>
+		<play_each_item>1</play_each_item>
+		<global_wnd x="0" y="0" width="1024" height="768">
+			<auto_static x="0" y="0" width="1024" height="768" stretch="1">
+				<window_name>back</window_name>
+				<texture>intro\intro_back</texture>
+			</auto_static>
+		</global_wnd>
+
+		<item type="video">
+			<sound>characters_voice\scenario\video\dream_sarcofag</sound>
+			<pause_state>on</pause_state>
+			<function_on_stop>xr_effects.end_radar_dream</function_on_stop>
+			<pause_sound>on</pause_sound>
+			<video_wnd x="0" y="0" width="1024" height="768" stretch="1">
+				<texture x="0" y="1" width="512" height="286">intro\dream_sarcofag</texture>
+			</video_wnd>
+		</item>
+	</radar_dream>
+
+	<vp_radar_dream>
+		<play_each_item>1</play_each_item>
+		<global_wnd/>
+		<item>
+			<length_sec>41.5</length_sec>  <!-- 39.5 + 2 -->
+			<pause_state>on</pause_state>
+			<disabled_key>quit</disabled_key>
+			<function_on_start>closecaption.start_cc_dream_sarcofag</function_on_start>
+			<grab_input>1</grab_input>
+			<main_wnd>
+				<auto_static start_time="2" length_sec="5" x="212" y="40" width="600" height="40" light_anim="asus_logo_01" la_cyclic="0" la_texture="1" la_text="1" la_alpha="1">
+					<text align="c" font="graffiti50">cc_title_dream_sarcofag</text>
+				</auto_static>
+			</main_wnd>
+		</item>
+	</vp_radar_dream>
+
+	<dream_sarcofag_cc>
+		<play_each_item>1</play_each_item>
+		<global_wnd x="0" y="0" width="1024" height="768">
+			<auto_static x="0" y="0" width="1024" height="768" stretch="1">
+				<window_name>back</window_name>
+				<texture>intro\intro_back</texture>
+			</auto_static>
+		</global_wnd>
+		<item type="image">
+			<length_sec>0</length_sec>
+			<main_wnd/>
+		</item>
+		<item type="video">
+			<sound>characters_voice\scenario\video\dream_sarcofag</sound>
+			<pause_state>on</pause_state>
+			<pause_sound>on</pause_sound>
+			<video_wnd x="0" y="0" width="1024" height="768" stretch="1">
+				<texture x="0" y="1" width="512" height="286">intro\dream_sarcofag</texture>
+			</video_wnd>
+		</item>
+		<item type="image">
+			<length_sec>1</length_sec>
+			<pause_state>on</pause_state>
+			<main_wnd>
+				<auto_static start_time="0" length_sec="1"  x="0" y="0" width="1024" height="768" stretch="1" light_anim="" light_anim_cyclic="0" la_alpha="1" la_texture="1">
+					<window_name>w1</window_name>
+					<texture>intro\intro_back</texture>
+				</auto_static>
+			</main_wnd>
+		</item>
+	</dream_sarcofag_cc>
+
+
+
+
+
+	<yantar_dream>
+		<play_each_item>1</play_each_item>
+		<global_wnd x="0" y="0" width="1024" height="768">
+			<auto_static x="0" y="0" width="1024" height="768" stretch="1">
+				<window_name>back</window_name>
+				<texture>intro\intro_back</texture>
+			</auto_static>
+		</global_wnd>
+
+		<item type="video">
+			<sound>characters_voice\scenario\video\dream_doctor</sound>
+			<pause_state>on</pause_state>
+			<pause_sound>on</pause_sound>
+			<function_on_stop>xr_effects.end_yantar_dream</function_on_stop>
+			<video_wnd x="0" y="0" width="1024" height="768" stretch="1">
+				<texture x="0" y="1" width="512" height="286">intro\dream_doctor</texture>
+			</video_wnd>
+		</item>
+	</yantar_dream>
+
+	<yantar_dream_cc>
+		<play_each_item>1</play_each_item>
+		<global_wnd/>
+		<item>
+			<length_sec>82.3</length_sec>  <!-- 78.3 + 2 + 2 (.ogm len is 80 sec!) -->
+			<pause_state>on</pause_state>
+			<disabled_key>quit</disabled_key>
+			<function_on_start>closecaption.start_igm_dream_doctor</function_on_start>
+			<grab_input>1</grab_input>
+			<main_wnd>
+				<auto_static start_time="7" length_sec="5.8" x="212" y="670" width="600" height="40">
+					<text align="c" font="graffiti32">cc_dream_doctor_00067</text>
+				</auto_static>
+				<auto_static start_time="13" length_sec="4.5" x="212" y="670" width="600" height="40">
+					<text align="c" font="graffiti32">cc_dream_doctor_00127</text>
+				</auto_static>
+				<auto_static start_time="19.1" length_sec="4" x="212" y="670" width="600" height="40">
+					<text align="c" font="graffiti32">cc_dream_doctor_00188</text>
+				</auto_static>
+				<auto_static start_time="24.5" length_sec="3" x="212" y="670" width="600" height="40">
+					<text align="c" font="graffiti32">cc_dream_doctor_00242</text>
+				</auto_static>
+				<auto_static start_time="32.7" length_sec="4" x="212" y="670" width="600" height="40">
+					<text align="c" font="graffiti32">cc_dream_doctor_00324</text>
+				</auto_static>
+				<auto_static start_time="43" length_sec="3" x="212" y="670" width="600" height="40">
+					<text align="c" font="graffiti32">cc_dream_doctor_00427</text>
+				</auto_static>
+				<auto_static start_time="50.3" length_sec="3" x="212" y="670" width="600" height="40">
+					<text align="c" font="graffiti32">cc_dream_doctor_00500</text>
+				</auto_static>
+				<auto_static start_time="53.7" length_sec="3.5" x="212" y="670" width="600" height="40">
+					<text align="c" font="graffiti32">cc_dream_doctor_00534</text>
+				</auto_static>
+			</main_wnd>
+		</item>
+	</yantar_dream_cc>
+
+	<vp_yantar_dream>
+		<play_each_item>1</play_each_item>
+		<global_wnd/>
+		<item>
+			<length_sec>82.3</length_sec>  <!-- 78.3 + 2 + 2 (.ogm len is 80 sec!) -->
+			<pause_state>on</pause_state>
+			<disabled_key>quit</disabled_key>
+			<function_on_start>closecaption.start_cc_dream_doctor</function_on_start>
+			<grab_input>1</grab_input>
+			<main_wnd>
+				<auto_static start_time="2" length_sec="5" x="212" y="40" width="600" height="40" light_anim="asus_logo_01" la_cyclic="0" la_texture="1" la_text="1" la_alpha="1">
+					<text align="c" font="graffiti50">cc_title_dream_doctor</text>
+				</auto_static>
+
+				<auto_static start_time="7" length_sec="5.8" x="212" y="670" width="600" height="40">
+					<text align="c" font="graffiti32">cc_dream_doctor_00067</text>
+				</auto_static>
+				<auto_static start_time="13" length_sec="4.5" x="212" y="670" width="600" height="40">
+					<text align="c" font="graffiti32">cc_dream_doctor_00127</text>
+				</auto_static>
+				<auto_static start_time="19.1" length_sec="4" x="212" y="670" width="600" height="40">
+					<text align="c" font="graffiti32">cc_dream_doctor_00188</text>
+				</auto_static>
+				<auto_static start_time="24.5" length_sec="3" x="212" y="670" width="600" height="40">
+					<text align="c" font="graffiti32">cc_dream_doctor_00242</text>
+				</auto_static>
+				<auto_static start_time="32.7" length_sec="4" x="212" y="670" width="600" height="40">
+					<text align="c" font="graffiti32">cc_dream_doctor_00324</text>
+				</auto_static>
+				<auto_static start_time="43" length_sec="3" x="212" y="670" width="600" height="40">
+					<text align="c" font="graffiti32">cc_dream_doctor_00427</text>
+				</auto_static>
+				<auto_static start_time="50.3" length_sec="3" x="212" y="670" width="600" height="40">
+					<text align="c" font="graffiti32">cc_dream_doctor_00500</text>
+				</auto_static>
+				<auto_static start_time="53.7" length_sec="3.5" x="212" y="670" width="600" height="40">
+					<text align="c" font="graffiti32">cc_dream_doctor_00534</text>
+				</auto_static>
+			</main_wnd>
+		</item>
+	</vp_yantar_dream>
+
+	<dream_doctor_cc>
+		<play_each_item>1</play_each_item>
+		<global_wnd x="0" y="0" width="1024" height="768">
+			<auto_static x="0" y="0" width="1024" height="768" stretch="1">
+				<window_name>back</window_name>
+				<texture>intro\intro_back</texture>
+			</auto_static>
+		</global_wnd>
+		<item type="image">
+			<length_sec>0</length_sec>
+			<main_wnd/>
+		</item>
+		<item type="video">
+			<sound>characters_voice\scenario\video\dream_doctor</sound>
+			<pause_state>on</pause_state>
+			<pause_sound>on</pause_sound>
+			<video_wnd x="0" y="0" width="1024" height="768" stretch="1">
+				<texture x="0" y="1" width="512" height="286">intro\dream_doctor</texture>
+			</video_wnd>
+		</item>
+		<item type="image">
+			<length_sec>1</length_sec>
+			<pause_state>on</pause_state>
+			<main_wnd>
+				<auto_static start_time="0" length_sec="1"  x="0" y="0" width="1024" height="768" stretch="1" light_anim="" light_anim_cyclic="0" la_alpha="1" la_texture="1">
+					<window_name>w1</window_name>
+					<texture>intro\intro_back</texture>
+				</auto_static>
+			</main_wnd>
+		</item>
+	</dream_doctor_cc>
+
+
+
+
+
+	<mov_desire_1>
+		<play_each_item>1</play_each_item>
+		<global_wnd x="0" y="0" width="1024" height="768">
+			<auto_static x="0" y="0" width="1024" height="768" stretch="1">
+				<window_name>back</window_name>
+				<texture>intro\intro_back</texture>
+			</auto_static>
+		</global_wnd>
+
+		<item type="video">
+			<sound>characters_voice\scenario\video\final_blind</sound>
+			<pause_state>on</pause_state>
+			<function_on_stop>xr_effects.game_credits</function_on_stop>
+			<pause_sound>on</pause_sound>
+			<video_wnd x="0" y="0" width="1024" height="768" stretch="1">
+				<texture x="0" y="1" width="512" height="286">intro\final_blind</texture>
+			</video_wnd>
+		</item>
+	</mov_desire_1>
+
+	<mov_desire_1_cc>
+		<play_each_item>1</play_each_item>
+		<global_wnd/>
+		<item>
+			<length_sec>60.3</length_sec>  <!-- 58.3 + 2 -->
+			<pause_state>on</pause_state>
+			<disabled_key>quit</disabled_key>
+			<function_on_start>closecaption.start_igm_final_blind</function_on_start>
+			<grab_input>1</grab_input>
+			<main_wnd>
+				<auto_static start_time="25.7" length_sec="4.5" x="212" y="670" width="600" height="40">
+					<text align="c" font="graffiti32">cc_final_blind_00254</text>
+				</auto_static>
+			</main_wnd>
+		</item>
+	</mov_desire_1_cc>
+
+	<vp_mov_desire_1>
+		<play_each_item>1</play_each_item>
+		<global_wnd/>
+		<item>
+			<length_sec>60.3</length_sec>  <!-- 58.3 + 2 -->
+			<pause_state>on</pause_state>
+			<disabled_key>quit</disabled_key>
+			<function_on_start>closecaption.start_cc_final_blind</function_on_start>
+			<grab_input>1</grab_input>
+			<main_wnd>
+				<auto_static start_time="2" length_sec="5" x="212" y="40" width="600" height="40" light_anim="asus_logo_01" la_cyclic="0" la_texture="1" la_text="1" la_alpha="1">
+					<text align="c" font="graffiti50">cc_title_final_blind</text>
+				</auto_static>
+
+				<auto_static start_time="25.7" length_sec="4.5" x="212" y="670" width="600" height="40">
+					<text align="c" font="graffiti32">cc_final_blind_00254</text>
+				</auto_static>
+			</main_wnd>
+		</item>
+	</vp_mov_desire_1>
+
+	<final_blind_cc>
+		<play_each_item>1</play_each_item>
+		<global_wnd x="0" y="0" width="1024" height="768">
+			<auto_static x="0" y="0" width="1024" height="768" stretch="1">
+				<window_name>back</window_name>
+				<texture>intro\intro_back</texture>
+			</auto_static>
+		</global_wnd>
+		<item type="image">
+			<length_sec>0</length_sec>
+			<main_wnd/>
+		</item>
+		<item type="video">
+			<sound>characters_voice\scenario\video\final_blind</sound>
+			<pause_state>on</pause_state>
+			<pause_sound>on</pause_sound>
+			<video_wnd x="0" y="0" width="1024" height="768" stretch="1">
+				<texture x="0" y="1" width="512" height="286">intro\final_blind</texture>
+			</video_wnd>
+		</item>
+		<item type="image">
+			<length_sec>1</length_sec>
+			<pause_state>on</pause_state>
+			<main_wnd>
+				<auto_static start_time="0" length_sec="1"  x="0" y="0" width="1024" height="768" stretch="1" light_anim="" light_anim_cyclic="0" la_alpha="1" la_texture="1">
+					<window_name>w1</window_name>
+					<texture>intro\intro_back</texture>
+				</auto_static>
+			</main_wnd>
+		</item>
+	</final_blind_cc>
+
+
+
+
+
+	<mov_desire_2>
+		<play_each_item>1</play_each_item>
+		<global_wnd x="0" y="0" width="1024" height="768">
+			<auto_static x="0" y="0" width="1024" height="768" stretch="1">
+				<window_name>back</window_name>
+				<texture>intro\intro_back</texture>
+			</auto_static>
+		</global_wnd>
+
+		<item type="video">
+			<sound>characters_voice\scenario\video\final_gold</sound>
+			<pause_state>on</pause_state>
+			<function_on_stop>xr_effects.game_credits</function_on_stop>
+			<pause_sound>on</pause_sound>
+			<video_wnd x="0" y="0" width="1024" height="768" stretch="1">
+				<texture x="0" y="1" width="512" height="286">intro\final_gold</texture>
+			</video_wnd>
+		</item>
+	</mov_desire_2>
+
+	<mov_desire_2_cc>
+		<play_each_item>1</play_each_item>
+		<global_wnd/>
+		<item>
+			<length_sec>78</length_sec>  <!-- 76 + 2 -->
+			<pause_state>on</pause_state>
+			<disabled_key>quit</disabled_key>
+			<function_on_start>closecaption.start_igm_final_gold</function_on_start>
+			<grab_input>1</grab_input>
+			<main_wnd>
+				<auto_static start_time="10.2" length_sec="4.5" x="212" y="670" width="600" height="40">
+					<text align="c" font="graffiti32">cc_final_gold_00099</text>
+				</auto_static>
+			</main_wnd>
+		</item>
+	</mov_desire_2_cc>
+
+	<vp_mov_desire_2>
+		<play_each_item>1</play_each_item>
+		<global_wnd/>
+		<item>
+			<length_sec>78</length_sec>  <!-- 76 + 2 -->
+			<pause_state>on</pause_state>
+			<disabled_key>quit</disabled_key>
+			<function_on_start>closecaption.start_cc_final_gold</function_on_start>
+			<grab_input>1</grab_input>
+			<main_wnd>
+				<auto_static start_time="2" length_sec="5" x="212" y="40" width="600" height="40" light_anim="asus_logo_01" la_cyclic="0" la_texture="1" la_text="1" la_alpha="1">
+					<text align="c" font="graffiti50">cc_title_final_gold</text>
+				</auto_static>
+
+				<auto_static start_time="10.2" length_sec="4.5" x="212" y="670" width="600" height="40">
+					<text align="c" font="graffiti32">cc_final_gold_00099</text>
+				</auto_static>
+			</main_wnd>
+		</item>
+	</vp_mov_desire_2>
+
+	<final_gold_cc>
+		<play_each_item>1</play_each_item>
+		<global_wnd x="0" y="0" width="1024" height="768">
+			<auto_static x="0" y="0" width="1024" height="768" stretch="1">
+				<window_name>back</window_name>
+				<texture>intro\intro_back</texture>
+			</auto_static>
+		</global_wnd>
+		<item type="image">
+			<length_sec>0</length_sec>
+			<main_wnd/>
+		</item>
+		<item type="video">
+			<sound>characters_voice\scenario\video\final_gold</sound>
+			<pause_state>on</pause_state>
+			<pause_sound>on</pause_sound>
+			<video_wnd x="0" y="0" width="1024" height="768" stretch="1">
+				<texture x="0" y="1" width="512" height="286">intro\final_gold</texture>
+			</video_wnd>
+		</item>
+		<item type="image">
+			<length_sec>1</length_sec>
+			<pause_state>on</pause_state>
+			<main_wnd>
+				<auto_static start_time="0" length_sec="1"  x="0" y="0" width="1024" height="768" stretch="1" light_anim="" light_anim_cyclic="0" la_alpha="1" la_texture="1">
+					<window_name>w1</window_name>
+					<texture>intro\intro_back</texture>
+				</auto_static>
+			</main_wnd>
+		</item>
+	</final_gold_cc>
+
+
+
+
+
+	<mov_desire_3>
+		<play_each_item>1</play_each_item>
+		<global_wnd x="0" y="0" width="1024" height="768">
+			<auto_static x="0" y="0" width="1024" height="768" stretch="1">
+				<window_name>back</window_name>
+				<texture>intro\intro_back</texture>
+			</auto_static>
+		</global_wnd>
+
+		<item type="video">
+			<sound>characters_voice\scenario\video\final_to_monolith</sound>
+			<pause_state>on</pause_state>
+			<function_on_stop>xr_effects.game_credits</function_on_stop>
+			<pause_sound>on</pause_sound>
+			<video_wnd x="0" y="0" width="1024" height="768" stretch="1">
+				<texture x="0" y="1" width="512" height="286">intro\final_to_monolith</texture>
+			</video_wnd>
+		</item>
+	</mov_desire_3>
+
+	<mov_desire_3_cc>
+		<play_each_item>1</play_each_item>
+		<global_wnd/>
+		<item>
+			<length_sec>52</length_sec>  <!-- 50 + 2 -->
+			<pause_state>on</pause_state>
+			<disabled_key>quit</disabled_key>
+			<function_on_start>closecaption.start_igm_final_to_monolith</function_on_start>
+			<grab_input>1</grab_input>
+			<main_wnd>
+				<auto_static start_time="9" length_sec="4.5" x="212" y="670" width="600" height="40">
+					<text align="c" font="graffiti32">cc_final_to_monolith_00088</text>
+				</auto_static>
+			</main_wnd>
+		</item>
+	</mov_desire_3_cc>
+
+	<vp_mov_desire_3>
+		<play_each_item>1</play_each_item>
+		<global_wnd/>
+		<item>
+			<length_sec>52</length_sec>  <!-- 50 + 2 -->
+			<pause_state>on</pause_state>
+			<disabled_key>quit</disabled_key>
+			<function_on_start>closecaption.start_cc_final_to_monolith</function_on_start>
+			<grab_input>1</grab_input>
+			<main_wnd>
+				<auto_static start_time="2" length_sec="5" x="212" y="40" width="600" height="40" light_anim="asus_logo_01" la_cyclic="0" la_texture="1" la_text="1" la_alpha="1">
+					<text align="c" font="graffiti50">cc_title_final_to_monolith</text>
+				</auto_static>
+
+				<auto_static start_time="9" length_sec="4.5" x="212" y="670" width="600" height="40">
+					<text align="c" font="graffiti32">cc_final_to_monolith_00088</text>
+				</auto_static>
+			</main_wnd>
+		</item>
+	</vp_mov_desire_3>
+
+	<final_to_monolith_cc>
+		<play_each_item>1</play_each_item>
+		<global_wnd x="0" y="0" width="1024" height="768">
+			<auto_static x="0" y="0" width="1024" height="768" stretch="1">
+				<window_name>back</window_name>
+				<texture>intro\intro_back</texture>
+			</auto_static>
+		</global_wnd>
+		<item type="image">
+			<length_sec>0</length_sec>
+			<main_wnd/>
+		</item>
+		<item type="video">
+			<sound>characters_voice\scenario\video\final_to_monolith</sound>
+			<pause_state>on</pause_state>
+			<pause_sound>on</pause_sound>
+			<video_wnd x="0" y="0" width="1024" height="768" stretch="1">
+				<texture x="0" y="1" width="512" height="286">intro\final_to_monolith</texture>
+			</video_wnd>
+		</item>
+		<item type="image">
+			<length_sec>1</length_sec>
+			<pause_state>on</pause_state>
+			<main_wnd>
+				<auto_static start_time="0" length_sec="1"  x="0" y="0" width="1024" height="768" stretch="1" light_anim="" light_anim_cyclic="0" la_alpha="1" la_texture="1">
+					<window_name>w1</window_name>
+					<texture>intro\intro_back</texture>
+				</auto_static>
+			</main_wnd>
+		</item>
+	</final_to_monolith_cc>
+
+
+
+
+
+	<mov_desire_4>
+		<play_each_item>1</play_each_item>
+		<global_wnd x="0" y="0" width="1024" height="768">
+			<auto_static x="0" y="0" width="1024" height="768" stretch="1">
+				<window_name>back</window_name>
+				<texture>intro\intro_back</texture>
+			</auto_static>
+		</global_wnd>
+
+		<item type="video">
+			<sound>characters_voice\scenario\video\final_apocal</sound>
+			<pause_state>on</pause_state>
+			<function_on_stop>xr_effects.game_credits</function_on_stop>
+			<pause_sound>on</pause_sound>
+			<video_wnd x="0" y="0" width="1024" height="768" stretch="1">
+				<texture x="0" y="1" width="512" height="286">intro\final_apocal</texture>
+			</video_wnd>
+		</item>
+	</mov_desire_4>
+
+	<mov_desire_4_cc>
+		<play_each_item>1</play_each_item>
+		<global_wnd/>
+		<item>
+			<length_sec>77.6</length_sec>  <!-- 75.6 + 2 -->
+			<pause_state>on</pause_state>
+			<disabled_key>quit</disabled_key>
+			<function_on_start>closecaption.start_igm_final_apocal</function_on_start>
+			<grab_input>1</grab_input>
+			<main_wnd>
+				<auto_static start_time="18" length_sec="6" x="212" y="670" width="600" height="40">
+					<text align="c" font="graffiti32">cc_final_apocal_00177</text>
+				</auto_static>
+			</main_wnd>
+		</item>
+	</mov_desire_4_cc>
+
+	<vp_mov_desire_4>
+		<play_each_item>1</play_each_item>
+		<global_wnd/>
+		<item>
+			<length_sec>77.6</length_sec>  <!-- 75.6 + 2 -->
+			<pause_state>on</pause_state>
+			<disabled_key>quit</disabled_key>
+			<function_on_start>closecaption.start_cc_final_apocal</function_on_start>
+			<grab_input>1</grab_input>
+			<main_wnd>
+				<auto_static start_time="2" length_sec="5" x="212" y="40" width="600" height="40" light_anim="asus_logo_01" la_cyclic="0" la_texture="1" la_text="1" la_alpha="1">
+					<text align="c" font="graffiti50">cc_title_final_apocal</text>
+				</auto_static>
+
+				<auto_static start_time="18" length_sec="6" x="212" y="670" width="600" height="40">
+					<text align="c" font="graffiti32">cc_final_apocal_00177</text>
+				</auto_static>
+			</main_wnd>
+		</item>
+	</vp_mov_desire_4>
+
+	<final_apocal_cc>
+		<play_each_item>1</play_each_item>
+		<global_wnd x="0" y="0" width="1024" height="768">
+			<auto_static x="0" y="0" width="1024" height="768" stretch="1">
+				<window_name>back</window_name>
+				<texture>intro\intro_back</texture>
+			</auto_static>
+		</global_wnd>
+		<item type="image">
+			<length_sec>0</length_sec>
+			<main_wnd/>
+		</item>
+		<item type="video">
+			<sound>characters_voice\scenario\video\final_apocal</sound>
+			<pause_state>on</pause_state>
+			<pause_sound>on</pause_sound>
+			<video_wnd x="0" y="0" width="1024" height="768" stretch="1">
+				<texture x="0" y="1" width="512" height="286">intro\final_apocal</texture>
+			</video_wnd>
+		</item>
+		<item type="image">
+			<length_sec>1</length_sec>
+			<pause_state>on</pause_state>
+			<main_wnd>
+				<auto_static start_time="0" length_sec="1"  x="0" y="0" width="1024" height="768" stretch="1" light_anim="" light_anim_cyclic="0" la_alpha="1" la_texture="1">
+					<window_name>w1</window_name>
+					<texture>intro\intro_back</texture>
+				</auto_static>
+			</main_wnd>
+		</item>
+	</final_apocal_cc>
+
+
+
+
+
+	<mov_desire_5>
+		<play_each_item>1</play_each_item>
+		<global_wnd x="0" y="0" width="1024" height="768">
+			<auto_static x="0" y="0" width="1024" height="768" stretch="1">
+				<window_name>back</window_name>
+				<texture>intro\intro_back</texture>
+			</auto_static>
+		</global_wnd>
+
+		<item type="video">
+			<sound>characters_voice\scenario\video\final_immortal</sound>
+			<pause_state>on</pause_state>
+			<pause_sound>on</pause_sound>
+			<function_on_stop>xr_effects.game_credits</function_on_stop>
+			<video_wnd x="0" y="0" width="1024" height="768" stretch="1">
+				<texture x="0" y="1" width="512" height="286">intro\final_immortal</texture>
+			</video_wnd>
+		</item>
+	</mov_desire_5>
+
+	<mov_desire_5_cc>
+		<play_each_item>1</play_each_item>
+		<global_wnd/>
+		<item>
+			<length_sec>56.3</length_sec>  <!-- 54.3 + 2 -->
+			<pause_state>on</pause_state>
+			<disabled_key>quit</disabled_key>
+			<function_on_start>closecaption.start_igm_final_immortal</function_on_start>
+			<grab_input>1</grab_input>
+			<main_wnd>
+				<auto_static start_time="9.3" length_sec="4.5" x="212" y="670" width="600" height="40">
+					<text align="c" font="graffiti32">cc_final_immortal_00093</text>
+				</auto_static>
+			</main_wnd>
+		</item>
+	</mov_desire_5_cc>
+
+	<vp_mov_desire_5>
+		<play_each_item>1</play_each_item>
+		<global_wnd/>
+		<item>
+			<length_sec>56.3</length_sec>  <!-- 54.3 + 2 -->
+			<pause_state>on</pause_state>
+			<disabled_key>quit</disabled_key>
+			<function_on_start>closecaption.start_cc_final_immortal</function_on_start>
+			<grab_input>1</grab_input>
+			<main_wnd>
+				<auto_static start_time="2" length_sec="5" x="212" y="40" width="600" height="40" light_anim="asus_logo_01" la_cyclic="0" la_texture="1" la_text="1" la_alpha="1">
+					<text align="c" font="graffiti50">cc_title_final_immortal</text>
+				</auto_static>
+
+				<auto_static start_time="9.3" length_sec="4.5" x="212" y="670" width="600" height="40">
+					<text align="c" font="graffiti32">cc_final_immortal_00093</text>
+				</auto_static>
+			</main_wnd>
+		</item>
+	</vp_mov_desire_5>
+
+	<final_immortal_cc>
+		<play_each_item>1</play_each_item>
+		<global_wnd x="0" y="0" width="1024" height="768">
+			<auto_static x="0" y="0" width="1024" height="768" stretch="1">
+				<window_name>back</window_name>
+				<texture>intro\intro_back</texture>
+			</auto_static>
+		</global_wnd>
+		<item type="image">
+			<length_sec>0</length_sec>
+			<main_wnd/>
+		</item>
+		<item type="video">
+			<sound>characters_voice\scenario\video\final_immortal</sound>
+			<pause_state>on</pause_state>
+			<pause_sound>on</pause_sound>
+			<video_wnd x="0" y="0" width="1024" height="768" stretch="1">
+				<texture x="0" y="1" width="512" height="286">intro\final_immortal</texture>
+			</video_wnd>
+		</item>
+		<item type="image">
+			<length_sec>1</length_sec>
+			<pause_state>on</pause_state>
+			<main_wnd>
+				<auto_static start_time="0" length_sec="1"  x="0" y="0" width="1024" height="768" stretch="1" light_anim="" light_anim_cyclic="0" la_alpha="1" la_texture="1">
+					<window_name>w1</window_name>
+					<texture>intro\intro_back</texture>
+				</auto_static>
+			</main_wnd>
+		</item>
+	</final_immortal_cc>
+
+
+
+
+
+	<mov_join_osoznanie>
+		<play_each_item>1</play_each_item>
+		<global_wnd x="0" y="0" width="1024" height="768">
+			<auto_static x="0" y="0" width="1024" height="768" stretch="1">
+				<window_name>back</window_name>
+				<texture>intro\intro_back</texture>
+			</auto_static>
+		</global_wnd>
+
+		<item type="video">
+			<sound>characters_voice\scenario\video\dream_doctor_2</sound>
+			<pause_state>on</pause_state>
+			<pause_sound>on</pause_sound>
+			<function_on_stop>xr_effects.game_credits</function_on_stop>
+			<video_wnd x="0" y="0" width="1024" height="768" stretch="1">
+				<texture x="0" y="1" width="512" height="286">intro\dream_doctor_2</texture>
+			</video_wnd>
+		</item>
+	</mov_join_osoznanie>
+
+	<mov_join_osoznanie_cc>
+		<play_each_item>1</play_each_item>
+		<global_wnd/>
+		<item>
+			<length_sec>60.7</length_sec>  <!-- 58.7 + 2 -->
+			<pause_state>on</pause_state>
+			<disabled_key>quit</disabled_key>
+			<function_on_start>closecaption.start_igm_dream_doctor_2</function_on_start>
+			<grab_input>1</grab_input>
+			<main_wnd>
+				<auto_static start_time="24.6" length_sec="3.5" x="212" y="670" width="600" height="40">
+					<text align="c" font="graffiti32">cc_dream_doctor_2_00242</text>
+				</auto_static>
+				<auto_static start_time="28.9" length_sec="2.8" x="212" y="670" width="600" height="40">
+					<text align="c" font="graffiti32">cc_dream_doctor_2_00285</text>
+				</auto_static>
+				<auto_static start_time="31.9" length_sec="2.5" x="212" y="670" width="600" height="40">
+					<text align="c" font="graffiti32">cc_dream_doctor_2_00315</text>
+				</auto_static>
+				<auto_static start_time="34.6" length_sec="2.6" x="212" y="670" width="600" height="40">
+					<text align="c" font="graffiti32">cc_dream_doctor_2_00342</text>
+				</auto_static>
+				<auto_static start_time="37.4" length_sec="2.2" x="212" y="670" width="600" height="40">
+					<text align="c" font="graffiti32">cc_dream_doctor_2_00370</text>
+				</auto_static>
+				<auto_static start_time="39.7" length_sec="4.4" x="212" y="670" width="600" height="40">
+					<text align="c" font="graffiti32">cc_dream_doctor_2_00393</text>
+				</auto_static>
+				<auto_static start_time="44.4" length_sec="5" x="212" y="670" width="600" height="40">
+					<text align="c" font="graffiti32">cc_dream_doctor_2_00440</text>
+				</auto_static>
+			</main_wnd>
+		</item>
+	</mov_join_osoznanie_cc>
+
+	<vp_mov_join_osoznanie>
+		<play_each_item>1</play_each_item>
+		<global_wnd/>
+		<item>
+			<length_sec>60.7</length_sec>  <!-- 58.7 + 2 -->
+			<pause_state>on</pause_state>
+			<disabled_key>quit</disabled_key>
+			<function_on_start>closecaption.start_cc_dream_doctor_2</function_on_start>
+			<grab_input>1</grab_input>
+			<main_wnd>
+				<auto_static start_time="2" length_sec="5" x="212" y="40" width="600" height="40" light_anim="asus_logo_01" la_cyclic="0" la_texture="1" la_text="1" la_alpha="1">
+					<text align="c" font="graffiti50">cc_title_dream_doctor_2</text>
+				</auto_static>
+
+				<auto_static start_time="24.6" length_sec="3.5" x="212" y="670" width="600" height="40">
+					<text align="c" font="graffiti32">cc_dream_doctor_2_00242</text>
+				</auto_static>
+				<auto_static start_time="28.9" length_sec="2.8" x="212" y="670" width="600" height="40">
+					<text align="c" font="graffiti32">cc_dream_doctor_2_00285</text>
+				</auto_static>
+				<auto_static start_time="31.9" length_sec="2.5" x="212" y="670" width="600" height="40">
+					<text align="c" font="graffiti32">cc_dream_doctor_2_00315</text>
+				</auto_static>
+				<auto_static start_time="34.6" length_sec="2.6" x="212" y="670" width="600" height="40">
+					<text align="c" font="graffiti32">cc_dream_doctor_2_00342</text>
+				</auto_static>
+				<auto_static start_time="37.4" length_sec="2.2" x="212" y="670" width="600" height="40">
+					<text align="c" font="graffiti32">cc_dream_doctor_2_00370</text>
+				</auto_static>
+				<auto_static start_time="39.7" length_sec="4.4" x="212" y="670" width="600" height="40">
+					<text align="c" font="graffiti32">cc_dream_doctor_2_00393</text>
+				</auto_static>
+				<auto_static start_time="44.4" length_sec="5" x="212" y="670" width="600" height="40">
+					<text align="c" font="graffiti32">cc_dream_doctor_2_00440</text>
+				</auto_static>
+			</main_wnd>
+		</item>
+	</vp_mov_join_osoznanie>
+
+	<dream_doctor_2_cc>
+		<play_each_item>1</play_each_item>
+		<global_wnd x="0" y="0" width="1024" height="768">
+			<auto_static x="0" y="0" width="1024" height="768" stretch="1">
+				<window_name>back</window_name>
+				<texture>intro\intro_back</texture>
+			</auto_static>
+		</global_wnd>
+		<item type="image">
+			<length_sec>0</length_sec>
+			<main_wnd/>
+		</item>
+		<item type="video">
+			<sound>characters_voice\scenario\video\dream_doctor_2</sound>
+			<pause_state>on</pause_state>
+			<pause_sound>on</pause_sound>
+			<video_wnd x="0" y="0" width="1024" height="768" stretch="1">
+				<texture x="0" y="1" width="512" height="286">intro\dream_doctor_2</texture>
+			</video_wnd>
+		</item>
+		<item type="image">
+			<length_sec>1</length_sec>
+			<pause_state>on</pause_state>
+			<main_wnd>
+				<auto_static start_time="0" length_sec="1"  x="0" y="0" width="1024" height="768" stretch="1" light_anim="" light_anim_cyclic="0" la_alpha="1" la_texture="1">
+					<window_name>w1</window_name>
+					<texture>intro\intro_back</texture>
+				</auto_static>
+			</main_wnd>
+		</item>
+	</dream_doctor_2_cc>
+
+
+
+
+
+	<mov_refuse_osoznanie>
+		<play_each_item>1</play_each_item>
+		<global_wnd x="0" y="0" width="1024" height="768">
+			<auto_static x="0" y="0" width="1024" height="768" stretch="1">
+				<window_name>back</window_name>
+				<texture>intro\intro_back</texture>
+			</auto_static>
+		</global_wnd>
+
+		<item type="video">
+			<sound>characters_voice\scenario\video\final_peace</sound>
+			<pause_state>on</pause_state>
+			<pause_sound>on</pause_sound>
+			<function_on_stop>xr_effects.game_credits</function_on_stop>
+			<video_wnd x="0" y="0" width="1024" height="768" stretch="1">
+				<texture x="0" y="1" width="512" height="286">intro\final_peace</texture>
+			</video_wnd>
+		</item>
+	</mov_refuse_osoznanie>
+
+	<mov_refuse_osoznanie_cc>
+		<play_each_item>1</play_each_item>
+		<global_wnd/>
+		<item>
+			<length_sec>107.8</length_sec>  <!-- 105.8 + 2 -->
+			<pause_state>on</pause_state>
+			<disabled_key>quit</disabled_key>
+			<function_on_start>closecaption.start_igm_final_peace</function_on_start>
+			<grab_input>1</grab_input>
+			<main_wnd>
+				<auto_static start_time="69.4" length_sec="4" x="212" y="670" width="600" height="40">
+					<text align="c" font="graffiti32">cc_final_peace_01089</text>
+				</auto_static>
+				<auto_static start_time="74.3" length_sec="3.1" x="212" y="670" width="600" height="40">
+					<text align="c" font="graffiti32">cc_final_peace_01138</text>
+				</auto_static>
+				<auto_static start_time="77.6" length_sec="2.5" x="212" y="670" width="600" height="40">
+					<text align="c" font="graffiti32">cc_final_peace_01171</text>
+				</auto_static>
+				<auto_static start_time="80.2" length_sec="4.5" x="212" y="670" width="600" height="40">
+					<text align="c" font="graffiti32">cc_final_peace_01197</text>
+				</auto_static>
+			</main_wnd>
+		</item>
+	</mov_refuse_osoznanie_cc>
+
+	<vp_mov_refuse_osoznanie>
+		<play_each_item>1</play_each_item>
+		<global_wnd/>
+		<item>
+			<length_sec>107.8</length_sec>  <!-- 105.8 + 2 -->
+			<pause_state>on</pause_state>
+			<disabled_key>quit</disabled_key>
+			<function_on_start>closecaption.start_cc_final_peace</function_on_start>
+			<grab_input>1</grab_input>
+			<main_wnd>
+				<auto_static start_time="2" length_sec="5" x="212" y="40" width="600" height="40" light_anim="asus_logo_01" la_cyclic="0" la_texture="1" la_text="1" la_alpha="1">
+					<text align="c" font="graffiti50">cc_title_final_peace</text>
+				</auto_static>
+
+				<auto_static start_time="69.4" length_sec="4" x="212" y="670" width="600" height="40">
+					<text align="c" font="graffiti32">cc_final_peace_01089</text>
+				</auto_static>
+				<auto_static start_time="74.3" length_sec="3.1" x="212" y="670" width="600" height="40">
+					<text align="c" font="graffiti32">cc_final_peace_01138</text>
+				</auto_static>
+				<auto_static start_time="77.6" length_sec="2.5" x="212" y="670" width="600" height="40">
+					<text align="c" font="graffiti32">cc_final_peace_01171</text>
+				</auto_static>
+				<auto_static start_time="80.2" length_sec="4.5" x="212" y="670" width="600" height="40">
+					<text align="c" font="graffiti32">cc_final_peace_01197</text>
+				</auto_static>
+			</main_wnd>
+		</item>
+	</vp_mov_refuse_osoznanie>
+
+	<final_peace_cc>
+		<play_each_item>1</play_each_item>
+		<global_wnd x="0" y="0" width="1024" height="768">
+			<auto_static x="0" y="0" width="1024" height="768" stretch="1">
+				<window_name>back</window_name>
+				<texture>intro\intro_back</texture>
+			</auto_static>
+		</global_wnd>
+		<item type="image">
+			<length_sec>0</length_sec>
+			<main_wnd/>
+		</item>
+		<item type="video">
+			<sound>characters_voice\scenario\video\final_peace</sound>
+			<pause_state>on</pause_state>
+			<pause_sound>on</pause_sound>
+			<video_wnd x="0" y="0" width="1024" height="768" stretch="1">
+				<texture x="0" y="1" width="512" height="286">intro\final_peace</texture>
+			</video_wnd>
+		</item>
+		<item type="image">
+			<length_sec>1</length_sec>
+			<pause_state>on</pause_state>
+			<main_wnd>
+				<auto_static start_time="0" length_sec="1"  x="0" y="0" width="1024" height="768" stretch="1" light_anim="" light_anim_cyclic="0" la_alpha="1" la_texture="1">
+					<window_name>w1</window_name>
+					<texture>intro\intro_back</texture>
+				</auto_static>
+			</main_wnd>
+		</item>
+	</final_peace_cc>
+
+
+
+
+
+	<movie_skipped>
+		<global_wnd/>
+		<item>
+			<length_sec>3</length_sec>
+			<grab_input>0</grab_input>
+			<main_wnd>
+				<auto_static start_time="0" length_sec="2.8" x="262" y="550" width="500" height="40">
+					<text align="c" font="graffiti32">cc_movie_skipped</text>
+				</auto_static>
+			</main_wnd>
+		</item>
+	</movie_skipped>
+
+
+
+
+
+	<vp_kill_gunslinger>
+		<play_each_item>1</play_each_item>
+		<global_wnd x="0" y="0" width="1024" height="768">
+			<auto_static x="0" y="0" width="1024" height="768" stretch="1">
+				<window_name>back</window_name>
+				<texture>intro\intro_back</texture>
+			</auto_static>
+		</global_wnd>
+		<item type="image">
+			<length_sec>0.5</length_sec>
+			<main_wnd>
+				<auto_static start_time="0" length_sec="0.5"  x="0" y="0" width="1024" height="768" stretch="1" light_anim="" light_anim_cyclic="0" la_alpha="1" la_texture="1">
+					<texture>intro\intro_back</texture>
+				</auto_static>
+			</main_wnd>
+		</item>
+		<item type="video">
+			<sound>characters_voice\scenario\gunslinger\start_dream</sound>
+			<pause_state>on</pause_state>
+			<pause_sound>on</pause_sound>
+			<video_wnd x="0" y="0" width="1024" height="768" stretch="1">
+				<texture x="0" y="0" width="256" height="256">intro\intro_kill</texture>
+			</video_wnd>
+		</item>
+		<item type="image">
+			<length_sec>0.5</length_sec>
+			<main_wnd>
+				<auto_static start_time="0" length_sec="0.5"  x="0" y="0" width="1024" height="768" stretch="1" light_anim="" light_anim_cyclic="0" la_alpha="1" la_texture="1">
+					<texture>intro\intro_back</texture>
+				</auto_static>
+			</main_wnd>
+		</item>
+	</vp_kill_gunslinger>
+
+	<vp_sleep_birds>
+		<play_each_item>1</play_each_item>
+		<global_wnd x="0" y="0" width="1024" height="768">
+			<auto_static x="0" y="0" width="1024" height="768" stretch="1">
+				<window_name>back</window_name>
+				<texture>intro\intro_back</texture>
+			</auto_static>
+		</global_wnd>
+		<item type="image">
+			<length_sec>0.5</length_sec>
+			<main_wnd>
+				<auto_static start_time="0" length_sec="0.5"  x="0" y="0" width="1024" height="768" stretch="1" light_anim="" light_anim_cyclic="0" la_alpha="1" la_texture="1">
+					<texture>intro\intro_back</texture>
+				</auto_static>
+			</main_wnd>
+		</item>
+		<item type="video">
+			<sound>heart\3.ogg</sound>
+			<pause_state>on</pause_state>
+			<pause_sound>on</pause_sound>
+			<video_wnd x="0" y="0" width="1024" height="768" stretch="1">
+				<texture x="0" y="0" width="512" height="512">sleep\esc_sky_01</texture>
+			</video_wnd>
+		</item>
+		<item type="image">
+			<length_sec>0.5</length_sec>
+			<main_wnd>
+				<auto_static start_time="0" length_sec="0.5"  x="0" y="0" width="1024" height="768" stretch="1" light_anim="" light_anim_cyclic="0" la_alpha="1" la_texture="1">
+					<texture>intro\intro_back</texture>
+				</auto_static>
+			</main_wnd>
+		</item>
+	</vp_sleep_birds>
+
+	<vp_sleep_rats_dark>
+		<play_each_item>1</play_each_item>
+		<global_wnd x="0" y="0" width="1024" height="768">
+			<auto_static x="0" y="0" width="1024" height="768" stretch="1">
+				<window_name>back</window_name>
+				<texture>intro\intro_back</texture>
+			</auto_static>
+		</global_wnd>
+		<item type="image">
+			<length_sec>0.5</length_sec>
+			<main_wnd>
+				<auto_static start_time="0" length_sec="0.5"  x="0" y="0" width="1024" height="768" stretch="1" light_anim="" light_anim_cyclic="0" la_alpha="1" la_texture="1">
+					<texture>intro\intro_back</texture>
+				</auto_static>
+			</main_wnd>
+		</item>
+		<item type="video">
+			<sound>characters_voice\scenario\video\dream_rats</sound>
+			<pause_state>on</pause_state>
+			<pause_sound>on</pause_sound>
+			<video_wnd x="0" y="0" width="1024" height="768" stretch="1">
+				<texture x="0" y="0" width="512" height="256">sleep\movie-003_rats_output-010</texture>
+			</video_wnd>
+		</item>
+		<item type="image">
+			<length_sec>0.5</length_sec>
+			<main_wnd>
+				<auto_static start_time="0" length_sec="0.5"  x="0" y="0" width="1024" height="768" stretch="1" light_anim="" light_anim_cyclic="0" la_alpha="1" la_texture="1">
+					<texture>intro\intro_back</texture>
+				</auto_static>
+			</main_wnd>
+		</item>
+	</vp_sleep_rats_dark>
+
+	<vp_sleep_sky_red>
+		<play_each_item>1</play_each_item>
+		<global_wnd x="0" y="0" width="1024" height="768">
+			<auto_static x="0" y="0" width="1024" height="768" stretch="1">
+				<window_name>back</window_name>
+				<texture>intro\intro_back</texture>
+			</auto_static>
+		</global_wnd>
+		<item type="image">
+			<length_sec>0.5</length_sec>
+			<main_wnd>
+				<auto_static start_time="0" length_sec="0.5"  x="0" y="0" width="1024" height="768" stretch="1" light_anim="" light_anim_cyclic="0" la_alpha="1" la_texture="1">
+					<texture>intro\intro_back</texture>
+				</auto_static>
+			</main_wnd>
+		</item>
+		<item type="video">
+			<sound>ambient\air_2.ogg</sound>
+			<pause_state>on</pause_state>
+			<pause_sound>on</pause_sound>
+			<video_wnd x="0" y="0" width="1024" height="768" stretch="1">
+				<texture x="0" y="0" width="512" height="512">sleep\aes_sky_red</texture>
+			</video_wnd>
+		</item>
+		<item type="image">
+			<length_sec>0.5</length_sec>
+			<main_wnd>
+				<auto_static start_time="0" length_sec="0.5"  x="0" y="0" width="1024" height="768" stretch="1" light_anim="" light_anim_cyclic="0" la_alpha="1" la_texture="1">
+					<texture>intro\intro_back</texture>
+				</auto_static>
+			</main_wnd>
+		</item>
+	</vp_sleep_sky_red>
+
+
+
+
+
+	<!-- The following sections are for dream mods -->
+	<Movie-003_Rats_OutPut-010>
+		<play_each_item>1</play_each_item>
+		<global_wnd x="0" y="0" width="1024" height="768">
+			<auto_static x="0" y="0" width="1024" height="768" stretch="1">
+				<window_name>back</window_name>
+				<texture>intro\intro_back</texture>
+			</auto_static>
+		</global_wnd>
+		<item type="video">
+			<sound>characters_voice\scenario\video\dream_rats</sound>
+			<pause_state>on</pause_state>
+			<function_on_stop>sleep_manager.stopper</function_on_stop>
+			<video_wnd x="0" y="0" width="1024" height="768" stretch="1">
+				<texture x="0" y="1" width="512" height="245">sleep\movie-003_rats_output-010</texture>
+			</video_wnd>
+		</item>
+	</Movie-003_Rats_OutPut-010>
+
+	<esc_sky_01>
+		<play_each_item>1</play_each_item>
+		<global_wnd x="0" y="0" width="1024" height="768">
+			<auto_static x="0" y="0" width="1024" height="768" stretch="1">
+				<window_name>back</window_name>
+				<texture>intro\intro_back</texture>
+			</auto_static>
+		</global_wnd>
+		<item type="video">
+			<sound>heart\3.ogg</sound>
+			<pause_state>on</pause_state>
+			<function_on_stop>sleep_manager.stopper</function_on_stop>
+			<video_wnd x="0" y="0" width="1024" height="768" stretch="1">
+				<texture x="0" y="1" width="512" height="245">sleep\esc_sky_01</texture>
+			</video_wnd>
+		</item>
+	</esc_sky_01>
+
+	<hyuv_sq>
+		<play_each_item>1</play_each_item>
+		<global_wnd x="0" y="0" width="1024" height="768">
+			<auto_static x="0" y="0" width="1024" height="768" stretch="1">
+				<window_name>back</window_name>
+				<texture>intro\intro_back</texture>
+			</auto_static>
+		</global_wnd>
+		<item type="video">
+			<sound>ambient\air_2.ogg</sound>
+			<pause_state>on</pause_state>
+			<function_on_stop>sleep_manager.stopper</function_on_stop>
+			<video_wnd x="0" y="0" width="1024" height="768" stretch="1">
+				<texture x="0" y="1" width="512" height="245">sleep\hyuv_sq</texture>
+			</video_wnd>
+		</item>
+	</hyuv_sq>
+
+	<akw>
+		<play_each_item>1</play_each_item>
+		<global_wnd x="0" y="0" width="1024" height="768">
+			<auto_static x="0" y="0" width="1024" height="768" stretch="1">
+				<window_name>back</window_name>
+				<texture>intro\intro_back</texture>
+			</auto_static>
+		</global_wnd>
+		<item type="video">
+			<sound>ambient\air_2.ogg</sound>
+			<pause_state>on</pause_state>
+			<function_on_stop>sleep_manager.stopper</function_on_stop>
+			<video_wnd x="0" y="0" width="1024" height="768" stretch="1">
+				<texture x="0" y="1" width="512" height="245">sleep\akw</texture>
+			</video_wnd>
+		</item>
+	</akw>
+
+	<aes_sky_red>
+		<play_each_item>1</play_each_item>
+		<global_wnd x="0" y="0" width="1024" height="768">
+			<auto_static x="0" y="0" width="1024" height="768" stretch="1">
+				<window_name>back</window_name>
+				<texture>intro\intro_back</texture>
+			</auto_static>
+		</global_wnd>
+		<item type="video">
+			<sound>ambient\air_2.ogg</sound>
+			<pause_state>on</pause_state>
+			<function_on_stop>sleep_manager.stopper</function_on_stop>
+			<video_wnd x="0" y="0" width="1024" height="768" stretch="1">
+				<texture x="0" y="1" width="512" height="245">sleep\aes_sky_red</texture>
+			</video_wnd>
+		</item>
+	</aes_sky_red>
+
+	<without_dream>
+		<play_each_item>1</play_each_item>
+		<global_wnd x="0" y="0" width="1024" height="768">
+			<auto_static x="0" y="0" width="1024" height="768" stretch="1">
+				<window_name>back</window_name>
+				<texture>intro\intro_back</texture>
+			</auto_static>
+		</global_wnd>
+		<item type="video">
+			<sound>heart\4.ogg</sound>
+			<pause_state>on</pause_state>
+			<function_on_stop>sleep_manager.stopper</function_on_stop>
+			<video_wnd x="0" y="0" width="1024" height="768" stretch="1">
+				<texture x="0" y="1" width="1024" height="768">intro\intro_back</texture>
+			</video_wnd>
+		</item>
+	</without_dream>
+
+	<time_scaling>
+		<play_each_item>1</play_each_item>
+		<global_wnd x="0" y="0" width="1024" height="768">
+			<auto_static x="0" y="0" width="1024" height="768" stretch="1">
+				<window_name>back</window_name>
+				<texture>intro\intro_back</texture>
+			</auto_static>
+		</global_wnd>
+		<item type="video">
+			<sound>characters_voice\human_01\monolith\states\sleep\sleep_6.ogg</sound>
+			<pause_state>off</pause_state>
+			<can_be_stopped>off</can_be_stopped>
+			<function_on_stop>sleep_manager.dreamer</function_on_stop>
+			<video_wnd x="0" y="0" width="1024" height="768" stretch="1">
+				<texture x="0" y="1" width="1024" height="768">intro\intro_back</texture>
+			</video_wnd>
+		</item>
+	</time_scaling>
