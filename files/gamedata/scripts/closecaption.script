@@ -1,0 +1,922 @@
+-----------------------------------------------------------
+-- Szinkronfeliratok
+-----------------------------------------------------------
+-- Készítette: The Sweet Little 16-bit (tsl16b@freemail.hu)
+-----------------------------------------------------------
+
+function cc_display_sndobj_theme(cc_id)
+	local cc_value = snd_themes[cc_id]
+	if cc_value then
+		if cc_value[3] ~= false then
+			if distance_between_safe(level_object_by_sid(cc_value[4]), db.actor) < cc_value[5] then
+				if cc_value[3] == "t" then
+					cc_display_tutorial(cc_id)
+				else
+					cc_display_normal(cc_id, cc_value[3], cc_value[2], cc_value[1])
+				end
+			end
+			if cc_value[1] == -2 then snd_themes[cc_id][3] = false end
+		end
+	end
+end
+
+function cc_display_npcsnd_theme(s_id, cc_thid, npc)
+	if type(s_id) == "number" then
+		local cc_id = "cc_" .. s_id
+		local cc_value = snd_ids[cc_id]
+		if cc_value then
+			if cc_value[3] ~= false then
+				local dist = distance_between_safe(npc, db.actor)
+				if dist < cc_value[4] then
+					if cc_value[5] then
+						cc_give_info_portion(cc_value[5])
+					end
+					if cc_value[3] == "t" then
+						cc_display_tutorial(cc_id)
+					elseif cc_value[3] == true then
+						cc_display_npcsnd_theme(0, npc:name() .. "-" .. cc_thid, npc)
+					else
+						cc_display_normal(cc_id, cc_value[3], cc_value[2], cc_value[1])
+					end
+				end
+			end
+		else
+			cc_value = npcsnd_themes[cc_thid]
+			if cc_value then
+				local dist = distance_between_safe(npc, db.actor)
+				if dist < cc_value[4] then
+					if cc_value[5] then
+						cc_give_info_portion(cc_value[5])
+					end
+					if cc_value[3] == "t" then
+						cc_display_tutorial(cc_thid)
+					else
+						cc_display_normal(cc_thid, cc_value[3], cc_value[2], cc_value[1])
+					end
+				end
+			end
+		end
+	end
+end
+
+function cc_display_sndpath(p)
+	local cc_value = snd_paths[p]
+	if cc_value then
+		local cc_id = string.gsub(p, "\\", "-")
+		if cc_value[1] >= 1 then				-- normal
+			if cc_value[4] then
+				cc_give_info_portion(cc_value[4] .. cc_id)
+			end
+			if cc_value[3] == "t" then
+				cc_display_tutorial(cc_id)
+			else
+				cc_display_normal("cc_" .. cc_id, cc_value[3], cc_value[2], cc_value[1])
+			end
+		else							-- radio
+			cc_send_tip("cc_" .. cc_id, cc_value[2], cc_value[3]*1000)
+		end
+	end
+end
+
+function cc_display_news(p)
+	local cc_value = tips_paths[p]
+	if cc_value then
+		local news_id = "cc_" .. string.gsub(p, "\\", "-")
+		cc_display_normal(news_id, cc_value[3], cc_value[2], cc_value[1])
+	end
+end
+
+function cc_give_info_portion(info)
+	if db.cc_nip == nil then read_cc_ini() end
+	if db.cc_nip == true then
+		db.actor:give_info_portion(info)
+	end
+end
+
+cc_on = {0, 0, 0, 0}
+
+function cc_display_normal(cc_id, showtime, sender, color)
+	if db.cc_npc == true then
+		if ((color == -1) or (color == -2)) then
+			cc_send_tip(cc_id, sender, showtime*1000)
+		else
+			if db.actor:is_talking() then
+				local x = tips_icons[sender][1]
+				local y = tips_icons[sender][2]
+				if sender == "cc" then
+					if db.cc_icc == true then
+						db.actor:give_talk_message(game.translate_string(cc_id), "ui\\ui_iconsTotal",Frect():set(x,y,83,47),"closed_caption")
+					end
+				else
+					db.actor:give_talk_message(game.translate_string(cc_id), "ui\\ui_iconsTotal",Frect():set(x,y,83,47),"other_answer_item")
+				end
+			else
+				if sender == "cc" then if db.cc_icc ~= true then return end end
+				local time_now = time_global() / 1000
+				local time_ccend = time_now + showtime
+				if color == nil then color = 1 end
+				if color == 0 then
+					for i,v in ipairs(cc_on) do
+						if v <= time_now then
+							color = i
+							break
+						end
+					end
+					if color == 0 then color = 1 end
+				end
+				local tmpl = "closecaption_" .. color
+				local hud = get_hud()
+				hud:AddCustomStatic(tmpl, true)
+				hud:GetCustomStatic(tmpl):wnd():SetTextST(game.translate_string(cc_id))
+				hud:GetCustomStatic(tmpl).m_endTime = time_ccend
+				if color <= #cc_on then cc_on[color] = time_ccend end
+			end
+		end
+	elseif db.cc_npc == nil then
+		read_cc_ini()
+		if db.cc_npc ~= nil then
+			cc_display_normal(cc_id, showtime, sender, color)
+		end
+	end
+end
+
+function cc_display_tutorial(cc_id)
+	if db.cc_npc == true then
+		local cansend = xr_conditions.can_send_tutorial()
+		if cansend then game.start_tutorial(cc_id) end
+	elseif db.cc_npc == nil then
+		read_cc_ini()
+		if db.cc_npc ~= nil then
+			cc_display_tutorial(cc_id)
+		end
+	end
+end
+
+function cc_send_tip(news_id, sender, showtime)
+	if db.cc_npc == true then
+		local timeout = 0
+		if showtime == nil then showtime = 5000 end
+
+		if sender == nil then
+			sender = "cc"
+		end
+		local x = tips_icons[sender][1]
+		local y = tips_icons[sender][2]
+
+		local news_text = "%c[255,160,160,160]"..game.translate_string("st_tip").."\\n".."%c[default]"..game.translate_string(news_id)
+
+		if db.actor:is_talking() then
+			db.actor:give_talk_message(news_text, "ui\\ui_iconsTotal", Frect():set(x,y,83,47), "other_answer_item")
+		else
+			db.actor:give_game_news(news_text, "ui\\ui_iconsTotal", Frect():set(x,y,83,47), timeout*1000, showtime)
+		end
+	elseif db.cc_npc == nil then
+		read_cc_ini()
+		if db.cc_npc ~= nil then
+			cc_send_tip(news_id, sender, showtime)
+		end
+	end
+end
+
+function read_cc_ini()
+	-------- Read values for closecaptions
+	local cc = "closecaption"
+	local p_igm, cc_igm, cc_npc, cc_icc, cc_nip = true, false, false, false, false
+	cc_npc = load_variable("cc_npc", 0)
+	if cc_npc == 0 then
+		local ini = ini_file("misc\\closecaption.ltx")
+		if ini:section_exist(cc) then
+			if ini:line_exist(cc, "play_igm") then
+       				p_igm = ini:r_bool(cc, "play_igm")
+			end
+			if ini:line_exist(cc, "cc_ingame_video") then
+				cc_igm = ini:r_bool(cc, "cc_ingame_video")
+			end
+			if ini:line_exist(cc, "cc_ingame_npc") then
+				cc_npc = ini:r_bool(cc, "cc_ingame_npc")
+			end
+			if ini:line_exist(cc, "cc_ingame_cc") then
+				cc_icc = ini:r_bool(cc, "cc_ingame_cc")
+			end
+			if ini:line_exist(cc, "cc_add_new_info") then
+				cc_nip = ini:r_bool(cc, "cc_add_new_info")
+			end
+			--[[
+			if ini:line_exist(cc, "cc_video_player") then
+				cc_vpl = ini:r_bool(cc, "cc_video_player")
+			end
+			--]]
+		end
+		db.p_igm = p_igm
+		db.cc_igm = cc_igm
+		db.cc_npc = cc_npc
+		db.cc_icc = cc_icc
+		db.cc_nip = cc_nip
+		save_variable("cc_nip", cc_nip)
+		save_variable("cc_icc", cc_icc)
+		save_variable("cc_npc", cc_npc)
+		save_variable("cc_igm", cc_igm)
+		save_variable("p_igm", p_igm)
+	else
+		cc_nip = load_variable("cc_nip", cc_nip)
+		cc_icc = load_variable("cc_icc", cc_icc)
+		cc_igm = load_variable("cc_igm", cc_igm)
+		p_igm = load_variable("p_igm", p_igm)
+		db.p_igm = p_igm
+		db.cc_igm = cc_igm
+		db.cc_npc = cc_npc
+		db.cc_icc = cc_icc
+		db.cc_nip = cc_nip
+	end
+end
+
+function start_movie(movie_nocc, movie_cc, no_movie)
+	if db.p_igm == nil then read_cc_ini() end
+	if db.p_igm == false then
+		if no_movie == 2 then xr_effects.end_x18_dream()		-- x18_dream
+			game.start_tutorial("movie_skipped")
+		elseif no_movie == 3 then xr_effects.end_radar_dream()		-- radar_dream
+			game.start_tutorial("movie_skipped")
+		elseif no_movie == 4 then xr_effects.end_yantar_dream()		-- yantar_dream
+			game.start_tutorial("movie_skipped")
+--		elseif no_movie == 5 then xr_effects.game_credits()		-- mov_desire_1
+--		elseif no_movie == 6 then xr_effects.game_credits()		-- mov_desire_2
+--		elseif no_movie == 7 then xr_effects.game_credits()		-- mov_desire_3
+--		elseif no_movie == 8 then xr_effects.game_credits()		-- mov_desire_4
+--		elseif no_movie == 9 then xr_effects.game_credits()		-- mov_desire_5
+--		elseif no_movie == 10 then xr_effects.game_credits()		-- mov_join_osoznanie
+--		elseif no_movie == 11 then xr_effects.game_credits()		-- mov_refuse_osoznanie
+--		elseif no_movie == 1 then	-- nothing to do		-- intro_game	-- Normally started (or not) by exe
+		else start_movie_sub(movie_nocc, movie_cc)			-- play endings anyway
+		end
+	else
+		start_movie_sub(movie_nocc, movie_cc)
+	end
+end
+
+function start_movie_sub(movie_nocc, movie_cc)
+	if ((db.cc_igm == true) and (is_version_ok() == true)) then
+		game.start_tutorial(movie_cc)
+	else
+		game.start_tutorial(movie_nocc)
+	end
+end
+
+-------- detect real version (not the one from registry, paranoia rulez)
+function is_version_ok()
+	local ver = true
+	local sectn = "identity_immunities"
+	local ini = ini_file("defines.ltx")
+	if ini:line_exist(sectn, "hit_probability_gd_novice") then	-- v1.0004 addition
+		ver = false
+	else
+		ini = ini_file("ui\\ui_movies.xml")
+		if not ini:section_exist("before10004") then	-- isn't ui_movies for v1.0003 in place?
+			ver = false
+		end
+	end
+	return ver
+end
+
+-- Code portions from the excellent AMK mod --
+function save_variable(variable_name, value)
+  xr_logic.pstor_store(db.actor, variable_name, value)
+end
+
+function load_variable(variable_name, value_if_not_found)
+  return xr_logic.pstor_retrieve(db.actor, variable_name, value_if_not_found)
+end
+
+function del_variable(variable_name)
+  if db.storage[db.actor:id()].pstor[variable_name] then
+    db.storage[db.actor:id()].pstor[variable_name] = nil
+  end
+end
+----------------------------------------------
+
+
+
+
+
+function before_igm_intro_stalker(actor, npc)
+	level.hide_indicators()
+	read_cc_ini()
+	db.ver_ok = is_version_ok()
+end
+
+function start_igm_intro_stalker(actor, npc)
+	if db.ver_ok == true then
+		start_movie("intro_stalker_nocc_skippable", "intro_stalker_cc_skippable", 1)
+	end
+	game.start_tutorial("intro_stalker_igm")
+end
+
+function end_igm_intro_stalker(actor, npc)
+	level.show_indicators()
+end
+
+function start_cc_intro_stalker(actor, npc)
+	game.start_tutorial("intro_stalker_cc")
+end
+
+function start_igm_dream_rats(actor, npc)
+	game.start_tutorial("x18_dream")
+end
+
+function start_cc_dream_rats(actor, npc)
+	game.start_tutorial("dream_rats_cc")
+end
+
+--[[ Not used
+function start_igm_dream_sarcofag(actor, npc)
+	game.start_tutorial("radar_dream")
+end
+--]]
+
+function start_cc_dream_sarcofag(actor, npc)
+	game.start_tutorial("dream_sarcofag_cc")
+end
+
+function start_igm_dream_doctor(actor, npc)
+	game.start_tutorial("yantar_dream")
+end
+
+function start_cc_dream_doctor(actor, npc)
+	game.start_tutorial("dream_doctor_cc")
+end
+
+function start_igm_final_blind(actor, npc)
+	game.start_tutorial("mov_desire_1")
+end
+
+function start_cc_final_blind(actor, npc)
+	game.start_tutorial("final_blind_cc")
+end
+
+function start_igm_final_gold(actor, npc)
+	game.start_tutorial("mov_desire_2")
+end
+
+function start_cc_final_gold(actor, npc)
+	game.start_tutorial("final_gold_cc")
+end
+
+function start_igm_final_to_monolith(actor, npc)
+	game.start_tutorial("mov_desire_3")
+end
+
+function start_cc_final_to_monolith(actor, npc)
+	game.start_tutorial("final_to_monolith_cc")
+end
+
+function start_igm_final_apocal(actor, npc)
+	game.start_tutorial("mov_desire_4")
+end
+
+function start_cc_final_apocal(actor, npc)
+	game.start_tutorial("final_apocal_cc")
+end
+
+function start_igm_final_immortal(actor, npc)
+	game.start_tutorial("mov_desire_5")
+end
+
+function start_cc_final_immortal(actor, npc)
+	game.start_tutorial("final_immortal_cc")
+end
+
+function start_igm_dream_doctor_2(actor, npc)
+	game.start_tutorial("mov_join_osoznanie")
+end
+
+function start_cc_dream_doctor_2(actor, npc)
+	game.start_tutorial("dream_doctor_2_cc")
+end
+
+function start_igm_final_peace(actor, npc)
+	game.start_tutorial("mov_refuse_osoznanie")
+end
+
+function start_cc_final_peace(actor, npc)
+	game.start_tutorial("final_peace_cc")
+end
+
+function giveinfo_trader_monolog2(actor, npc)
+	cc_give_info_portion("rc_characters_voice-scenario-trader-trader_monolog2")
+end
+
+
+tips_icons = {
+		default	= { 0, 658},		grey	= { 415, 141},
+		trader	= { 332, 893},		doctor	= { 0, 658},
+		wolf	= { 332, 940},		monolith = { 0, 658},
+		megafon	= { 249, 846},		petruha	= { 332, 799},
+		nimble	= { 332, 846},		kuznyetsov = { 332, 94},
+		bes	= { 415, 0},		krot	= { 332, 47},
+		cc	= { 249, 893},		no_cc	= { 249, 940},
+		stalker	= { 0, 658},		transp	= { 0, 940},
+		dolg	= { 0, 658},		freedom	= { 0, 658},
+		barman	= { 332, 235},		soldier	= { 415, 564},
+		ecolog	= { 498, 0},		saharov	= { 332, 470},
+		max	= { 415, 282},		ara	= { 415, 423},
+		arena	= { 332, 141},
+--		o_soznanie = { 498, 893},
+}
+
+tips_paths = {
+--------------		snd_path / news_id				= {clr, sender, shtm, rc}
+		["characters_voice\\scenario\\garbage\\grey_grey_1"]	= {-1, "grey", 11},
+		["characters_voice\\scenario\\aes\\aes2\\aes2_trader_ask"] = {1, "trader", 4},
+		["ambient\\gunfire_2"]					= {-1, "krot", 3},
+}
+
+snd_themes = {
+---------------      id			= {clr, sender, shtm, sid, dist}
+		["epic-1"]		= {3, "megafon", 12, 018, 100},
+		["epic-2"]		= {3, "megafon", 10, 018, 100},
+		["epic-3"]		= {3, "megafon", 16, 018, 100},
+		["epic-4"]		= {3, "megafon", 33, 018, 100},
+		["humor-1"]		= {3, "megafon", 11, 018, 100},
+		["humor-2"]		= {3, "megafon", 12, 018, 100},
+		["humor-3"]		= {3, "megafon", 11, 018, 100},
+		["humor-4"]		= {3, "megafon", 6, 018, 100},
+		["humor-5"]		= {3, "megafon", 8, 018, 100},
+		["humor-6"]		= {3, "megafon", 10, 018, 100},
+		["humor-7"]		= {3, "megafon", 8, 018, 100},
+		["humor-8"]		= {3, "megafon", 9, 018, 100},
+		["humor-9"]		= {3, "megafon", 6, 018, 100},
+		["humor-10"]		= {3, "megafon", 4, 018, 100},
+		["humor-11"]		= {3, "megafon", 4, 018, 100},
+		["humor-12"]		= {3, "megafon", 4, 018, 100},
+		["humor-13"]		= {3, "megafon", 4, 018, 100},
+		["humor-14"]		= {3, "megafon", 6, 018, 100},
+		["humor-15"]		= {3, "megafon", 8, 018, 100},
+		["humor-16"]		= {3, "megafon", 5, 018, 100},
+		["humor-17"]		= {3, "megafon", 5, 018, 100},
+		["alarm1-1"]		= {3, "megafon", 5, 018, 100},
+		["alarm1-2"]		= {3, "megafon", 3, 018, 100},
+		["alarm1-3"]		= {3, "megafon", 3, 018, 100},
+		["alarm1-4"]		= {3, "megafon", 3, 018, 100},
+		["alarm1-5"]		= {3, "megafon", 4, 018, 100},
+		["siren-1"]		= {9, "cc", 2, -1, 100001},
+		["trader_door_open_start-1"] = {9, "cc", 1.5, -1, 100001},
+		["trader_door_close_start-1"] = {9, "cc", 1.5, -1, 100001},
+		["trader_door_close_stop-1"] = {9, "cc", 1.5, -1, 100001},
+		["trader_door_locked-1"] = {9, "cc", 1.5, -1, 100001},
+		["dolg_alarm-1"]	= {3, "megafon", 5, 508, 75},
+		["dolg_megafon_1_hit-1"] = {3, "megafon", 7, 508, 75},
+		["dolg_megafon_2_hit-1"] = {3, "megafon", 5, 508, 75},
+		["dolg_megafon_kill-1"]	= {3, "megafon", 8, 508, 75},
+		["bar_start_megafon-1"] = {3, "megafon", 10, 508, 120},
+		["bar_start_megafon-2"] = {3, "megafon", 15, 508, 120},
+		["bar_start_megafon-3"] = {3, "megafon", 8, 508, 120},
+		["bar_start_megafon-4"] = {3, "megafon", 9, 508, 120},
+		["dolg_speech-1"] 	= {3, "megafon", 10, 508, 75},
+		["dolg_speech-2"] 	= {3, "megafon", 15, 508, 75},
+		["dolg_speech-3"] 	= {3, "megafon", 8, 508, 75},
+		["dolg_speech-4"] 	= {3, "megafon", 9, 508, 75},
+		["dolg_speech-5"] 	= {3, "megafon", 5, 508, 75},
+		["dolg_speech-6"] 	= {3, "megafon", 6, 508, 75},
+		["dolg_speech-7"] 	= {3, "megafon", 10, 508, 75},
+		["dolg_speech-8"] 	= {3, "megafon", 3, 508, 75},
+		["dolg_speech-9"] 	= {3, "megafon", 3, 508, 75},
+		["dolg_speech-10"]	= {3, "megafon", 3, 508, 75},
+		["bar_arena_fight_1-1"]	= {-2, "arena", 12, -1, 100001},
+		["bar_arena_fight_1_end-1"] = {3, "arena", 4, -1, 100001},
+		["bar_arena_fight_2-1"]	= {-2, "arena", 12, -1, 100001},
+		["bar_arena_fight_2_end-1"] = {3, "arena", 7, -1, 100001},
+		["bar_arena_fight_3-1"]	= {-2, "arena", 11, -1, 100001},
+		["bar_arena_fight_3_end-1"] = {3, "arena", 4, -1, 100001},
+		["bar_arena_fight_4-1"]	= {-2, "arena", 9, -1, 100001},
+		["bar_arena_fight_4_end-1"] = {3, "arena", 4, -1, 100001},
+		["bar_arena_fight_5-1"]	= {-2, "arena", 10, -1, 100001},
+		["bar_arena_fight_5_end-1"] = {3, "arena", 6, -1, 100001},
+		["bar_arena_fight_6-1"]	= {-2, "arena", 14, -1, 100001},
+		["bar_arena_fight_6_end-1"] = {3, "arena", 7, -1, 100001},
+		["bar_arena_fight_7-1"]	= {-2, "arena", 18, -1, 100001},
+		["bar_arena_fight_7_end-1"] = {3, "arena", 8, -1, 100001},
+		["bar_arena_fight_8-1"]	= {-2, "arena", 19, -1, 100001},
+		["bar_arena_fight_8_end-1"] = {3, "arena", 9, -1, 100001},
+		["bar_arena_public-1"]	= {4, "stalker", 1.5,	-1, 100001},
+		["bar_arena_public-2"]	= {4, "stalker", 1.5,	-1, 100001},
+		["bar_arena_public-3"]	= {4, "stalker", 1.5,	-1, 100001},
+		["bar_arena_public-4"]	= {4, "stalker", 1.5,	-1, 100001},
+		["bar_arena_public-5"]	= {4, "stalker", 1.5,	-1, 100001},
+		["bar_arena_public-6"]	= {4, "stalker", 1.5,	-1, 100001},
+		["bar_arena_public-7"]	= {4, "stalker", 1.5,	-1, 100001},
+		["bar_arena_public-8"]	= {4, "stalker", 1.5,	-1, 100001},
+		["bar_arena_public-9"]	= {4, "stalker", 1.5,	-1, 100001},
+		["gar_bandits_seryi-1"]	= {0, "default", 3,	100,	15},
+		["gar_bandits_seryi-2"]	= {0, "default", 3,	100,	15},
+		["gar_bandits_seryi-3"]	= {0, "default", 3,	100,	15},
+		["gar_bandits_seryi-4"]	= {0, "default", 3,	100,	15},
+		["gar_bandits_seryi-5"]	= {0, "default", 3,	100,	15},
+		["gar_seryi_shooting-1"] = {9, "cc", 	3,	-1, 100001},
+		["gar_seryi_shooting_2-1"] = {4, "default", 3, 100,	25},
+		["agro_test-1"]		= {9, "cc",	3,	-1, 100001},
+		["system_message_1-1"]	= {6, "megafon", 14,	-1, 100001},
+		["system_message_2-1"]	= {6, "megafon", 5,	-1, 100001},
+		["system_message_3-1"]	= {6, "megafon", 5,	-1, 100001},
+		["system_message_4-1"]	= {6, "megafon", 5,	-1, 100001},
+		["system_message_5-1"]	= {6, "megafon", 3,	-1, 100001},
+		["mon_monolith_alarm-1"]	= {6, "megafon", 5, 1305, 25},
+		["mon_monolith_damaged-1"]	= {6, "megafon", 4, 1305, 25},
+		["mon_monolith_heavy_damaged-1"]= {6, "megafon", 4, 1305, 25},
+		["mon_monolith_recharged-1"]	= {6, "megafon", 7, 1305, 25},
+}
+
+snd_ids = {
+---------------	     id	     = {clr, sender,	shtm, dist, rc}	-- shtm == true: overloaded theme
+		["cc_10027"] = {0, "",		true,	25},
+		["cc_10049"] = {0, "",		true, 100001},
+		["cc_10050"] = {0, "",		true, 100001},
+		["cc_10051"] = {0, "",		true, 100001},
+		["cc_10054"] = {1, "default",	3,	25},
+		["cc_10067"] = {9, "cc",	2,	25},
+		["cc_10101"] = {9, "cc",	2,	10},
+		["cc_10115"] = {9, "cc",	2,	20},
+		["cc_10173"] = {9, "cc",	2,	15},
+}
+
+npcsnd_themes = {
+---------------		id			= {clr, sender, shtm, dist, rc}
+		["esc_bandit_shustryi-0"]	= {1, "nimble", "t",	25},
+		["esc_bandit_shustryi-1"]	= {1, "nimble", "t",	25},
+		["esc_bandit_shustryi-2"]	= {1, "nimble", "t",	25},
+		["esc_bandit_shustryi-3"]	= {1, "nimble", "t",	25},
+		["esc_bandit_shustryi-4"]	= {1, "nimble", "t",	25},
+		["esc_bridge_soldiers-0"]	= {1, "kuznyetsov", 11,	25},
+		["esc_factory_attack-0"]	= {1, "default", 4,	25},
+		["esc_factory_go-0"]		= {1, "default", 3,	25},
+		["esc_factory_go-1"]		= {1, "default", 3,	25},
+		["esc_factory_go-2"]		= {1, "default", 3,	25},
+		["esc_factory_raid-0"]		= {1, "default", 6,	25},
+		["esc_factory_victory-0"]	= {1, "default", 3,	25},
+		["esc_fox_alert-0"]		= {1, "default", 7,	25},
+		["esc_fox_thanks-0"]		= {1, "default", 4,	25},
+		["esc_fanat_dialog-0"]		= {1, "default", 5,	25},
+		["esc_fanat_ready-0"]		= {1, "default", 4,	25},
+		["esc_fanat_victory-0"]		= {1, "default", 7,	25},
+		["esc_lager_killer-0"]		= {1, "default", 6,	25},
+		["esc_petruha_call-0"]		= {1, "petruha", 3,	25},
+		["esc_petruha_raport-0"] 	= {-1, "petruha", 6,	2000},
+		["esc_shustryi_help-0"]		= {1, "nimble", 7,	25},
+		["esc_shustryi_help-1"]		= {1, "nimble",	5,	25},
+		["esc_shustryi_help-2"]		= {1, "nimble",	4,	25},
+		["esc_shustryi_help-3"]		= {1, "nimble",	6,	25},
+		["esc_shustryi_thanks-0"]	= {1, "nimble",	4,	25},
+		["esc_tolik_help-0"]		= {1, "transp",	5,	25},
+		["esc_tolik_help-1"]		= {1, "transp",	5,	25},
+		["esc_tolik_thanks-0"]		= {1, "transp",	7,	25},
+		["esc_wolf_say_thanks-0"]	= {1, "wolf",	4,	25},
+		["esc_wolf_radio-0"]		= {1, "wolf",	6,	25},
+		["esc_wolf_to_rangers_1"]	= {-1, "petruha",	6,	25},
+		["gar_bandits_seryi-0"]		= {0, "default",	3,	15},
+		["gar_bandits_seryi-1"]		= {0, "default",	3,	15},
+		["gar_bandits_seryi-2"]		= {0, "default",	3,	15},
+		["gar_bandits_seryi-3"]		= {0, "default",	3,	15},
+		["gar_bandits_seryi-4"]		= {0, "default",	3,	15},
+		["gar_dolg_blokpost-0"]		= {1, "stalker",	4,	25},
+		["gar_dm_bandit_backoff1-0"]	= {4, "transp",		3,	25},
+		["gar_dm_bandit_backoff2-0"]	= {4, "transp",		3,	25},
+		["gar_dm_bandit_demand-0"]	= {4, "transp",		4,	25},
+		["gar_dm_bandit_demand-1"]	= {4, "transp",		2,	25},
+		["gar_dm_bandit_demand-2"]	= {4, "transp",		3,	25},
+		["gar_dm_newbie_help_me-0"]	= {1, "transp",		3,	25},
+		["gar_dm_newbie_no_money-0"]	= {1, "transp",		3,	25},
+		["gar_dm_newbie_no_money-1"]	= {1, "transp",		3,	25},
+		["gar_dm_newbie_no_money-2"]	= {1, "transp",		3,	25},
+		["gar_dm_newbie_thank_you-0"]	= {1, "transp",		3,	25},
+		["gar_hellcar_alarm-0"]		= {2, "stalker",	4,	25},
+		["gar_hellcar_ambush-0"]	= {1, "bes",		4,	25},
+		["gar_hellcar_to_battle-0"]	= {1, "bes",		5,	25},
+		["gar_seryi_see_actor-0"]	= {2, "grey",		4,	30},
+		["agr_doctor_1-0"]		= {1, "doctor", "t", 25, "rc_scenario-agroprom-doctor_1"},
+		["agr_krot_fear-0"]		= {1, "krot",		4,	25},
+		["agr_krot_thanks_2-0"]		= {1, "krot",		13,	25},
+		["agr_desertir_spam-0"]		= {1, "transp",		4,	25},
+		["agr_desertir_spam-1"]		= {1, "transp",		4,	25},
+		["agr_desertir_spam-2"]		= {1, "transp",		4,	25},
+		["agr_dont_shoot-0"]		= {1, "transp",		4,	25},
+		["agr_stalker_help_1-0"]	= {1, "stalker",	4,	80},
+		["agr_stalker_help_2-0"]	= {1, "stalker",	8,	80},
+		["agr_stalker_help_3-0"]	= {1, "stalker",	2.5,	80},
+		["agr_stalker_help_4-0"]	= {1, "stalker",	2.5,	80},
+		["bar_bar_barmen_hello-0"]	= {1, "barman",		3,	3},
+		["bar_bar_barmen_hello-1"]	= {1, "barman",		3,	3},
+		["bar_bar_barmen_hello-2"]	= {1, "barman",		4,	3},
+		["bar_bar_barmen_hello-3"]	= {1, "barman",		3,	3},
+		["bar_bar_barmen_hello-4"]	= {1, "barman",		3,	3},
+		["bar_bar_barmen_hello_room-0"]	= {1, "barman",		3,	3},
+		["bar_bar_barmen_hello_room-1"]	= {1, "barman",		3,	3},
+		["bar_bar_barmen_hello_room-2"]	= {1, "barman",		4,	3},
+		["bar_bar_barmen_hello_room-3"]	= {1, "barman",		3,	3},
+		["bar_bar_osvedomitel_hello-0"]	= {1, "stalker",	5,	3.5},
+		["bar_bar_osvedomitel_hello-1"]	= {1, "stalker",	4,	3.5},
+		["bar_dolg_guard_busy-0"]	= {1, "dolg",		3,	25},
+		["bar_dolg_guard_busy-1"]	= {1, "dolg",		3,	25},
+		["bar_dolg_guard_stop-0"]	= {1, "dolg",		3,	25},
+		["bar_dolg_guard_stop-1"]	= {1, "dolg",		4,	25},
+		["bar_dolg_hangar_bridge_hello-0"] = {1, "dolg",	3,	25},
+		["bar_dolg_leader-0"]		= {1, "dolg",		4,	25},
+		["bar_dolg_leader-1"]		= {1, "dolg",		4,	25},
+		["bar_dolg_leader-2"]		= {1, "dolg",		3,	25},
+		["bar_dolg_leader-3"]		= {1, "dolg",		5,	25},
+		["bar_dolg_leader-4"]		= {1, "dolg",		3,	25},
+		["bar_dolg_leader-5"]		= {1, "dolg",		3,	25},
+		["bar_dolg_leader-6"]		= {1, "dolg",		4,	25},
+		["bar_dolg_leader-7"]		= {1, "dolg",		3,	25},
+		["bar_dolg_leader_hello-0"]	= {1, "dolg",		3,	25},
+		["bar_dolg_leader_hello-1"]	= {1, "dolg",		3,	25},
+		["bar_dolg_petrenko_hello-0"]	= {1, "dolg",		3,	25},
+		["bar_dolg_petrenko_hello-1"]	= {1, "dolg",		3,	25},
+		["bar_guard_prohodi-0"]		= {1, "stalker",	3,	25},
+		["bar_guard_stop-0"]		= {1, "stalker",	3,	25},
+		["bar_guard_stop-1"]		= {1, "stalker",	3,	25},
+		["bar_guard_stop-2"]		= {1, "stalker",	3,	25},
+		["bar_guard_enter-0"]		= {1, "stalker",	3,	25},
+		["bar_guard_enter-1"]		= {1, "stalker",	3,	25},
+		["val_escort_captive_phrase1-0"] = {1, "stalker",	2.5,	25},
+		["val_escort_captive_phrase2-0"] = {1, "stalker",	5,	25},
+		["val_escort_captive_phrase3-0"] = {1, "stalker",	2.5,	25},
+		["val_escort_dead-0"]		= {1, "stalker",	6,	25},
+		["val_escort_guards-0"]		= {1, "default",	3,	50},
+		["val_escort_guards-1"]		= {1, "default",	3,	50},
+		["val_escort_guards-2"]		= {1, "default",	3,	50},
+		["val_escort_guards-3"]		= {1, "default",	3,	50},
+		["val_escort_guards-4"]		= {1, "default",	3,	50},
+		["val_escort_nap1_go_home-0"]	= {1, "stalker",	5,	25},
+		["val_escort_nap1_phrase1-0"]	= {1, "stalker",	5,	35},
+		["val_escort_nap1_phrase1-1"]	= {1, "stalker",	5,	35},
+		["val_escort_nap1_phrase2-0"]	= {1, "stalker",	3,	35},
+		["val_escort_nap1_phrase2-1"]	= {1, "stalker",	3,	35},
+		["val_escort_nap1_phrase3-0"]	= {1, "stalker",	8,	25},
+		["val_escort_nap1_phrase4-0"]	= {1, "stalker",	7,	25},
+		["val_escort_nap1_phrase5-0"]	= {1, "stalker",	4,	25},
+		["val_escort_nap1_phrase6-0"]	= {1, "stalker",	3,	25},
+		["val_escort_nap1_phrase7-0"]	= {1, "stalker",	6,	25},
+		["val_escort_phrase_invite-0"]	= {1, "stalker",	3,	25},
+		["val_prisoner_captive_come_here-0"] = {1, "dolg",	2.5,	25},
+		["val_prisoner_captive_help_me-0"] = {1, "dolg",	2.5,	25},
+		["val_prisoner_captive_help_me-1"] = {1, "dolg",	2.5,	25},
+		["val_prisoner_captive_help_me-2"] = {1, "dolg",	4,	25},
+		["val_prisoner_captive_open-0"] = {1, "dolg",		6,	25},
+		["val_prisoner_captive_thanx-0"] = {1, "dolg",		3,	25},
+		["val_rob_guard_jeer-0"] 	= {1, "default",	3,	25},
+		["val_rob_leader_call-0"] 	= {1, "default",	4,	50},
+		["val_rob_leader_jeer-0"] 	= {-1, "default",	14,	2000},
+		["kruglov_stop_enemy_1-0"]	= {-1, "ecolog",	5,	2000},
+		["kruglov_stop_enemy_2-0"]	= {-1, "ecolog",	5,	2000},
+		["rostok_kruglov_help_1-0"]	= {1, "ecolog",		11,	25},
+		["rostok_kruglov_help_2-0"]	= {1, "ecolog",		9,	25},
+		["rostok_kruglov_help_3-0"]	= {1, "ecolog",		14,	25},
+		["rostok_kruglov_help_4-0"]	= {1, "ecolog",		6,	25},
+		["rostok_kruglov_help_5-0"]	= {-1, "ecolog",	4,	2000},
+		["rostok_kruglov_help_6-0"]	= {-1, "ecolog",	4,	2000},
+		["rostok_kruglov_torrid-0"]	= {1, "ecolog",		16,	25},
+		["rostok_volkodav_assistant_talk_1-0"] = {1, "freedom",	7,	25},
+		["rostok_volkodav_assistant_talk_2-0"] = {1, "freedom",	3,	25},
+		["rostok_volkodav_assistant_talk_3-0"] = {1, "freedom",	4,	25},
+		["rostok_volkodav_talk_1-0"]	= {1, "freedom",	8,	25},
+		["rostok_volkodav_talk_2-0"]	= {1, "freedom",	4,	25},
+		["yantar_kruglov_to_professor_1-0"] = {1, "ecolog",	4,	25},
+		["yantar_kruglov_radiation_quest_2-0"] = {1, "ecolog",	4,	25},
+		["yantar_kruglov_radiation_quest_5-0"] = {1, "ecolog",	7,	25},
+		["yantar_kruglov_radiation_quest_8-0"] = {1, "ecolog",	12,	25},
+		["yantar_kruglov_radiation_quest_9-0"] = {1, "ecolog",	4,	25},
+		["yantar_kruglov_radiation_quest_10-0"] = {1, "ecolog", 6,	25},
+		["yantar_probe_1-0"]		= {1, "ecolog",		7,	25},
+		["yantar_probe_2-0"]		= {1, "ecolog",		8,	25},
+		["yantar_probe_3-0"]		= {1, "ecolog",		8,	25},
+		["yantar_professor_idle-2"]	= {1, "saharov",	2,	25},
+		["yantar_professor_idle-3"]	= {1, "saharov",	2.5,	25},
+		["yantar_professor_idle-4"]	= {1, "saharov",	2.5,	25},
+		["yantar_professor_radiation_quest_2-0"] = {1, "saharov", 3,	25},
+		["yantar_professor_talk_1-0"]	= {1, "saharov",	2,	25},
+		["yantar_professor_to_kruglov_1-0"] = {1, "saharov",	8,	25},
+		["yantar_professor_to_kruglov_2-0"] = {1, "saharov",	5,	25},
+		["mil_ara_ambush-0"]		= {1, "ara",		5,	25},
+		["mil_cherep_hi-0"]		= {1, "default",	7,	25},
+		["mil_collect_phrase1-0"]	= {0, "freedom",	3,	25},
+		["mil_collect_phrase2-0"]	= {0, "freedom",	4,	25},
+		["mil_collect_phrase3-0"]	= {0, "freedom",	6,	25},
+		["mil_collect_phrase4-0"]	= {0, "freedom",	4,	25},
+		["mil_collect_phrase5-0"]	= {0, "freedom",	4,	25},
+		["mil_collect_phrase6-0"]	= {0, "freedom",	7,	25},
+		["mil_collect_phrase7-0"]	= {4, "freedom",	6,	25},
+		["mil_crazy-0"]			= {1, "freedom",	2,	25},
+		["mil_crazy-1"]			= {1, "freedom",	3,	25},
+		["mil_crazy-2"]			= {1, "freedom",	3,	25},
+		["mil_crazy-3"]			= {1, "freedom",	4,	25},
+		["mil_dolg_after_kill1-0"]	= {0, "default",	2.5,	25},
+		["mil_dolg_after_kill2-0"]	= {0, "default",	4,	25},
+		["mil_dolg_after_kill3-0"]	= {0, "default",	2.5,	25},
+		["mil_dolg_about_sniper-0"]	= {1, "default",	7,	25},
+		["mil_dolg_go_attack-0"]	= {1, "default",	3,	25},
+		["mil_dolg_getready-0"]		= {1, "default",	4,	25},
+		["mil_dolg_before_attack1-0"]	= {1, "default",	4,	25},
+		["mil_dolg_before_attack2-0"]	= {1, "default",	4,	25},
+		["mil_freedom_ambush1-0"]	= {0, "freedom",	3,	25},
+		["mil_freedom_ambush2-0"]	= {0, "freedom",	2.5,	25},
+		["mil_freedom_ambush3-0"]	= {0, "freedom",	4,	25},
+		["mil_freedom_ambush4-0"]	= {0, "freedom",	3,	25},
+		["mil_freedom_ambush5-0"]	= {0, "freedom",	6,	25},
+		["mil_freedom_ambush6-0"]	= {0, "freedom",	3,	25},
+		["mil_freedom_patrol-0"]	= {2, "freedom",	6,	30},
+		["mil_freedom_victory1-0"]	= {1, "freedom",	4,	25},
+		["mil_freedom_victory2-0"]	= {1, "freedom",	3,	25},
+		["mil_freedom_victory3-0"]	= {1, "freedom",	3,	25},
+		["mil_freedom_victory4-0"]	= {1, "freedom",	4,	25},
+		["mil_freedom_victory5-0"]	= {1, "freedom",	5,	25},
+		["mil_guard_to_max-0"]		= {1, "freedom",	"t",	25},
+		["mil_freedom_patrol_base-0"]	= {1, "freedom",	4,	25},
+		["mil_freedom_patrol_base-1"]	= {1, "freedom",	4,	25},
+		["mil_freedom_patrol_base-2"]	= {1, "freedom",	4,	25},
+		["mil_freedom_zoneguard-0"]	= {1, "freedom",	3,	25},
+		["mil_pavlik_to_ara-0"]		= {1, "freedom",	"t",	25},
+		["mil_ara_to_pavlik-0"]		= {1, "freedom",	"t",	25},
+		["mil_kolyan-0"]		= {1, "freedom",	4,	25},
+		["mil_max_to_actor-0"]		= {0, "max",		4,	25},
+		["mil_max_to_kolyan-0"]		= {1, "max",		4,	25},
+		["mil_max_to_tolyan-0"]		= {1, "max",		5,	25},
+		["mil_paul_frost-0"]		= {1, "freedom",	3,	25},
+		["pri_followers_leader_phrase1_1-0"] = {-1, "default",	19,	2000},
+		["pri_followers_leader_phrase1_2-0"] = {1, "default",	9,	25},
+		["pri_followers_leader_phrase1_3-0"] = {1, "default",	2.5,	25},
+		["pri_followers_final_phrase2-0"] = {-1, "default",	4,	2000},
+-------------------- overloaded themes ---------------------------------------
+		["agr_krot-speech-0"]		= {1, "krot",		13,	25},
+		["agr_krot-speech1-0"]		= {1, "krot",		3,	25},
+		["agr_krot-speech1-1"]		= {1, "krot",		3,	25},
+		["agr_krot-speech1-2"]		= {1, "krot",		3,	25},
+		["bar_bar_visitor_hunter-state-0"] = {1, "stalker",	3,	3.5},
+		["bar_bar_visitor_hunter-state-1"] = {1, "stalker",	3,	3.5},
+		["bar_bar_visitor_hunter-state-2"] = {1, "stalker",	3,	3.5},
+		["bar_bar_visitor_hunter-state-3"] = {1, "stalker",	3,	3.5},
+		["bar_bar_visitor_hunter-state-4"] = {1, "stalker",	3,	3.5},
+		["bar_bar_visitors_1_2-state-0"] = {1, "stalker",	4,	4},
+		["bar_bar_visitors_1_2-state-1"] = {1, "stalker",	3,	4},
+		["bar_bar_visitors_1_2-state-2"] = {1, "stalker",	3,	4},
+		["bar_bar_visitors_1_2-state-3"] = {1, "stalker",	4,	4},
+		["bar_bar_visitors_1_2-state-4"] = {1, "stalker",	3,	4},
+		["bar_bar_visitors_1_2-state-5"] = {1, "stalker",	3,	4},
+		["bar_bar_visitors_1_2-state-6"] = {1, "stalker",	4,	4},
+		["bar_bar_visitors_1_2-state-7"] = {1, "stalker",	3,	4},
+		["bar_bar_visitors_1_2-state-8"] = {1, "stalker",	3,	4},
+		["bar_bar_visitors_1_2-state-9"] = {1, "stalker",	3,	4},
+		["bar_bar_visitors_1_2-state-12"] = {1, "stalker",	3,	4},
+		["bar_bar_visitors_1_2-state-13"] = {1, "stalker",	6,	4},
+		["bar_bar_visitors_1_2-state-14"] = {1, "stalker",	7,	4},
+		["bar_bar_visitors_3_2-state-0"] = {1, "stalker",	4,	4},
+		["bar_bar_visitors_3_2-state-1"] = {1, "stalker",	3,	4},
+		["bar_bar_visitors_3_2-state-2"] = {1, "stalker",	3,	4},
+		["bar_bar_visitors_3_2-state-3"] = {1, "stalker",	4,	4},
+		["bar_bar_visitors_3_2-state-4"] = {1, "stalker",	3,	4},
+		["bar_bar_visitors_3_2-state-5"] = {1, "stalker",	3,	4},
+		["bar_bar_visitors_3_2-state-6"] = {1, "stalker",	4,	4},
+		["bar_bar_visitors_3_2-state-7"] = {1, "stalker",	3,	4},
+		["bar_bar_visitors_3_2-state-8"] = {1, "stalker",	3,	4},
+		["bar_bar_visitors_3_2-state-9"] = {1, "stalker",	3,	4},
+		["bar_bar_visitors_3_2-state-12"] = {1, "stalker",	3,	4},
+		["bar_bar_visitors_3_2-state-13"] = {1, "stalker",	6,	4},
+		["bar_bar_visitors_3_2-state-14"] = {1, "stalker",	7,	4},
+		["val_escort_bandit_halfdead-speech-0"] = {4, "stalker", 7,	35},
+		["val_sacrifice_guard1-speech-0"] = {3, "stalker",	5,	25},
+		["val_sacrifice_guard1-speech-1"] = {3, "stalker",	4,	25},
+		["val_sacrifice_guard1-speech-2"] = {3, "stalker",	2.5,	25},
+		["val_sacrifice_guard1-speech-3"] = {3, "stalker",	2.5,	25},
+		["val_sacrifice_guard1-speech-4"] = {3, "stalker",	9,	25},
+		["val_sacrifice_guard2-speech-0"] = {4, "stalker",	4,	25},
+		["val_sacrifice_guard2-speech-1"] = {4, "stalker",	8,	25},
+		["val_sacrifice_victim-speech-0"] = {1, "stalker",	5,	25},
+		["val_sacrifice_victim-speech-1"] = {1, "stalker",	4,	25},
+		["val_sacrifice_tunnel_bandit-speech-0"] = {1, "stalker", 15,	25},
+		["mil_dolg_stalker0006_0000-speech-0"] = {1, "stalker", 6,	25},
+}
+
+snd_paths = {
+---------------			snd_path						= {clr, sender, shtm, rc_prfx}
+		["characters_voice\\scenario\\trader\\trader_monolog1"]			= {1, "trader", "t", "rc_"},
+		["characters_voice\\scenario\\trader\\trader_script1a_1"]		= {1, "trader", 4},
+		["characters_voice\\scenario\\trader\\trader_script1a_2"]		= {1, "trader", 4},
+		["characters_voice\\scenario\\trader\\trader_script1a_3"]		= {1, "trader", 4},
+		["characters_voice\\scenario\\trader\\trader_script1a_4"]		= {1, "trader", 4},
+		["characters_voice\\scenario\\trader\\trader_script1a_5"]		= {1, "trader", 4},
+		["characters_voice\\scenario\\trader\\trader_script1a_6"]		= {1, "trader", 4},
+		["characters_voice\\scenario\\trader\\trader_script1c_1"]		= {1, "trader", 4},
+		["characters_voice\\scenario\\trader\\trader_script1c_2"]		= {1, "trader", 4},
+		["characters_voice\\scenario\\trader\\trader_script1c_3"]		= {1, "trader", 4},
+		["characters_voice\\scenario\\trader\\trader_script1c_4"]		= {1, "trader", 4},
+		["characters_voice\\scenario\\trader\\trader_script1c_5"]		= {1, "trader", 4},
+		["characters_voice\\scenario\\trader\\trader_script1c_6"]		= {1, "trader", 4},
+		["characters_voice\\scenario\\trader\\trader_script1c_7"]		= {1, "trader", 4},
+		["characters_voice\\scenario\\trader\\trader_script1c_8"]		= {1, "trader", 4},
+		["characters_voice\\scenario\\trader\\trader_script1c_9"]		= {1, "trader", 4},
+		["characters_voice\\scenario\\trader\\trader1b"]			= {1, "trader", 5},
+		["characters_voice\\scenario\\trader\\trader3a"]			= {1, "trader", 4},
+		["characters_voice\\scenario\\trader\\trader3b"]			= {1, "trader", 4},
+		["characters_voice\\scenario\\trader\\trader3c"]			= {1, "trader", 4},
+		["characters_voice\\scenario\\escape\\heli_radio_part_1"]		= {-1, "soldier", 13},
+		["characters_voice\\scenario\\val\\patrol_prikaz"]			= {-1, "soldier", 7},
+		["characters_voice\\scenario\\val\\val_desant_1"]			= {-1, "soldier", 15},
+		["characters_voice\\scenario\\Rostok\\killer_radio_enemy_1"]		= {-1, "freedom", 6},
+		["characters_voice\\scenario\\Rostok\\killer_radio_enemy_2"]		= {-1, "freedom", 3},
+		["characters_voice\\scenario\\Rostok\\killer_radio_enemy_3"]		= {-1, "freedom", 5},
+		["characters_voice\\scenario\\Rostok\\sniper_radio_see_enemy_1"]	= {-1, "freedom", 7},
+		["characters_voice\\scenario\\Rostok\\sniper_radio_see_enemy_2"]	= {-1, "freedom", 4},
+		["characters_voice\\scenario\\Rostok\\sniper_shoot_enemy_1"]		= {1, "freedom", 3},
+		["characters_voice\\scenario\\Rostok\\volkodav_radio_enemy_1"]		= {-1, "freedom", 9},
+		["characters_voice\\scenario\\Rostok\\volkodav_radio_enemy_2"]		= {-1, "freedom", 5},
+		["characters_voice\\scenario\\Rostok\\volkodav_radio_see_enemy_1"]	= {-1, "freedom", 7},
+		["characters_voice\\scenario\\Rostok\\volkodav_radio_snipers_dead_1"]	= {-1, "freedom", 6},
+		["characters_voice\\scenario\\Rostok\\volkodav_radio_snipers_dead_2"]	= {-1, "freedom", 5},
+		["characters_voice\\scenario\\Rostok\\volkodav_radio_snipers_dead_3"]	= {-1, "freedom", 3},
+		["characters_voice\\scenario\\yantar\\dream_talk_r"]			= {1, "default", "t"},
+		["characters_voice\\scenario\\yantar\\ghost_pda"]			= {1, "default", "t"},
+		["characters_voice\\scenario\\yantar\\vasiliev_pda"]			= {1, "default", "t"},
+		["characters_voice\\scenario\\military\\dolg_attack\\base\\mil_base_attack_1"]	= {-1, "dolg", 11},
+		["characters_voice\\scenario\\military\\dolg_attack\\base\\mil_base_attack_2"]	= {-1, "dolg", 13},
+		["characters_voice\\scenario\\military\\dolg_attack\\base\\mil_base_attack_3"]	= {-1, "dolg", 6},
+		["characters_voice\\scenario\\military\\dolg_attack\\base\\mil_base_attack_4"]	= {-1, "dolg", 6},
+		["characters_voice\\scenario\\military\\dolg_attack\\base\\mil_base_attack_5"]	= {-1, "dolg", 5},
+		["characters_voice\\scenario\\military\\dolg_attack\\base\\mil_base_attack_6"]	= {-1, "dolg", 7},
+		["characters_voice\\scenario\\military\\dolg_attack\\base\\mil_base_attack_7"]	= {-1, "dolg", 7},
+		["characters_voice\\scenario\\military\\dolg_attack\\base\\mil_base_attack_8"]	= {-1, "dolg", 7},
+		["characters_voice\\scenario\\military\\dolg_attack\\base\\mil_dolg_down_1"]	= {-1, "dolg", 3},
+		["characters_voice\\scenario\\military\\dolg_attack\\base\\mil_dolg_down_2"]	= {-1, "dolg", 6},
+		["characters_voice\\scenario\\military\\dolg_attack\\base\\mil_dolg_down_3"]	= {-1, "dolg", 6},
+		["characters_voice\\scenario\\military\\dolg_attack\\base\\mil_dolg_down_4"]	= {-1, "dolg", 10},
+		["characters_voice\\scenario\\military\\dolg_attack\\base\\mil_dolg_down_5"]	= {-1, "dolg", 9},
+		["characters_voice\\scenario\\military\\dolg_attack\\base\\mil_enemy_down_1"]	= {-1, "dolg", 3},
+		["characters_voice\\scenario\\military\\dolg_attack\\base\\mil_enemy_down_2"]	= {-1, "dolg", 3},
+		["characters_voice\\scenario\\military\\dolg_attack\\base\\mil_enemy_down_3"]	= {-1, "dolg", 3},
+		["characters_voice\\scenario\\military\\dolg_attack\\base\\mil_mission_complete"] = {-1, "dolg", 7},
+		["characters_voice\\scenario\\radar\\rad_hat_1"]			= {7, "default", 5},
+		["characters_voice\\scenario\\radar\\rad_hat_2"]			= {7, "default", 4},
+		["characters_voice\\scenario\\radar\\rad_freedom_dolg_1"]		= {-1, "default", 24},
+		["characters_voice\\scenario\\radar\\rad_soldier_des_1"]		= {-1, "soldier", 37},
+		["characters_voice\\scenario\\pri\\followers_actor_leave_phrase"]	= {-1, "default", 5},
+		["characters_voice\\scenario\\pri\\followers_btr_phrase1_2"]		= {-1, "default", 3},
+		["characters_voice\\scenario\\pri\\followers_btr_phrase2_1"]		= {-1, "default", 5},
+		["characters_voice\\scenario\\pri\\followers_btr_phrase2_2"]		= {-1, "default", 4},
+		["characters_voice\\scenario\\pri\\followers_crossroads_phrase"]	= {-1, "default", 7},
+		["characters_voice\\scenario\\pri\\followers_fight01"]			= {-1, "default", 3},
+		["characters_voice\\scenario\\pri\\followers_fight02"]			= {-1, "default", 3},
+		["characters_voice\\scenario\\pri\\followers_fight03"]			= {-1, "default", 3},
+		["characters_voice\\scenario\\pri\\followers_fight04"]			= {-1, "default", 4},
+		["characters_voice\\scenario\\pri\\followers_fight05"]			= {-1, "default", 3},
+		["characters_voice\\scenario\\pri\\followers_fight06"]			= {-1, "default", 4},
+		["characters_voice\\scenario\\pri\\followers_fight07"]			= {-1, "default", 4},
+		["characters_voice\\scenario\\pri\\followers_fight09"]			= {-1, "default", 3},
+		["characters_voice\\scenario\\pri\\followers_fight12"]			= {-1, "default", 3},
+		["characters_voice\\scenario\\pri\\followers_fight13"]			= {-1, "default", 3},
+		["characters_voice\\scenario\\pri\\followers_fight14"]			= {-1, "default", 3},
+		["characters_voice\\scenario\\pri\\followers_fight15"]			= {-1, "default", 4},
+		["characters_voice\\scenario\\pri\\followers_kill1"]			= {-1, "default", 3},
+		["characters_voice\\scenario\\pri\\followers_kill2"]			= {-1, "default", 3},
+		["characters_voice\\scenario\\pri\\followers_kill3"]			= {-1, "default", 3},
+		["characters_voice\\scenario\\pri\\followers_kill4"]			= {-1, "default", 4},
+		["characters_voice\\scenario\\pri\\followers_kill5"]			= {-1, "default", 3},
+		["characters_voice\\scenario\\pri\\followers_kill6"]			= {-1, "default", 3},
+		["characters_voice\\scenario\\pri\\followers_kill7"]			= {-1, "default", 3},
+		["characters_voice\\scenario\\pri\\followers_start_phrase1"]		= {-1, "default", 10},
+		["characters_voice\\scenario\\pri\\followers_underground_phrase1"]	= {-1, "default", 13},
+		["characters_voice\\scenario\\pri\\followers_underground_phrase2"]	= {-1, "default", 3},
+		["characters_voice\\scenario\\pri\\followers_underground_phrase3"]	= {-1, "default", 5},
+		["characters_voice\\scenario\\pri\\followers_wave1_end_phrase"]		= {-1, "default", 4},
+		["characters_voice\\scenario\\pri\\followers_wave2_end_phrase"]		= {-1, "default", 4},
+		["characters_voice\\scenario\\pri\\followers_wave2_start_phrase"]	= {-1, "default", 3},
+		["characters_voice\\scenario\\pri\\followers_wave4_end_phrase"]		= {-1, "default", 3},
+		["characters_voice\\scenario\\pri\\followers_wave4_start_phrase"]	= {-1, "default", 3},
+		["characters_voice\\scenario\\pri\\followers_wave6_end_phrase"]		= {-1, "default", 4},
+		["characters_voice\\scenario\\aes\\aes2\\aes_blowout_1"]		= {-1, "default", 11},
+		["characters_voice\\scenario\\aes\\aes2\\aes_blowout_2"]		= {-1, "default", 13},
+		["characters_voice\\scenario\\aes\\aes2\\aes_blowout_3"]		= {-1, "default", 24},
+		["characters_voice\\scenario\\sarcofag\\monolith_call_1"]		= {5, "monolith", 9},
+		["characters_voice\\scenario\\sarcofag\\monolith_call_2"]		= {5, "monolith", 9},
+		["characters_voice\\scenario\\sarcofag\\monolith_call_3"]		= {5, "monolith", 8},
+		["characters_voice\\scenario\\sarcofag\\monolith_call_4"]		= {5, "monolith", 11},
+		["characters_voice\\scenario\\sarcofag\\monolith_call_5"]		= {5, "monolith", 9},
+		["characters_voice\\scenario\\sarcofag\\monolith_call_6"]		= {5, "monolith", 8},
+		["characters_voice\\scenario\\sarcofag\\monolith_call_7"]		= {5, "monolith", 12},
+		["characters_voice\\scenario\\sarcofag\\monolith_call_e1"]		= {5, "monolith", 6},
+		["characters_voice\\scenario\\sarcofag\\monolith_call_e2"]		= {5, "monolith", 5},
+		["characters_voice\\scenario\\sarcofag\\monolith_call_e3"]		= {5, "monolith", 4},
+		["characters_voice\\scenario\\sarcofag\\monolith_call_e4"]		= {5, "monolith", 7},
+		["characters_voice\\scenario\\sarcofag\\monolith_call_e5"]		= {5, "monolith", 6},
+		["characters_voice\\scenario\\sarcofag\\monolith_call_e6"]		= {5, "monolith", 6},
+		["characters_voice\\scenario\\sarcofag\\monolith_call_e7"]		= {5, "monolith", 6},
+		["characters_voice\\scenario\\sarcofag\\monolith_call_h1"]		= {5, "monolith", 6},
+		["characters_voice\\scenario\\sarcofag\\monolith_call_h2"]		= {5, "monolith", 6},
+		["characters_voice\\scenario\\sarcofag\\monolith_call_h3"]		= {5, "monolith", 5},
+		["characters_voice\\scenario\\sarcofag\\monolith_call_h4"]		= {5, "monolith", 7},
+		["characters_voice\\scenario\\sarcofag\\monolith_call_h5"]		= {5, "monolith", 6},
+		["characters_voice\\scenario\\sarcofag\\monolith_call_h6"]		= {5, "monolith", 6},
+		["characters_voice\\scenario\\sarcofag\\monolith_call_h7"]		= {5, "monolith", 7},
+		["ambient\\gunfire_2"]							= {9, "cc", 2},
+		["device\\door_servomotor"]						= {9, "cc", 1.5},
+		["monsters\\bloodsucker\\bloodsucker_script_attack_0"]			= {9, "cc", 2},
+		["monsters\\giant\\giant_underground_0"]				= {9, "cc", 2},
+		["monsters\\poltergeist\\die_0"]					= {9, "cc", 2},
+		["characters_voice\\scenario\\aes\\aes_chopers_begin"]			= {9, "cc", 2},
+}

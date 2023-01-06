@@ -1,0 +1,76 @@
+
+--' Мы отказываемся вступить в осознание, нас переносит на вторую станцию
+function osoznanie_decline(npc, actor)
+    db.actor:disable_info_portion("oso_init_dialog")
+	npc:stop_talk()
+    actor:stop_talk()
+	xr_effects.enable_ui(db.actor, nil)	  
+	local point = patrol("mon_jump_aes2_walk")
+	local look = patrol("mon_jump_aes2_look")
+	
+	db.actor:set_actor_position(point:point(0))
+	local dir = look:point(0):sub(point:point(0))
+	db.actor:set_actor_direction(-dir:getH())
+	
+end
+
+--' Мы соглашаемся вступить в осознание, конец игры.
+function osoznanie_agree(npc, actor)
+	db.actor:disable_info_portion("oso_init_dialog")
+	npc:stop_talk()
+    actor:stop_talk()
+	xr_effects.enable_ui(db.actor, nil)	  
+	--game.start_tutorial("mov_join_osoznanie")
+	closecaption.start_movie("mov_join_osoznanie", "mov_join_osoznanie_cc", 10)
+end
+
+
+
+
+
+function cc_oso_osoznanie_start_11(npc, actor)
+	cc_display_oso("oso_osoznanie_start_11", 10)
+end
+
+function cc_oso_osoznanie_start_21(npc, actor)
+	cc_display_oso("oso_osoznanie_start_21", 3)
+end
+
+function cc_oso_who_are_you_1(npc, actor)
+	cc_display_oso("oso_who_are_you_1", 71)
+end
+
+function cc_oso_stalker_1(npc, actor)
+	cc_display_oso("oso_stalker_1", 43)
+end
+
+function cc_oso_what_about_me_1(npc, actor)
+	cc_display_oso("oso_what_about_me_1", 31)
+end
+
+function cc_oso_what_is_the_zone_1(npc, actor)
+	cc_display_oso("oso_what_is_the_zone_1", 20)
+end
+
+function cc_oso_what_next_1(npc, actor)
+	cc_display_oso("oso_what_next_1", 30)
+end
+
+function cc_oso_why_chernobyl_1(npc, actor)
+	cc_display_oso("oso_why_chernobyl_1", 22)
+end
+
+function cc_oso_chernobyl_crush_1(npc, actor)
+	cc_display_oso("oso_chernobyl_crush_1", 14)
+end
+
+function cc_oso_death_truck_1(npc, actor)
+	cc_display_oso("oso_death_truck_1", 27)
+end
+
+function cc_display_oso(cc_id, cc_value)
+	local hud = get_hud()
+	hud:AddCustomStatic("closecaption_oso", true)
+	hud:GetCustomStatic("closecaption_oso"):wnd():SetTextST(game.translate_string(cc_id))
+	hud:GetCustomStatic("closecaption_oso").m_endTime = time_global()/1000 + cc_value
+end
