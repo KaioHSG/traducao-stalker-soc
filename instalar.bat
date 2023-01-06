@@ -30,8 +30,10 @@ EXIT
 
 :doInstall
 CLS
-ECHO Instalando arquivos. . .
+ECHO Fazendo backup. . .
 XCOPY "%STALKERPATH%\gamedata" "%STALKERPATH%\gamedata_backup\" /E /Y
+ECHO.
+ECHO Instalando arquivos. . .
 XCOPY "files" "%STALKERPATH%" /E /Y
 XCOPY "desinstalar.bat" "%STALKERPATH%" /Y
 XCOPY "InGameCC_Leia-me.txt" "%STALKERPATH%" /Y
