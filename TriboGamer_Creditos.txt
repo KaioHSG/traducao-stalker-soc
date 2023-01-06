@@ -1,8 +1,16 @@
-STALKER SoC
------------
+S.T.A.L.K.E.R.: Shadow of Chernobyl
+-----------------------------------
 https://tribogamer.com/traducoes/404_traducao-do-s-t-a-l-k-e-r-shadow-of-chernobyl-para-portugues-do-brasil.html
 
+Administrador:  Kev2k
+   Tradutores:  Kev2k, NimbleVintar
+    Revisores:  NimbleVintar, PascallDoom
+ Tests-ingame:  Kev2k, NimbleVintar
+   Instalador:  H3rdell
 
-InGameCC
---------
+
+CloseCaption e Legendas Ingame
+------------------------------
 https://tribogamer.com/downloads/1818_baixar-closecaption-e-legendas-ingame-pt-br-s-t-a-l-k-e-r-shadow-of-chernobyl.html
+
+Por:  MaxPresi
