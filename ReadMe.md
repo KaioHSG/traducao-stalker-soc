@@ -30,6 +30,6 @@ Tradução desinstalada.
 ### ·f·i· csoport
 #### [InGameCC](http://stalker.kincsvadasz.hu)
 
-*  Mr. Fusion (mrf_of_vsb@hotmail.com)
-* The Sweet Little 16-bit (tsl16b@freemail.hu)
-* saxus (http://saxus.muportal.hu)
+* Conteúdo (transcrição e conceito): Mr. Fusion
+* Programação Lua: TSL16b
+* Transcrição e tradução russa: Macron
