@@ -1,5 +1,5 @@
 @echo off
-title Instalar Tradu‡Æo e InGameCC
+title Instalar Traduâ€¡Ã†o e InGameCC
 
 :installPath
 set StalkerPath=.
@@ -17,13 +17,13 @@ goto :chooseInstall
 
 :chooseInstall
 cls
-echo O S.T.A.L.K.E.R. est  instalado em:
+echo O S.T.A.L.K.E.R. estÂ  instalado em:
 echo "%StalkerPath%"
 echo.
-echo NOTA: Dependendo do local do jogo, vai ser ness rio executar o script como
+echo NOTA: Dependendo do local do jogo, vai ser nessÂ rio executar o script como
 echo       administrador.
 echo.
-choice /c sn  /m "Instalar tradu‡Æo"
+choice /c sn  /m "Instalar traduâ€¡Ã†o"
 if %ErrorLevel%==1 (goto :doInstall)
 if %ErrorLevel%==2 (exit)
 
@@ -38,7 +38,7 @@ echo Instalando arquivos...
 xcopy "Arquivos" "%StalkerPath%" /e /y
 xcopy "Desinstalar.bat" "%StalkerPath%" /y
 xcopy "InGameCC Leia-me.txt" "%StalkerPath%" /y
-xcopy "TriboGamer Creditos.txt" "%StalkerPath%" /y
+xcopy "TriboGamer CrÃ©ditos.txt" "%StalkerPath%" /y
 xcopy "ReadMe.md" "%StalkerPath%" /y
 if exist "%StalkerPath%\bin\msvcr80.dll" (goto :version10004) else (goto :version10003)
 
@@ -48,12 +48,12 @@ xcopy "files\gamedata\config\ui\ui_movies10004.xml" "%StalkerPath%\gamedata\conf
 echo.
 echo ---------------------------------------------------------------
 echo.
-echo Instala‡Æo finalizada.
+echo Instalaâ€¡Ã†o finalizada.
 echo.
-echo NOTA: As legendas das cenas nÆo aparecerÆo nesta versÆo (1.0004 ou posterior) da
+echo NOTA: As legendas das cenas nÃ†o aparecerÃ†o nesta versÃ†o (1.0004 ou posterior) da
 echo       engine do jogo.
 echo.
-echo Precione qualquer botÆo para sair...
+echo Precione qualquer botÃ†o para sair...
 pause > nul
 exit
 
@@ -63,50 +63,50 @@ xcopy "files\gamedata\config\ui\ui_movies10003.xml" "%StalkerPath%\gamedata\conf
 echo.
 echo ---------------------------------------------------------------
 echo.
-echo Instala‡Æo finalizada.
+echo Instalaâ€¡Ã†o finalizada.
 echo.
-echo NOTA: Se vocˆ atualizar para v1.0004 ou uma versÆo posterior, lembre-se de
-echo       reinstalar a tradu‡Æo ou executar o "InGameCC_v10004.bat".
+echo NOTA: Se vocË† atualizar para v1.0004 ou uma versÃ†o posterior, lembre-se de
+echo       reinstalar a traduâ€¡Ã†o ou executar o "InGameCC_v10004.bat".
 echo.
-echo Precione qualquer botÆo para sair...
+echo Precione qualquer botÃ†o para sair...
 pause > nul
 exit
 
 :errNoStalker
 cls
-echo A pasta do S.T.A.L.K.E.R. nÆo foi encontrada no registro.
+echo A pasta do S.T.A.L.K.E.R. nÃ†o foi encontrada no registro.
 echo.
-echo NOTA: Vocˆ pode especificar a pasta do jogo editando a linha "set StalkerPath=." no
+echo NOTA: VocË† pode especificar a pasta do jogo editando a linha "set StalkerPath=." no
 echo       instalador.
 echo.
-echo Precione qualquer botÆo para sair...
+echo Precione qualquer botÃ†o para sair...
 pause > nul
 exit
 
 :errStillNoStalker
 cls
-echo O executavel do S.T.A.L.K.E.R. nÆo pode ser encontrado em:
+echo O executavel do S.T.A.L.K.E.R. nÃ†o pode ser encontrado em:
 echo.
 echo "%StalkerPath%\bin\XR_3DA.exe"
 echo.
-echo NOTA: No entanto, a instalacÆo pode ser feita copiando todos os arquivos da pasta
+echo NOTA: No entanto, a instalacÃ†o pode ser feita copiando todos os arquivos da pasta
 echo       "Arquivos" para a pasta do jogo instalado.
 echo.
-echo       Se vocˆ usa a versÆo do jogo 1.0003 ou anterior, deve executar o arquivo em
-echo       lote chamado "InGameCC_v10003.bat" para permitir que as legendas tamb‚m
-echo       apare‡am nas cenas. Infelizmente v1.0004 e versäes posteriores do jogo nÆo tem
+echo       Se vocË† usa a versÃ†o do jogo 1.0003 ou anterior, deve executar o arquivo em
+echo       lote chamado "InGameCC_v10003.bat" para permitir que as legendas tambâ€šm
+echo       apareâ€¡am nas cenas. Infelizmente v1.0004 e versÃ¤es posteriores do jogo nÃ†o tem
 echo       este recurso.
 echo.
-echo Precione qualquer botÆo para sair...
+echo Precione qualquer botÃ†o para sair...
 pause > nul
 exit
 
 :errCCExists
 cls
-echo Uma versÆo do mod InGameCC j  est  instalada.
+echo Uma versÃ†o do mod InGameCC jÂ  estÂ  instalada.
 echo.
 echo NOTA: Remova o mod e tente novamente.
 echo.
-echo Precione qualquer botÆo para sair...
+echo Precione qualquer botÃ†o para sair...
 pause > nul
 exit
