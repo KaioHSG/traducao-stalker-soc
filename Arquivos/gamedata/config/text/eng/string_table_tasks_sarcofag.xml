@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="windows-1252" ?>	
+	<string id="sar_monolith">
+		<text>Wish Granter</text>
+	</string>
+	<string id="sar_monolith_0">
+		<text>Vá até o Monolith</text>
+	</string>
+	<string id="sar_monolith_1">
+		<text>Vá para o Sarcófago</text>
+	</string>
+	<string id="sar_monolith_2">
+		<text>Encontre o Wish Granter</text>
+	</string>
+	<string id="sar_monolith_destroy">
+		<text>Esconderijo dos Monolith's.</text>
+	</string>
+	<string id="sar_monolith_destroy_0">
+		<text>Infiltre-se no Laboratório Secreto.</text>
+	</string>
+	<string id="sar_monolith_destroy_1">
+		<text>Descubra a Verdade por trás do Monolith.</text>
+	</string>
+	<string id="sar_monolith_destroy_2">
+		<text>Destrua os Geradores de Energia do Monolith.</text>
+	</string>
+	<string id="sar_perception">
+		<text>O Segredo da Zona.</text>
+	</string>
+	<string id="sar_perception_1">
+		<text>Conheça Quem Está por Trás do Monolith.</text>
+	</string>
+	<string id="sar_perception_2">
+		<text>Encontre o Laboratório Secreto e Conheça os  "Puppeteers".</text>
+	</string>
+	<string id="sar_secret_lab">
+		<text>Laboratório Secreto</text>
+	</string>
+	<string id="sar_secret_lab_0">
+		<text>Entre no Bunker Secreto.</text>
+	</string>
+	<string id="sar_secret_lab_1">
+		<text>Encontre a Porta Secreta.</text>
+	</string>
+	<string id="sar_secret_lab_2">
+		<text>Abre-a Usando o Codificador.</text>
+	</string>
+	<string id="sar_secret_lab_3">
+		<text>Descubra Oque Tem por Trás da Porta.</text>
+	</string>

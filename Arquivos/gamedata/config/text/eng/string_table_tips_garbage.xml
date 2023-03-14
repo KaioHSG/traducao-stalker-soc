@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="windows-1252" ?>	
+	<string id="gar_actor_looser">
+		<text>Você é um lixo, Marked One. Totalmente inútil! Não espere gratidão - você não nos ajudou em nada!</text>
+	</string>
+	<string id="gar_actor_normal">
+		<text>Nada mau, Stalker! Você matou apenas alguns mutantes, parece que você não é tão rápido com armas né? Se quiser ir para o Bar, terá que pagar uma quantia.</text>
+	</string>
+	<string id="gar_actor_winner">
+		<text>Excelente, Marked One, você realmente nos ajudou. Seu pagamento será uma passagem "VIP", assim poderá ir a hora que quiser. Vá para o bar.</text>
+	</string>
+	<string id="gar_direction_fire">
+		<text>Deixe-os chegar mais perto, vamos cercar eles. Eu atiro primeiro, depois o restante do pessoal abre fogo sem piedade.</text>
+	</string>
+	<string id="gar_dolg_blokpost_warning">
+		<text>Você está no território Duty, Stalker. Desrespeito não vai ser tolerado neste local.</text>
+	</string>
+	<string id="gar_dolg_monster_rush">
+		<text>Atenção!! Aqui é o Posto Avançado da Duty. Uma horda de mutantes está vindo do Dark Valley na direção do Bar. Qualquer um que nos ajude a parar os monstros não vai se arrepender.</text>
+	</string>
+	<string id="gar_dolg_warning">
+		<text>Você está no território Duty, Stalker. Comece a brincar e você vai virar comida dos vermes.</text>
+	</string>
+	<string id="gar_hellcar_victory">
+		<text>Bom Trabalho pessoal, acabamos com eles. O meu pelotão : façam uma pausa, limpe as armas e vão descansar. Você, Stalker, venha até aqui. Vamos conversar.</text>
+	</string>
+	<string id="tips_gar_hellcar_alarm">
+		<text>Pessoal, aqui é o comandante dos Stalker's locais. Nós eliminamos alguns bandidos do Cemitério de Veículos, mas eles provavelmente voltarão.
+			Restou apenas alguns de nós, qualquer um que nós ajudar, ficaremos agradecidos.</text>
+	</string>

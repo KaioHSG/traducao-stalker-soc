@@ -1,0 +1,15 @@
+    <article id="rc_characters_voice-scenario-trader-trader_monolog1" name="article_sidorovich_greets" article_type="journal" group="Recorded_conversations">
+        <texture x="128" y="0" width="128" height="128">ui\ui_icons_npc</texture>
+        <text>rc_characters_voice-scenario-trader-trader_monolog1</text>
+    </article>
+    <article id="rc_characters_voice-scenario-trader-trader_monolog2" name="article_sidor_about_strelok" article_type="journal" group="Recorded_conversations">
+        <texture x="128" y="0" width="128" height="128">ui\ui_icons_npc</texture>
+        <text>rc_characters_voice-scenario-trader-trader_monolog2</text>
+    </article>
+    <article id="rc_scenario-agroprom-doctor_1" name="article_doctor_monolog" article_type="journal" group="Recorded_conversations">
+        <texture x="384" y="0" width="128" height="128">ui\ui_icons_npc</texture>
+        <text>rc_scenario-agroprom-doctor_1</text>
+    </article>
+    <article id="yan_ghost_info" name="article_yan_ghost_pda" article_type="journal" group="Found_PDA">
+        <text>storyline_ghost_info</text>
+    </article>

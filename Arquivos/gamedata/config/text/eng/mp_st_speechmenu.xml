@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<string_table>
+	<string id="speech_attack">
+		<text>Ataque!</text>
+	</string>
+	<string id="speech_covermeartifact">
+		<text>Eu estou indo pegar o artefato! Me de cobertura.</text>
+	</string>
+	<string id="speech_followme">
+		<text>Siga-me!</text>
+	</string>
+	<string id="speech_guardartifact">
+		<text>Guarde o artefato. Não ataque ainda!</text>
+	</string>
+	<string id="speech_holdingpos">
+		<text>Eu estou aguardando</text>
+	</string>
+	<string id="speech_holdpos">
+		<text>Mantenha a posição!</text>
+	</string>
+	<string id="speech_icoverartifact">
+		<text>Vá até o artefato! Eu vou te cobrir.</text>
+	</string>
+	<string id="speech_needhelp">
+		<text>Preciso de Ajuda</text>
+	</string>
+	<string id="speech_needmoney">
+		<text>Sem dinheiro, compre alguns equipamentos</text>
+	</string>
+	<string id="speech_no">
+		<text>Não</text>
+	</string>
+	<string id="speech_noenemy">
+		<text>Ninguém por perto</text>
+	</string>
+	<string id="speech_report">
+		<text>Relatório sobre a situação!</text>
+	</string>
+	<string id="speech_retreat">
+		<text>Retroceder!</text>
+	</string>
+	<string id="speech_roger">
+		<text>Entendido</text>
+	</string>
+	<string id="speech_silence">
+		<text>Silêncio, todo mundo!</text>
+	</string>
+	<string id="speech_sticktogether">
+		<text>Todos Juntos</text>
+	</string>
+	<string id="speech_takeartifact">
+		<text>Vá até o Artefato!</text>
+	</string>
+</string_table>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="windows-1252" ?>		
+	<string id="yan_find_ghost">
+		<text>Pegue os Documentos do Ghost</text>
+	</string>
+	<string id="yan_find_ghost_task">
+		<text>Pegue os Documentos</text>
+	</string>
+	<string id="yan_find_vasilyev_task">
+		<text>Entre no Laboratório</text>
+	</string>
+	<string id="yan_find_labX16">
+		<text>Entre no Laboratório X16</text>
+	</string>
+	<string id="yan_find_scientist">
+		<text>Comece as Medições de Radiação</text>
+	</string>
+	<string id="yan_find_vasilyev">
+		<text>Vasculhe o Corpo de Valiliev</text>
+	</string>
+	<string id="yan_kill_brain">
+		<text>Desligue as Emissões Psi</text>
+	</string>
+	<string id="yan_kill_brain_task">
+		<text>Desligue o Mecanismo</text>
+	</string>
+	<string id="yan_kill_brain_task_2">
+		<text>Saia do Laboratório</text>
+	</string>
+	<string id="yan_provodnik_about_doctor">
+		<text>Fale com Guide</text>
+	</string>
+	<string id="yan_provodnik_task">
+		<text>Encontre-se com Guide</text>
+	</string>
+	<string id="yan_psi_zone_find">
+		<text>Escolta Kruglov para o Local de Medição</text>
+	</string>
+	<string id="yan_psi_zone_find_semenov">
+		<text>Escolta Semenov para o Local de Medição</text>
+	</string>
+	<string id="yan_return_to_bunker">
+		<text>Leve os Resultados para Sakharov</text>
+	</string>
+	<string id="yan_scientist_return">
+		<text>Fale com Sakharov</text>
+	</string>
+	<string id="yan_scientist_return_task">
+		<text>Fale com Sakharov</text>
+	</string>
+	<string id="yan_secret_tonnel">
+		<text>Saia pelo Túnel Secreto</text>
+	</string>
+	<string id="yan_switcher_off_1">
+		<text>Desligue o 1 Modulo de Controle</text>
+	</string>
+	<string id="yan_switcher_off_2">
+		<text>Desligue o 2 Modulo de Controle</text>
+	</string>
+	<string id="yan_switcher_off_3">
+		<text>Desligue o 3 Modulo de Controle</text>
+	</string>
+	<string id="yan_talk_to_kruglov">
+		<text>Fale com Kruglov</text>
+	</string>
+	<string id="yan_talk_to_semenov">
+		<text>Fale com Semenov</text>
+	</string>
+	<string id="yan_vasilyev_pda">
+		<text>PDA de Vasiliev</text>
+	</string>
+	<string id="yan_zombie_zone">
+		<text>Localização Estimada do Laboratório X16</text>
+	</string>

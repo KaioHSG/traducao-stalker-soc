@@ -1,0 +1,331 @@
+	<characters_voice-scenario-trader-trader_monolog1><!-- Sidorovich: - So Marked One, I saved you... -->
+		<global_wnd/>
+		<item>
+			<length_sec>29.1</length_sec>
+			<grab_input>0</grab_input>
+			<main_wnd>
+				<!--auto_static start_time="0" length_sec="29" x="512" y="670" width="680" height="80" alignment="c" stretch="1">
+					<texture a="96">intro\intro_back</texture>
+				</auto_static-->
+				<auto_static start_time="0" length_sec="10.3" x="512" y="670" width="680" height="80" alignment="c" stretch="1">
+					<text align="c" font="graffiti22" r="240" g="217" b="182">cc_characters_voice-scenario-trader-trader_monolog1-1</text>
+				</auto_static>
+				<auto_static start_time="10.6" length_sec="8.6" x="512" y="670" width="680" height="80" alignment="c" stretch="1">
+					<text align="c" font="graffiti22" r="240" g="217" b="182">cc_characters_voice-scenario-trader-trader_monolog1-2</text>
+				</auto_static>
+				<auto_static start_time="19.5" length_sec="9.5" x="512" y="670" width="680" height="80" alignment="c" stretch="1">
+					<text align="c" font="graffiti22" r="240" g="217" b="182">cc_characters_voice-scenario-trader-trader_monolog1-3</text>
+				</auto_static>
+			</main_wnd>
+		</item>
+	</characters_voice-scenario-trader-trader_monolog1>
+
+	<esc_bandit_shustryi-0>
+		<global_wnd/>
+		<item>
+			<length_sec>10.2</length_sec>
+			<grab_input>0</grab_input>
+			<main_wnd>
+				<auto_static start_time="0" length_sec="6.8" x="512" y="670" width="680" height="80" alignment="c" stretch="1">
+					<text align="c" font="graffiti22" r="238" g="155" b="23">cc_scenario-escape-factory_bandits_1-1</text>
+				</auto_static>
+				<auto_static start_time="7.1" length_sec="3" x="512" y="670" width="680" height="80" alignment="c" stretch="1">
+					<text align="c" font="graffiti22" r="240" g="217" b="182">cc_scenario-escape-factory_bandits_1-2</text>
+				</auto_static>
+			</main_wnd>
+		</item>
+	</esc_bandit_shustryi-0>
+
+	<esc_bandit_shustryi-1>
+		<global_wnd/>
+		<item>
+			<length_sec>7.5</length_sec>
+			<grab_input>0</grab_input>
+			<main_wnd>
+				<auto_static start_time="0" length_sec="2" x="512" y="670" width="680" height="80" alignment="c" stretch="1">
+					<text align="c" font="graffiti22" r="238" g="155" b="23">cc_scenario-escape-factory_bandits_2-1</text>
+				</auto_static>
+				<auto_static start_time="2.2" length_sec="3" x="512" y="670" width="680" height="80" alignment="c" stretch="1">
+					<text align="c" font="graffiti22" r="240" g="217" b="182">cc_scenario-escape-factory_bandits_2-2</text>
+				</auto_static>
+				<auto_static start_time="5.5" length_sec="1.9" x="512" y="670" width="680" height="80" alignment="c" stretch="1">
+					<text align="c" font="graffiti22" r="238" g="155" b="23">cc_scenario-escape-factory_bandits_2-3</text>
+				</auto_static>
+			</main_wnd>
+		</item>
+	</esc_bandit_shustryi-1>
+
+	<esc_bandit_shustryi-2>
+		<global_wnd/>
+		<item>
+			<length_sec>5.5</length_sec>
+			<grab_input>0</grab_input>
+			<main_wnd>
+				<auto_static start_time="0" length_sec="3.1" x="512" y="670" width="680" height="80" alignment="c" stretch="1">
+					<text align="c" font="graffiti22" r="238" g="155" b="23">cc_scenario-escape-factory_bandits_3-1</text>
+				</auto_static>
+				<auto_static start_time="3.4" length_sec="2" x="512" y="670" width="680" height="80" alignment="c" stretch="1">
+					<text align="c" font="graffiti22" r="240" g="217" b="182">cc_scenario-escape-factory_bandits_3-2</text>
+				</auto_static>
+			</main_wnd>
+		</item>
+	</esc_bandit_shustryi-2>
+
+	<esc_bandit_shustryi-3>
+		<global_wnd/>
+		<item>
+			<length_sec>6</length_sec>
+			<grab_input>0</grab_input>
+			<main_wnd>
+				<auto_static start_time="0" length_sec="2.8" x="512" y="670" width="680" height="80" alignment="c" stretch="1">
+					<text align="c" font="graffiti22" r="238" g="155" b="23">cc_scenario-escape-factory_bandits_4-1</text>
+				</auto_static>
+				<auto_static start_time="3.1" length_sec="2.8" x="512" y="670" width="680" height="80" alignment="c" stretch="1">
+					<text align="c" font="graffiti22" r="240" g="217" b="182">cc_scenario-escape-factory_bandits_4-2</text>
+				</auto_static>
+			</main_wnd>
+		</item>
+	</esc_bandit_shustryi-3>
+
+	<esc_bandit_shustryi-4>
+		<global_wnd/>
+		<item>
+			<length_sec>7</length_sec>
+			<grab_input>0</grab_input>
+			<main_wnd>
+				<auto_static start_time="0" length_sec="4.5" x="512" y="670" width="680" height="80" alignment="c" stretch="1">
+					<text align="c" font="graffiti22" r="238" g="155" b="23">cc_scenario-escape-factory_bandits_5-1</text>
+				</auto_static>
+				<auto_static start_time="4.8" length_sec="2.1" x="512" y="670" width="680" height="80" alignment="c" stretch="1">
+					<text align="c" font="graffiti22" r="240" g="217" b="182">cc_scenario-escape-factory_bandits_5-2</text>
+				</auto_static>
+			</main_wnd>
+		</item>
+	</esc_bandit_shustryi-4>
+
+	<!-- cc_10347 --><!-- Doctor: - Strelok! Hey, Strelok! Strelok, come on, man, wake up! ... -->
+	<agr_doctor_1-0>
+		<global_wnd/>
+		<item>
+			<length_sec>91</length_sec>	<!-- Sound track playback stopped at 91, full length would be 102.3 sec -->
+			<grab_input>0</grab_input>
+			<main_wnd>
+				<auto_static start_time="0.1" length_sec="3.4" x="132" y="670" width="760" height="72">
+					<text align="c" font="graffiti22" r="240" g="217" b="182">cc_scenario-agroprom-doctor_1-01</text>
+				</auto_static>
+				<auto_static start_time="3.8" length_sec="2.7" x="132" y="670" width="760" height="72">
+					<text align="c" font="graffiti22" r="240" g="217" b="182">cc_scenario-agroprom-doctor_1-02</text>
+				</auto_static>
+				<auto_static start_time="6.7" length_sec="5.9" x="132" y="670" width="760" height="72">
+					<text align="c" font="graffiti22" r="240" g="217" b="182">cc_scenario-agroprom-doctor_1-03</text>
+				</auto_static>
+				<auto_static start_time="12.9" length_sec="7.2" x="132" y="670" width="760" height="72">
+					<text align="c" font="graffiti22" r="240" g="217" b="182">cc_scenario-agroprom-doctor_1-04</text>
+				</auto_static>
+				<auto_static start_time="20.4" length_sec="3.9" x="132" y="670" width="760" height="72">
+					<text align="c" font="graffiti22" r="240" g="217" b="182">cc_scenario-agroprom-doctor_1-05</text>
+				</auto_static>
+				<auto_static start_time="24.6" length_sec="4.8" x="132" y="670" width="760" height="72">
+					<text align="c" font="graffiti22" r="240" g="217" b="182">cc_scenario-agroprom-doctor_1-06</text>
+				</auto_static>
+				<auto_static start_time="29.7" length_sec="4.1" x="132" y="670" width="760" height="72">
+					<text align="c" font="graffiti22" r="240" g="217" b="182">cc_scenario-agroprom-doctor_1-07</text>
+				</auto_static>
+				<auto_static start_time="34.1" length_sec="6.1" x="132" y="670" width="760" height="72">
+					<text align="c" font="graffiti22" r="240" g="217" b="182">cc_scenario-agroprom-doctor_1-08</text>
+				</auto_static>
+				<auto_static start_time="40.5" length_sec="5.1" x="132" y="670" width="760" height="72">
+					<text align="c" font="graffiti22" r="240" g="217" b="182">cc_scenario-agroprom-doctor_1-09</text>
+				</auto_static>
+				<auto_static start_time="45.9" length_sec="2.8" x="132" y="670" width="760" height="72">
+					<text align="c" font="graffiti22" r="240" g="217" b="182">cc_scenario-agroprom-doctor_1-10</text>
+				</auto_static>
+				<auto_static start_time="48.9" length_sec="4.8" x="132" y="670" width="760" height="72">
+					<text align="c" font="graffiti22" r="240" g="217" b="182">cc_scenario-agroprom-doctor_1-11</text>
+				</auto_static>
+				<auto_static start_time="54" length_sec="6.4" x="132" y="670" width="760" height="72">
+					<text align="c" font="graffiti22" r="240" g="217" b="182">cc_scenario-agroprom-doctor_1-12</text>
+				</auto_static>
+				<auto_static start_time="60.7" length_sec="3.9" x="132" y="670" width="760" height="72">
+					<text align="c" font="graffiti22" r="240" g="217" b="182">cc_scenario-agroprom-doctor_1-13</text>
+				</auto_static>
+				<auto_static start_time="64.9" length_sec="6.3" x="132" y="670" width="760" height="72">
+					<text align="c" font="graffiti22" r="240" g="217" b="182">cc_scenario-agroprom-doctor_1-14</text>
+				</auto_static>
+				<auto_static start_time="71.5" length_sec="5.2" x="132" y="670" width="760" height="72">
+					<text align="c" font="graffiti22" r="240" g="217" b="182">cc_scenario-agroprom-doctor_1-15</text>
+				</auto_static>
+				<auto_static start_time="77" length_sec="3.2" x="132" y="670" width="760" height="72">
+					<text align="c" font="graffiti22" r="240" g="217" b="182">cc_scenario-agroprom-doctor_1-16</text>
+				</auto_static>
+				<auto_static start_time="80.5" length_sec="5.5" x="132" y="670" width="760" height="72">
+					<text align="c" font="graffiti22" r="240" g="217" b="182">cc_scenario-agroprom-doctor_1-17</text>
+				</auto_static>
+				<auto_static start_time="86.3" length_sec="4" x="132" y="670" width="760" height="72">
+					<text align="c" font="graffiti22" r="240" g="217" b="182">cc_scenario-agroprom-doctor_1-18</text>
+				</auto_static>
+				<!--auto_static start_time="90.6" length_sec="7.8" x="132" y="670" width="760" height="72">
+					<text align="c" font="graffiti22" r="240" g="217" b="182">cc_scenario-agroprom-doctor_1-19</text>
+				</auto_static>
+				<auto_static start_time="98.7" length_sec="2.3" x="132" y="670" width="760" height="72">
+					<text align="c" font="graffiti22" r="240" g="217" b="182">cc_scenario-agroprom-doctor_1-20</text>
+				</auto_static>
+				<auto_static start_time="101.2" length_sec="1" x="132" y="670" width="760" height="72">
+					<text align="c" font="graffiti22" r="240" g="217" b="182">cc_scenario-agroprom-doctor_1-21</text>
+				</auto_static-->
+			</main_wnd>
+		</item>
+	</agr_doctor_1-0>
+	<!-- /cc_10347 -->
+
+	<characters_voice-scenario-yantar-dream_talk_r><!-- Fang, we can't just leave him like that! ... -->
+		<global_wnd/>
+		<item>
+			<length_sec>11.3</length_sec>
+			<grab_input>0</grab_input>
+			<main_wnd>
+				<auto_static start_time="0" length_sec="2.8" x="512" y="670" width="680" height="80" alignment="c" stretch="1">
+					<text align="c" font="graffiti22" r="240" g="217" b="182">cc_characters_voice-scenario-yantar-dream_talk_r-1</text>
+				</auto_static>
+				<auto_static start_time="3.1" length_sec="5" x="512" y="670" width="680" height="80" alignment="c" stretch="1">
+					<text align="c" font="graffiti22" r="238" g="155" b="23">cc_characters_voice-scenario-yantar-dream_talk_r-2</text>
+				</auto_static>
+				<auto_static start_time="8.4" length_sec="2.8" x="512" y="670" width="680" height="80" alignment="c" stretch="1">
+					<text align="c" font="graffiti22" r="240" g="217" b="182">cc_characters_voice-scenario-yantar-dream_talk_r-3</text>
+				</auto_static>
+			</main_wnd>
+		</item>
+	</characters_voice-scenario-yantar-dream_talk_r>
+
+	<characters_voice-scenario-yantar-ghost_pda><!-- Ghost's voice message: Where the hell are you, Strelok? Damn! ... -->
+		<global_wnd/>
+		<item>
+			<length_sec>63.4</length_sec>
+			<grab_input>0</grab_input>
+			<main_wnd>
+				<auto_static start_time="0" length_sec="3.6" x="512" y="674" width="680" height="80" alignment="c" stretch="1">
+					<text align="l" font="letterica16" r="255" g="255" b="250">cc_characters_voice-scenario-yantar-ghost_pda-1</text>
+				</auto_static>
+				<auto_static start_time="4" length_sec="9.9" x="512" y="674" width="680" height="80" alignment="c" stretch="1">
+					<text align="l" font="letterica16" r="255" g="255" b="250">cc_characters_voice-scenario-yantar-ghost_pda-2</text>
+				</auto_static>
+				<auto_static start_time="14.2" length_sec="15.4" x="512" y="674" width="680" height="80" alignment="c" stretch="1">
+					<text align="l" font="letterica16" r="255" g="255" b="250">cc_characters_voice-scenario-yantar-ghost_pda-3</text>
+				</auto_static>
+				<auto_static start_time="30" length_sec="8.1" x="512" y="674" width="680" height="80" alignment="c" stretch="1">
+					<text align="l" font="letterica16" r="255" g="255" b="250">cc_characters_voice-scenario-yantar-ghost_pda-4</text>
+				</auto_static>
+				<auto_static start_time="38.5" length_sec="8.6" x="512" y="674" width="680" height="80" alignment="c" stretch="1">
+					<text align="l" font="letterica16" r="255" g="255" b="250">cc_characters_voice-scenario-yantar-ghost_pda-5</text>
+				</auto_static>
+				<auto_static start_time="47.5" length_sec="7" x="512" y="674" width="680" height="80" alignment="c" stretch="1">
+					<text align="l" font="letterica16" r="255" g="255" b="250">cc_characters_voice-scenario-yantar-ghost_pda-4</text>
+				</auto_static>
+				<auto_static start_time="54.8" length_sec="8.5" x="512" y="674" width="680" height="80" alignment="c" stretch="1">
+					<text align="l" font="letterica16" r="255" g="255" b="250">cc_characters_voice-scenario-yantar-ghost_pda-5</text>
+				</auto_static>
+			</main_wnd>
+		</item>
+	</characters_voice-scenario-yantar-ghost_pda>
+
+	<characters_voice-scenario-yantar-vasiliev_pda><!-- Vasilyev's voice message: ...we've got all the papers. We know how to deactivate... -->
+		<global_wnd/>
+		<item>
+			<length_sec>36.4</length_sec>
+			<grab_input>0</grab_input>
+			<main_wnd>
+				<auto_static start_time="0" length_sec="10.5" x="512" y="674" width="680" height="80" alignment="c" stretch="1">
+					<text align="l" font="letterica16" r="255" g="255" b="250">cc_characters_voice-scenario-yantar-vasiliev_pda-1</text>
+				</auto_static>
+				<auto_static start_time="11.4" length_sec="10" x="512" y="674" width="680" height="80" alignment="c" stretch="1">
+					<text align="l" font="letterica16" r="255" g="255" b="250">cc_characters_voice-scenario-yantar-vasiliev_pda-2</text>
+				</auto_static>
+				<auto_static start_time="22" length_sec="14.3" x="512" y="674" width="680" height="80" alignment="c" stretch="1">
+					<text align="l" font="letterica16" r="255" g="255" b="250">cc_characters_voice-scenario-yantar-vasiliev_pda-3</text>
+				</auto_static>
+			</main_wnd>
+		</item>
+	</characters_voice-scenario-yantar-vasiliev_pda>
+
+	<mil_guard_to_max-0><!-- Max! ... Roger! ... We have a problem... -->
+		<global_wnd/>
+		<item>
+			<length_sec>7.1</length_sec>
+			<grab_input>0</grab_input>
+			<main_wnd>
+				<auto_static start_time="0" length_sec="5" x="512" y="570" width="680" height="200" alignment="c" stretch="1">
+					<texture a="0">intro\intro_back</texture>
+				</auto_static>
+				<auto_static start_time="0" length_sec="1" x="512" y="670" width="680" height="80" alignment="c" stretch="1">
+					<text align="c" font="graffiti22" r="240" g="217" b="182">cc_mil_guard_to_max-0-1</text>
+				</auto_static>
+				<auto_static start_time="1.2" length_sec="1" x="512" y="670" width="500" height="80" alignment="c" stretch="1">
+					<text align="l" font="letterica16" r="255" g="255" b="250">cc_mil_guard_to_max-0-2</text>
+				</auto_static>
+				<auto_static start_time="1.2" length_sec="1" x="172" y="632" width="83" height="47">
+					<texture x="415" y="282" width="83" height="47">ui\ui_iconstotal</texture>
+				</auto_static>
+				<auto_static start_time="2.3" length_sec="3.6" x="512" y="670" width="680" height="80" alignment="c" stretch="1">
+					<text align="c" font="graffiti22" r="240" g="217" b="182">cc_mil_guard_to_max-0-3</text>
+				</auto_static>
+				<auto_static start_time="6" length_sec="1" x="512" y="670" width="500" height="80" alignment="c" stretch="1">
+					<text align="l" font="letterica16" r="255" g="255" b="250">cc_mil_guard_to_max-0-4</text>
+				</auto_static>
+				<auto_static start_time="6" length_sec="1" x="172" y="632" width="83" height="47">
+					<texture x="415" y="282" width="83" height="47">ui\ui_iconsTotal</texture>
+				</auto_static>
+			</main_wnd>
+		</item>
+	</mil_guard_to_max-0>
+
+	<mil_pavlik_to_ara-0><!-- Pavlik: All clear. You can approach. ... -->
+		<global_wnd/>
+		<item>
+			<length_sec>8.2</length_sec>
+			<grab_input>0</grab_input>
+			<main_wnd>
+				<auto_static start_time="0" length_sec="5" x="512" y="570" width="680" height="200" alignment="c" stretch="1">
+					<texture a="0">intro\intro_back</texture>
+				</auto_static>
+				<auto_static start_time="0" length_sec="1.8" x="512" y="670" width="680" height="80" alignment="c" stretch="1">
+					<text align="c" font="graffiti22" r="240" g="217" b="182">cc_mil_pavlik_to_ara-0-1</text>
+				</auto_static>
+				<auto_static start_time="2.1" length_sec="1.1" x="512" y="670" width="500" height="80" alignment="c" stretch="1">
+					<text align="l" font="letterica16" r="255" g="255" b="250">cc_mil_pavlik_to_ara-0-2</text>
+				</auto_static>
+				<auto_static start_time="2.1" length_sec="1.1" x="172" y="632" width="83" height="47">
+					<texture x="415" y="423" width="83" height="47">ui\ui_iconstotal</texture>
+				</auto_static>
+				<auto_static start_time="3.5" length_sec="3.3" x="512" y="670" width="680" height="80" alignment="c" stretch="1">
+					<text align="c" font="graffiti22" r="240" g="217" b="182">cc_mil_pavlik_to_ara-0-3</text>
+				</auto_static>
+				<auto_static start_time="7.1" length_sec="1" x="512" y="670" width="500" height="80" alignment="c" stretch="1">
+					<text align="l" font="letterica16" r="255" g="255" b="250">cc_mil_pavlik_to_ara-0-4</text>
+				</auto_static>
+				<auto_static start_time="7.1" length_sec="1" x="172" y="632" width="83" height="47">
+					<texture x="415" y="423" width="83" height="47">ui\ui_iconstotal</texture>
+				</auto_static>
+			</main_wnd>
+		</item>
+	</mil_pavlik_to_ara-0>
+
+	<mil_ara_to_pavlik-0><!-- Ara: Well, Pavlusha, what have you got this time? ... -->
+		<global_wnd/>
+		<item>
+			<length_sec>8.2</length_sec>
+			<grab_input>0</grab_input>
+			<main_wnd>
+				<auto_static start_time="0" length_sec="3.3" x="512" y="670" width="680" height="80" alignment="c" stretch="1">
+					<text align="c" font="graffiti22" r="240" g="217" b="182">cc_mil_ara_to_pavlik-0-1</text>
+				</auto_static>
+				<auto_static start_time="3.6" length_sec="2.8" x="512" y="670" width="680" height="80" alignment="c" stretch="1">
+					<text align="c" font="graffiti22" r="238" g="155" b="23">cc_mil_ara_to_pavlik-0-2</text>
+				</auto_static>
+				<auto_static start_time="6.7" length_sec="1.4" x="512" y="670" width="680" height="80" alignment="c" stretch="1">
+					<text align="c" font="graffiti22" r="240" g="217" b="182">cc_mil_ara_to_pavlik-0-3</text>
+				</auto_static>
+			</main_wnd>
+		</item>
+	</mil_ara_to_pavlik-0>
+
+

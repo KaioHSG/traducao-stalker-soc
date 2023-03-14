@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<string_table>
+	<string id="cant_walk">
+		<text>Você está exausto demais para andar</text>
+	</string>
+	<string id="cant_walk_weight">
+		<text>Você está muito sobrecarregado para andar</text>
+	</string>
+	<string id="dar_poltergeist_hold_the_door">
+		<text>Alguém está bloqueando a porta.</text>
+	</string>
+	<string id="Global Map">
+		<text>Mapa Global</text>
+	</string>
+	<string id="gun_jammed">
+		<text>A arma foi atolada.Você precisa recarregar.</text>
+	</string>
+	<string id="inventory_box_use">
+		<text>Vasculhar a caixa ($$ACTION_USE$$)</text>
+	</string>
+	<string id="Local Map">
+		<text>Mapa Local</text>
+	</string>
+	<string id="st_game_saved">
+		<text>Jogo Salvo</text>
+	</string>
+	<string id="tip_car_locked">
+		<text>Bloqueado</text>
+	</string>
+	<string id="tip_car_use">
+		<text>Abra a Porta ($$ACTION_USE$$)</text>
+	</string>
+	<string id="tip_door_close">
+		<text>Pressione ($$ACTION_USE$$) para Fechar a Porta</text>
+	</string>
+	<string id="tip_door_coded">
+		<text>A porta está trancada com um código</text>
+	</string>
+	<string id="tip_door_decode">
+		<text>Pressione ($$ACTION_USE$$) para decodificar a porta</text>
+	</string>
+	<string id="tip_door_decoding">
+		<text>Decodificação em Progresso</text>
+	</string>
+	<string id="tip_door_locked">
+		<text>A Porta está Trancada</text>
+	</string>
+	<string id="tip_door_open">
+		<text>Pressione ($$ACTION_USE$$) para Abrir a Porta</text>
+	</string>
+	<string id="tip_gate_close">
+		<text>Pressione ($$ACTION_USE$$) para Abrir o Portão</text>
+	</string>
+	<string id="tip_gate_locked">
+		<text>O Portão está Bloqueado</text>
+	</string>
+	<string id="tip_gate_open">
+		<text>Pressione ($$ACTION_USE$$) para Fechar o Portão</text>
+	</string>
+	<string id="tip_monolith">
+		<text>FAÇA UM DESEJO "SECRETO" ($$ACTION_USE$$)</text>
+	</string>
+</string_table>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="windows-1252" ?>	
+	<string id="bar_ecolog_research_corrupted">
+		<text>Eu, professor Kruglov, estou suprimindo os resultados de nossa pesquisa em prol da ciência e da humanidade como um todo.
+			O conhecimento perigoso não deve passar para as mãos de pessoas não confiáveis que procurarão usá-lo para a realização de seus objetivos criminosos.
+			Aqueles que lerem esta nota devem saber que nosso grupo foi abatido em Wild Territory por mercenários liderados por um notório assassino chamado Wolfhound. Quando você ler isso, provavelmente estaremos mortos.</text>
+	</string>
+	<string id="bar_ecolog_research_normal">
+		<text>... Acontece que as emissões afetam principalmente as esferas avançadas da atividade cognitiva.
+			Experimentos mostram que apenas humanos e animais com processos cognitivos desenvolvidos, como cães e cavalos, são suscetíveis a essas emissões.
+			Apenas os seres humanos entram em estado de transe - em animais, o efeito é limitado a um forte sentimento de medo.
+			A julgar por essa evidência, seria razoável concluir que as emissões são voltadas especificamente para o cérebro humano.
+			Estudos extensivos sobre "voluntários" mostraram que os sujeitos deixarão o estado de transe se receberem tratamento médico.
+			Também desenvolvemos dispositivos experimentais que protegerão, até certo ponto, o cérebro humano dessas emissões.
+			De acordo com nossos cálculos, a fonte dessas emissões está localizada no centro de Lake Yantar. A fonte em si é susceptível de ser artificial por natureza, o que significa que pode ser desativado.
+			Há também o perigo de os criminosos tentarem alcançar a fonte das emissões e ganhar controle sobre ela.</text>
+	</string>
+	<string id="journal_after_agroprom_documents_name">
+		<text>Documentos Militares</text>
+	</string>
+	<string id="journal_bar_darklab_documents_name">
+		<text>Lab X18</text>
+	</string>
+	<string id="journal_bar_x16_documents_name">
+		<text>Então, o Brain Scorcher é feito pelo homem?</text>
+	</string>
+	<string id="journal_before_darklab_documents_name">
+		<text>Barkeep</text>
+	</string>
+	<string id="journal_before_radar_task_name">
+		<text>Depois de se encontrar com o Psico</text>
+	</string>
+	<string id="rostok_tunel_gordon_diary">
+		<text>12.01.2012 \n Deus amaldiçoe meus chefes ... não deixará um velho sozinho. Primeira Mesa, depois uma cidade estranha na Rússia. E agora eles mandam o pobre pequeno Gordon para as infindáveis planícies ucranianas. Tome seu jemmy e divirta-se.\n\n 20.03.2012 \n Entrou na Zona. Não há ursos aqui? Quem eu vou matar então? Eu não estou achando meus rolamentos muito bem neste lugar. Eu tive que usar meu pequeno pé de cabra para abrir uma lata de carne. \n\n26.04.2012 \n O blowout foi iniciado. O Barkeep me disse para esconder minha bunda e não expor ela. Eu afugentei alguns ratos de um túnel abandonado. Esperarei o Blowout terminar.</text>
+	</string>

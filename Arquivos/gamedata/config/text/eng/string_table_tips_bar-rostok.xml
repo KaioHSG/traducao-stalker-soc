@@ -1,0 +1,144 @@
+	<string id="bar_arena_actor_afraid">
+		<text>A luta foi cancelada! O desafiante se acovardou e não veio lutar</text>
+	</string>
+	<string id="bar_arena_fight_10">
+		<text>10 segundos se passaram!</text>
+	</string>
+	<string id="bar_arena_fight_20">
+		<text>20 segundos se passaram!</text>
+	</string>
+	<string id="bar_arena_fight_30">
+		<text>30 segundos se passaram!</text>
+	</string>
+	<string id="bar_arena_fight_40">
+		<text>40 segundos se passaram!</text>
+	</string>
+	<string id="bar_arena_fight_50">
+		<text>50 segundos se passaram!</text>
+	</string>
+	<string id="bar_arena_fight_60">
+		<text>1 minuto de luta!</text>
+	</string>
+	<string id="bar_arena_fight_70">
+		<text>1 minuto e 10 segundos se passaram!</text>
+	</string>
+	<string id="bar_arena_fight_80">
+		<text>1 minuto e 20 segundos se passaram!</text>
+	</string>
+	<string id="bar_arena_fight_90">
+		<text>1 minuto e 30 segundos se passaram!</text>
+	</string>
+	<string id="bar_arena_fight_begin">
+		<text>A luta começou!</text>
+	</string>
+	<string id="bar_arena_fight_bloodsucker">
+		<text>Atenção! Atenção! Uma nova luta está prestes a começar na Arena! No lado esquerdo - o mais temido pesadelo da Zona, o sempre faminto Sanguessuga! E no lado direito... Um homem? Sim, é um homem! Seus aplausos para Marked One!</text>
+	</string>
+	<string id="bar_arena_fight_burer">
+		<text>Atenção! Atenção! Uma nova luta está prestes a começar na Arena! No lado esquerdo - o mestre do kung-fu - o Burer! E no lado direito - o homem que está sempre preparado! Eles o chamam de Marked One!</text>
+	</string>
+	<string id="bar_arena_fight_dead">
+		<text>Então, o desafiante foi morto! Isto sim é uma surpresa!</text>
+	</string>
+	<string id="bar_arena_fight_lose">
+		<text>Bem, o desafiante matou seu oponente, mas não fez isso a tempo. Ele perdeu a luta!</text>
+	</string>
+	<string id="bar_arena_fight_pseudodog">
+		<text>Atenção! Atenção! Uma nova luta está prestes a começar na Arena. No lado esquerdo - ele é branco, peludo e está bravo com o inferno... O Pseudo-cão! E no lado direito - meio irregular, mas ainda vivo e maduro, um homem que chama a si mesmo Marked One!</text>
+	</string>
+	<string id="bar_arena_fight_savage">
+		<text>Atenção! Atenção! Uma nova luta está prestes a começar na Arena. No lado esquerdo - você o conhece, você o ama, e ele odeia você! Ele é a Besta! E no lado direito - vivo e chutando, pelo menos por enquanto - Marked One!</text>
+	</string>
+	<string id="bar_arena_fight_snork">
+		<text>Atenção! Atenção! Uma nova luta está prestes a começar na Arena! No lado esquerdo - o mestre das artes marciais e especialista em saúde - o Snork! E no lado direito - o homem sem passado e futuro. Eles o chamam de Marked One!</text>
+	</string>
+	<string id="bar_arena_fight_timeout">
+		<text>O tempo acabou! O desafiante perdeu, mas continua lutando por sua vida!</text>
+	</string>
+	<string id="bar_arena_fight_victory">
+		<text>OH! O desafiante matou seu oponente a tempo! Ele venceu!</text>
+	</string>
+	<string id="bar_ecolog_attack">
+		<text>Como desejar.</text>
+	</string>
+	<string id="bar_ecolog_crush_attract_actor">
+		<text>Por favor, não vá, amigo! Nos ajude! Os anarquistas derrubaram nosso helicóptero, e agora estão vindo para acabar conosco. Temos feridos aqui! Precisamos de sua ajuda!</text>
+	</string>
+	<string id="bar_ecolog_crush_heli_down">
+		<text>AH! Onde estão seus helicópteros agora, ratos do governo? Seu tempo acabou!</text>
+	</string>
+	<string id="bar_ecolog_crush_start_heli">
+		<text>Desta vez você conseguiu, Wolfhound. Tem um helicóptero militar a caminho. Eles farão pedacinhos de você!</text>
+	</string>
+	<string id="bar_ecolog_escape">
+		<text>Kruglov escapou! Encontre-o! Ele não pode ter ido muito longe.</text>
+	</string>
+	<string id="bar_ecolog_hit">
+		<text>Ajude-me, Marked One! Eles estão me matando!!!</text>
+	</string>
+	<string id="bar_ecolog_spam_1">
+		<text>Continue sonhando, cão! Volte para a escola antes de começar a dar ultimatos.</text>
+	</string>
+	<string id="bar_ecolog_spam_2">
+		<text>Não ataque, ou irei destruir os arquivos. Você não conseguirá nada!</text>
+	</string>
+	<string id="bar_ecolog_spam_3">
+		<text>Se você não quer que eu destrua os materiais da pesquisa, não se aproxime!</text>
+	</string>
+	<string id="bar_ecolog_spam_4">
+		<text>Pegue seus cães, Wolfhound, e dê o fora daqui se quiser continuar andando.</text>
+	</string>
+	<string id="bar_freedom_attack">
+		<text>Chega de conversa. Que comece o massacre!</text>
+	</string>
+	<string id="bar_freedom_attack_attract_actor">
+		<text>Ei, venha aqui, cara! Podemos acabar com estes ratos do governo juntos.</text>
+	</string>
+	<string id="bar_freedom_attack_spy">
+		<text>Seu bastardo! Você pagará por isso. Não se esqueça, Marked One.</text>
+	</string>
+	<string id="bar_freedom_chase">
+		<text>Eles estão nos seguindo?! Marked One, temos que detê-los!</text>
+	</string>
+	<string id="bar_freedom_spam_1">
+		<text>Pensei que vocês cientistas eram inteligentes. Vou fazer isto de forma simples: ou você me entrega os documentos, ou sairá daqui em um saco plástico.</text>
+	</string>
+	<string id="bar_freedom_spam_2">
+		<text>Eu posso não saber latim, Kruglov, mas você não acreditaria no quanto sou fluente em violência. Você gostaria que eu falasse sobre isso com você, ou me dará a informação que preciso?</text>
+	</string>
+	<string id="bar_freedom_spam_3">
+		<text>Você é um homem inteligente, professor. Dê-me a informação e estará livre para ir!</text>
+	</string>
+	<string id="bar_freedom_spam_4">
+		<text>Você não entende, não é, Kruglov? Nós derrubamos seu maldito helicóptero e queremos a informação que você carrega. Nos dê isso e você poderá pegar seus amigos e sair daqui. Esta é sua última chance. Passe-me o pen drive e desapareça!</text>
+	</string>
+	<string id="bar_psih_come">
+		<text>Venha aqui, rápido! Meus rapazes capturaram um stalker louco na Red Forest. Estamos tentando extrair alguma informação dele agora mesmo!</text>
+	</string>
+	<string id="bar_territory_dolg_1_hit">
+		<text>Marked One, você está louco?! Pare de atirar AGORA! É uma ordem!</text>
+	</string>
+	<string id="bar_territory_dolg_2_hit">
+		<text>Pare de atirar AGORA, Marked One! Faça o que digo ou será um homem morto!</text>
+	</string>
+	<string id="bar_territory_dolg_3_hit">
+		<text>Você foi expulso do grupo por desrespeitar o Código, Marked One. Você não tem mais nenhum amigo na Duty.</text>
+	</string>
+	<string id="bar_territory_dolg_kill">
+		<text>Marked One, você desobedeceu uma ordem direta. A Duty não esquece essas coisas. Você é um homem morto.</text>
+	</string>
+	<string id="bar_territory_nodolg_1_hit">
+		<text>Pare de atirar! Não atire em território Duty! Aqueles que quebrarem as regras serão punidos!</text>
+	</string>
+	<string id="bar_territory_nodolg_2_hit">
+		<text>Atenção! Marked One foi declarado um criminoso por violar as leis e atirar dentro do território Duty.</text>
+	</string>
+	<string id="bar_territory_nodolg_kill">
+		<text>Atenção! Há um assassino dentro do território Duty. Encontrem-o e o matem!</text>
+	</string>
+	<string id="rostok_kruglov_spam_1">
+		<text>Você, stalker, nos ajude! Estamos sendo atacados por Mercenários e metade do nosso time está morto. Nos ajude e garanto que não se arrependerá.</text>
+	</string>
+	<string id="rostok_kruglov_spam_2">
+		<text>Ajude-nos a lutar contra uma emboscada na fábrica. Transferi as coordenadas para você. Só tenha cuidado, Wolfhound e seus assassinos estão indo para o helicóptero.</text>
+	</string>

@@ -1,0 +1,170 @@
+
+Mod InGameCC para S.T.A.L.K.E.R.: Shadow of Chernobyl
+-----------------------------------------------------
+Versão 1.00 Portugês
+
+
+Descrição
+---------
+InGameCC é uma modificação do jogo S.T.A.L.K.E.R. Shadow 
+of Chernobyl, que faz com que o mecanismo de raio-x exiba 
+legendas e legendas ocultas quando certos eventos acontecem 
+(como um NPC diz algo, uma porta está se abrindo, etc.) no 
+jogo. Este método de exibição de legendas pode ser útilpara 
+quem quer fazer uma localização mais completa ou quer 
+adaptar o jogo para deficientes auditivos.
+
+
+Alcance
+-------
+Todas as frases de NPC faladas em inglês são legendadas e 
+mais algumas. Certos efeitos sonoros também receberam 
+legendas ocultas. Outras mudanças são:
+
+- adicionado entradas extras na seção de diário do PDA 
+  (opcional)
+- entradas reativadas na seção Estatísticas do PDA
+- adicionados ícones em ui_iconstotal.dds
+- substituiu 2 fontes com suas versões ligeiramente 
+  delineadas
+- som 1 Sidorovich reativado
+- substituiu 1 som por sua versão com efeito estéreo depois 
+  que o Brain Scorcher foi desligado
+- reativado 1 som osoznanie após abrir a porta secreta com 
+  decodificador
+- 7 sons de chamada Monolith falados em inglês com efeito 
+  estéreo reativados
+- desejo selecionável pelo jogador no Monólito (o mistério 
+  da Zona pode ser revelado sem o decodificador)
+
+
+Instalar
+--------
+Execute o arquivo "Install_InGameCC.bat".
+
+ ou
+
+1. Copie todos os arquivos da pasta "arquivos" para a pasta 
+   do jogo.
+2. Se você tiver a versão v1.0003 ou mais antiga do jogo 
+   instalada, execute "InGameCC_v10003.bat"
+
+
+Preferências
+------------
+Você pode pré-definir suas preferências em um arquivo de 
+texto chamado "closecaption.ltx" na pasta 
+"gamedata\config\misc". Abra o arquivo em um editor de 
+texto simples (bloco de notas) e defina os valores que 
+desejar. Embora você possa definir as opções de CC em 
+Opções->Som durante o jogo (os valores são recuperados de 
+um estado de jogo salvo), seu arquivo de preferências 
+permanecerá inalterado.
+
+
+Aviso
+-----
+Este mod não é compatível com nenhum outro mod que 
+modifique os mesmos arquivos. Se você optar por instalar 
+simplesmente copiando a pasta "gamedata" para o seu 
+S.T.A.L.K.E.R. pasta, então você será notificado sobre 
+possíveis colisões de arquivos. A substituição de arquivos 
+existentes pode (e provavelmente irá) impedir que um ou 
+mais mods instalados funcionem corretamente e infelizmente 
+não há muito o que fazer para evitar isso. No entanto, o 
+instalador faz backup de alguns arquivos antes de 
+substituí-los e tenta restaurá-los quando você remove o mod 
+InGameCC executando o arquivo "Unistall_InGameCC.bat".
+
+Uma vez que a funcionalidade de legendagem de cutscenes do 
+nosso mod VideoCC anterior está incorporada no InGameCC, 
+observe que nosso método de exibição de legendas em 
+cutscenes (ou seja, tutoriais em execução simultânea) não 
+funciona na versão de jogo 1.0004 ou posterior. Para evitar 
+problemas com cutscenes o instalador tenta detectar a 
+versão do seu jogo e copia o correto dos dois arquivos 
+"ui_movies.xml" que preparamos. Lembre-se de remover e 
+reinstalar o mod InGameCC caso atualize seu jogo para 
+v1.0004 ou posterior, ou simplesmente execute o arquivo em 
+lote de acordo com a versão do seu jogo.
+
+Os jogos salvos criados contendo qualquer uma das entradas 
+extras do PDA farão com que o jogo CTD (crash to desktop) 
+quando o PDA for acessado se certos arquivos XML do mod 
+InGameCC não estiverem mais disponíveis (por exemplo, 
+porque o mod foi removido). O recurso de informações extras 
+do PDA que está causando isso está desativado por padrão, 
+mas você pode ativá-lo editando as preferências (consulte o 
+capítulo anterior).
+
+
+Outras notas
+------------
+Para aqueles que querem usar InGameCC e The Zone 
+Reclamation Project ao mesmo tempo, um pacote de 
+compatibilidade para ZRP v1.05 será lançado em breve.
+
+
+Créditos
+--------
+Conteúdo (transcrição e conceito) por Mr. Fusion
+
+Programação Lua por TSL16b
+
+Transcrição e tradução russa por Macron
+
+
+Respeito
+--------
+O mod InGameCC contém partes do código de
+- mod AMK (rotinas variáveis persistentes)
+- mod BFA de bardak e The Zone Reclamation Project 
+  (correções de bugs)
+
+Obrigado por seu trabalho duro, pessoal! Feliz mod!
+
+
+Isenção de responsabilidade
+---------------------------
+Você pode usar livremente partes deste mod em seu mod, se 
+desejar.
+Uma menção da fonte em seus créditos seria bom.
+
+
+Contato
+-------
+Relatórios de bugs, perguntas e comentários em:
+
+  ·f·i· csoport
+  -------------
+  Mr. Fusion  (mrf_of_vsb at hotmail dot com)
+  The Sweet Little 16-bit  (tsl16b at freemail dot hu)
+  saxus  (http://saxus.muportal.hu)
+
+Este mod foi desenvolvido como parte do não-oficial
+Localização húngara do jogo STALKER SoC, disponível em: 
+
+http://stalker.kincsvadasz.hu
+
+A versão mais recente sempre pode ser baixada em:
+
+http://stalker.filefront.com
+
+
+Versões, alterações, bugs conhecidos
+------------------------------------
+
+25/05/2008 - Lançada a versão pública 1.00
+
+* Compatível com a versão do jogo 1.0000 a 1.0006
+- As legendas das cenas não estão disponíveis na versão do 
+  jogo 1.0004 ou superior
+! Se você vir apenas a legenda "Press (Esc)..." em vez da 
+imagem do filme de introdução, execute "InGameCC_v10004.bat"
++ Opção para omitir cutscenes (somente filmes de "sonho" no 
+  jogo)
++ Opção para ativar/desativar legendas em filmes
++ Pressione (Esc) para pular filmes reproduzidos sem legendas
++ As opções podem ser predefinidas no arquivo de preferências
++ Arquivos em lote para definir o mod para corresponder à 
+  versão do jogo (graças a Macron)
