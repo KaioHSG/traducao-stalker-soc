@@ -1,5 +1,5 @@
 @echo off
-title Desinstalar Tradu‡Æo e InGameCC
+title Desinstalar Traduâ€¡Ã†o e InGameCC
 
 :installPath
 set StalkerPath=.
@@ -17,10 +17,10 @@ goto :noFileList
 
 :chooseUninstall
 cls
-echo NOTA: Dependendo do local do jogo, vai ser ness rio executar o script como
+echo NOTA: Dependendo do local do jogo, vai ser nessÂ rio executar o script como
 echo       administrador.
 echo.
-choice /c sn  /m "Desinstalar tradu‡Æo"
+choice /c sn  /m "Desinstalar traduâ€¡Ã†o"
 if %ErrorLevel%==1 (goto :doUninstall)
 if %ErrorLevel%==2 (exit)
 
@@ -32,7 +32,7 @@ del "%StalkerPath%\InGameCC_files.lst" /q
 del "%StalkerPath%\InGameCC_v10003.bat" /q
 del "%StalkerPath%\InGameCC_v10004.bat" /q
 del "%StalkerPath%\InGameCC Leia-me.txt" /q
-del "%StalkerPath%\TriboGamer Creditos.txt" /q
+del "%StalkerPath%\TriboGamer CrÃ©ditos.txt" /q
 del "%StalkerPath%\ReadMe.md" /q
 del "%StalkerPath%\Desinstalar.bat" /q
 echo.
@@ -44,29 +44,29 @@ if exist "%StalkerPath%\gamedata_backup" (
 )
 echo ---------------------------------------------------------------
 echo.
-echo Tradu‡Æo e InGameCC removidos.
+echo Traduâ€¡Ã†o e InGameCC removidos.
 echo.
-echo Precione qualquer botÆo para sair...
+echo Precione qualquer botÃ†o para sair...
 pause > nul
 exit
 
 :errNoStalker
 cls
-echo A pasta do S.T.A.L.K.E.R. nÆo foi encontrada no registro.
+echo A pasta do S.T.A.L.K.E.R. nÃ†o foi encontrada no registro.
 echo.
-echo NOTA: Vocˆ pode especificar a pasta do jogo editando a linha "set StalkerPath=." no
+echo NOTA: VocË† pode especificar a pasta do jogo editando a linha "set StalkerPath=." no
 echo       instalador.
 echo.
-echo Precione qualquer botÆo para sair...
+echo Precione qualquer botÃ†o para sair...
 pause > nul
 
 :noFileList
 cls
-echo Aquivos do InGameCC nÆo encontados.
+echo Aquivos do InGameCC nÃ†o encontados.
 echo.
-echo NOTA: Vocˆ pode especificar a pasta do jogo editando a linha "set StalkerPath=." no
+echo NOTA: VocË† pode especificar a pasta do jogo editando a linha "set StalkerPath=." no
 echo       desinstalador.
 echo.
-echo Precione qualquer botÆo para sair...
+echo Precione qualquer botÃ†o para sair...
 pause > nul
 exit
