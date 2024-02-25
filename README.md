@@ -6,17 +6,15 @@ Tradução do jogo S.T.A.L.K.E.R.: Shadow of Chernobyl e a adição de legendas 
 
 ## Como instalar:
 
-**1**. Baixe o arquivo a [**Tradução STALKER SoC**](https://github.com/kaiohsg/traducao-stalker-soc/releases/latest).
-
-**2**. Extraia o arquivo `Traducao-STALKER-SoC.zip`.
-
-**3**. Execute o arquivo `Instalar.bat`.
+1. Baixe o arquivo a [**Tradução STALKER SoC**](https://github.com/kaiohsg/traducao-stalker-soc/releases/latest).
+2. Extraia o arquivo `Traducao-STALKER-SoC.zip`.
+3. Execute o arquivo `Instalar.bat`.
 
 Pronto! A tradução já está instalada.
 
 ## Como desinstalar:
 
-**1**. Execute o arquivo `Desintalar.bat` (ele pode ser encotrado dento da pasta do jogou, ou se preferir execute o do arquivo `Traducao-STALKER-SoC.zip`).
+1. Execute o arquivo `Desintalar.bat` (ele pode ser encotrado dento da pasta do jogou, ou se preferir execute o do arquivo `Traducao-STALKER-SoC.zip`).
 
 ## Créditos:
 
