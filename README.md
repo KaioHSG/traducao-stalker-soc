@@ -1,5 +1,6 @@
 [![Release](https://img.shields.io/github/v/release/KaioHSG/traducao-stalker-soc)](https://github.com/KaioHSG/traducao-stalker-soc/releases/latest)
 [![Downloads](https://img.shields.io/github/downloads/KaioHSG/traducao-stalker-soc/total)](https://github.com/KaioHSG/traducao-stalker-soc/releases)
+[![VirusTotal](https://img.shields.io/badge/virus%20total-status-navy)](https://www.virustotal.com/gui/file/8f641f98d8f7687759dc679c874fa352db9ec625a1cc1fd9a09a759d0df6f6f3)
 
 # Tradução STALKER SoC
 Tradução do jogo S.T.A.L.K.E.R.: Shadow of Chernobyl e a adição de legendas gerais.
