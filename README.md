@@ -1,4 +1,4 @@
-[![Version](https://img.shields.io/badge/version-1.0-green)](https://github.com/KaioHSG/traducao-stalker-soc/releases/latest)
+[![Release](https://img.shields.io/github/v/release/KaioHSG/traducao-stalker-soc)](https://github.com/KaioHSG/traducao-stalker-soc/releases/latest)
 [![Downloads](https://img.shields.io/github/downloads/KaioHSG/traducao-stalker-soc/total)](https://github.com/KaioHSG/traducao-stalker-soc/releases)
 
 # Tradução STALKER SoC
