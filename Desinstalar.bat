@@ -15,7 +15,7 @@ if not exist "%stalkerPath%\gamedata\scripts\closecaption.script" (goto :noFileL
 if not exist "InGameCC_files.lst" (goto :noFileList)
 echo Desinstalador Traduá∆o STALKER SoC v%version%
 echo.
-echo O S.T.A.L.K.E.R. estù instalado em: "%stalkerPath%"
+echo O S.T.A.L.K.E.R. est† instalado em: "%stalkerPath%"
 echo Dependendo do local do jogo, vai ser ness†rio executar o script como administrador.
 echo.
 choice /c sn  /m "Desinstalar traduá∆o"
@@ -24,17 +24,17 @@ echo --------------------------------------------------
 echo Deletando arquivos...
 rd "%stalkerPath%\gamedata" /s
 del "%stalkerPath%\InGameCC_files.lst"
-del "%stalkerPath%\InGameCC_v10003.bat"
-del "%stalkerPath%\InGameCC_v10004.bat"
+del "%stalkerPath%\v10003.bat"
+del "%stalkerPath%\v10004.bat"
 del "%stalkerPath%\Desinstalar.bat"
 echo --------------------------------------------------
 
-:: Fazer sistema de backup com arquivo ".zip".
+:: Fazer sistema de backup com arquivo ".tar".
 
-if exist "%stalkerPath%\gamedata_backup" (
+if exist "%stalkerPath%\gamedata-backup.tar" (
     echo Restaurando "gamedata"...
     tar
-    del "%stalkerPath%\gamedata_backup"
+    del "%stalkerPath%\gamedata-backup.tar"
 )
 echo ##################################################
 echo Traduá∆o e InGameCC removidos.

@@ -21,7 +21,7 @@ choice /c sn  /m "Instalar tradu‡Æo"
 if %errorLevel%==2 (exit)
 echo --------------------------------------------------
 
-:: Fazer sistema de backup com arquivo ".zip".
+:: Fazer sistema de backup com arquivo ".tar".
 
 if exist "%stalkerPath%\gamedata" (
     echo Fazendo backup...
