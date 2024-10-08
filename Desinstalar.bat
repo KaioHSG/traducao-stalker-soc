@@ -1,52 +1,39 @@
-@echo off
-title Desinstalar Tradu‡Æo e InGameCC
+@set stalkerPath=.
 
-:installPath
-set StalkerPath=.
-if not "%StalkerPath%"=="." (goto :checkPath)
-for /f "tokens=2*" %%a in ('reg query "HKLM\SOFTWARE\GSC Game World\STALKER-SHOC" /v InstallPath') do (set StalkerPath=%%b)
-if not "%StalkerPath%"=="." (goto :checkPath)
-for /f "tokens=2*" %%a in ('reg query "HKLM\SOFTWARE\WOW6432Node\GSC Game World\STALKER-SHOC" /v InstallPath') do (set StalkerPath=%%b)
-if not "%StalkerPath%"=="." (goto :checkPath)
+@echo off
+set version=1.1
+title Desinstalador Tradu‡Æo STALKER SoC v%version%
+if not "%stalkerPath%"=="." (goto :checkPath)
+for /f "tokens=2*" %%a in ('reg query "HKLM\SOFTWARE\GSC Game World\STALKER-SHOC" /v InstallPath 2^>nul') do (set stalkerPath=%%b)
+if not "%stalkerPath%"=="." (goto :checkPath)
+for /f "tokens=2*" %%a in ('reg query "HKLM\SOFTWARE\WOW6432Node\GSC Game World\STALKER-SHOC" /v InstallPath 2^>nul') do (set stalkerPath=%%b)
+if not "%stalkerPath%"=="." (goto :checkPath)
 goto :errNoStalker
 
 :checkPath
-if exist "%StalkerPath%\gamedata\scripts\closecaption.script" (goto :chooseUninstall)
-if exist "InGameCC_files.lst" (goto :chooseUninstall)
-goto :noFileList
-
-:chooseUninstall
-cls
-echo O S.T.A.L.K.E.R. est  instalado em:
-echo "%StalkerPath%"
+if not exist "%stalkerPath%\gamedata\scripts\closecaption.script" (goto :noFileList)
+if not exist "InGameCC_files.lst" (goto :noFileList)
+echo Desinstalador Tradu‡Æo STALKER SoC v%version%
 echo.
-echo NOTA: Dependendo do local do jogo, vai ser ness rio executar o script como
-echo       administrador.
+echo O S.T.A.L.K.E.R. est instalado em: "%stalkerPath%"
+echo Dependendo do local do jogo, vai ser ness rio executar o script como administrador.
 echo.
 choice /c sn  /m "Desinstalar tradu‡Æo"
-if %ErrorLevel%==1 (goto :doUninstall)
-if %ErrorLevel%==2 (exit)
-
-:doUninstall
-cls
-echo Desinstalando arquivos...
-rd "%StalkerPath%\gamedata" /s /q
-del "%StalkerPath%\InGameCC_files.lst" /q
-del "%StalkerPath%\InGameCC_v10003.bat" /q
-del "%StalkerPath%\InGameCC_v10004.bat" /q
-del "%StalkerPath%\InGameCC Leia-me.txt" /q
-del "%StalkerPath%\TriboGamer Cr‚ditos.txt" /q
-del "%StalkerPath%\ReadMe.md" /q
-del "%StalkerPath%\Desinstalar.bat" /q
-echo.
-if exist "%StalkerPath%\gamedata_backup" (
+if %errorLevel%==2 (exit)
+echo --------------------------------------------------
+echo Deletando arquivos...
+rd "%stalkerPath%\gamedata" /s
+del "%stalkerPath%\InGameCC_files.lst"
+del "%stalkerPath%\InGameCC_v10003.bat"
+del "%stalkerPath%\InGameCC_v10004.bat"
+del "%stalkerPath%\Desinstalar.bat"
+echo --------------------------------------------------
+if exist "%stalkerPath%\gamedata_backup" (
     echo Restaurando "gamedata"...
-    xcopy "%StalkerPath%\gamedata_backup" "%StalkerPath%\gamedata\" /e /y
-    rd "%StalkerPath%\gamedata_backup" /s /q
-    echo.
+    tar
+    del "%stalkerPath%\gamedata_backup"
 )
-echo ---------------------------------------------------------------
-echo.
+echo ##################################################
 echo Tradu‡Æo e InGameCC removidos.
 echo.
 echo Precione qualquer tecla para sair...
@@ -54,23 +41,19 @@ pause > nul
 exit
 
 :errNoStalker
-cls
 echo A pasta do S.T.A.L.K.E.R. nÆo foi encontrada no registro.
+echo Vocˆ pode especificar a pasta do jogo editando a linha "@set stalkerPath=." no instalador.
 echo.
-echo NOTA: Vocˆ pode especificar a pasta do jogo editando a linha "set StalkerPath=." no
-echo       instalador.
-echo.
+echo Ex.: @set stalkerPath=C:\Pasta do Jogo
 echo Precione qualquer tecla para sair...
 pause > nul
 exit
 
 :noFileList
-cls
 echo Aquivos do InGameCC nÆo encontados.
+echo Vocˆ pode especificar a pasta do jogo editando a linha "@set stalkerPath=." no desinstalador.
 echo.
-echo NOTA: Vocˆ pode especificar a pasta do jogo editando a linha "set StalkerPath=." no
-echo       desinstalador.
-echo.
+echo Ex.: @set stalkerPath=C:\Pasta do Jogo
 echo Precione qualquer tecla para sair...
 pause > nul
 exit
