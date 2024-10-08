@@ -28,6 +28,9 @@ del "%stalkerPath%\InGameCC_v10003.bat"
 del "%stalkerPath%\InGameCC_v10004.bat"
 del "%stalkerPath%\Desinstalar.bat"
 echo --------------------------------------------------
+
+:: Fazer sistema de backup com arquivo ".zip".
+
 if exist "%stalkerPath%\gamedata_backup" (
     echo Restaurando "gamedata"...
     tar

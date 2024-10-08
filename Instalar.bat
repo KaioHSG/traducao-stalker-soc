@@ -20,9 +20,12 @@ echo.
 choice /c sn  /m "Instalar traduá∆o"
 if %errorLevel%==2 (exit)
 echo --------------------------------------------------
+
+:: Fazer sistema de backup com arquivo ".zip".
+
 if exist "%stalkerPath%\gamedata" (
     echo Fazendo backup...
-    tar 
+    tar
     echo --------------------------------------------------
 )
 echo Instalando arquivos...
@@ -30,12 +33,7 @@ tar -zxvf "traducao-stalker-soc-mods.zip" -C "%stalkerPath%" --strip-components=
 echo --------------------------------------------------
 xcopy "Desinstalar.bat" "%stalkerPath%" /y
 echo --------------------------------------------------
-if not exist "%stalkerPath%\bin\msvcr80.dll" (goto :version10004) else (goto :version10003)
-
-:version10004
-ren "%stalkerPath%\gamedata\config\ui\ui_movies10004.xml" "ui_movies.xml"
-echo --------------------------------------------------
-xcopy "files\gamedata\config\ui\ui_movies10004.xml" "%stalkerPath%\gamedata\config\ui" /y
+if not exist "%stalkerPath%\bin\msvcr80.dll" (goto :version10003)
 echo ##################################################
 echo Instalaá∆o finalizada.
 echo As legendas das cenas n∆o aparecer∆o nesta vers∆o (1.0004 ou posterior) da engine do jogo.
@@ -68,7 +66,7 @@ exit
 :errStillNoStalker
 echo O executavel do S.T.A.L.K.E.R. n∆o pode ser encontrado em: "%stalkerPath%\bin\XR_3DA.exe"
 echo No entanto, a instalaá∆o pode ser feita extraindo todos os arquivos do arquivo "traducao-stalker-soc-mods.zip" para a pasta do jogo instalado.
-echo Se vocà usa a vers∆o do jogo 1.0003 ou anterior, deve executar o arquivo em lote chamado "InGameCC_v10003.bat" para permitir que as legendas tambÇm apareáam nas cenas.
+echo Se vocà usa a vers∆o do jogo 1.0003 ou anterior, deve executar o arquivo em lote chamado "v10003.bat" para permitir que as legendas tambÇm apareáam nas cenas.
 echo Infelizmente v1.0004 e vers‰es posteriores do jogo n∆o tem este recurso.
 echo.
 echo Precione qualquer tecla para sair...
