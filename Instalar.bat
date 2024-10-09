@@ -8,10 +8,10 @@ for /f "tokens=2*" %%a in ('reg query "HKLM\SOFTWARE\GSC Game World\STALKER-SHOC
 if not "%stalkerPath%"=="." (goto :checkPath)
 for /f "tokens=2*" %%a in ('reg query "HKLM\SOFTWARE\WOW6432Node\GSC Game World\STALKER-SHOC" /v InstallPath 2^>nul') do (set stalkerPath=%%b)
 if not "%stalkerPath%"=="." (goto :checkPath)
-goto :errNoStalker
+goto :noStalker
 
 :checkPath
-if not exist "%stalkerPath%\bin\XR_3DA.exe" (goto :errStillNoStalker)
+if not exist "traducao-stalker-soc-mods.zip" (goto :noFiles)
 echo Inastalador Tradu‡Æo STALKER SoC v%version%
 echo.
 echo O S.T.A.L.K.E.R. est  instalado em: "%stalkerPath%"
@@ -20,19 +20,15 @@ echo.
 choice /c sn  /m "Instalar tradu‡Æo"
 if %errorLevel%==2 (exit)
 echo --------------------------------------------------
-
-:: Fazer sistema de backup com arquivo ".tar".
-
 if exist "%stalkerPath%\gamedata" (
-    echo Fazendo backup...
-    tar
+    pushd "%stalkerPath%"
+    tar -cf "gamedata-backup.tar" "gamedata"
+    pushd "%~dp0"
     echo --------------------------------------------------
 )
-echo Instalando arquivos...
 tar -zxvf "traducao-stalker-soc-mods.zip" -C "%stalkerPath%" --strip-components=1 "traducao-stalker-soc-mods/*"
 echo --------------------------------------------------
 xcopy "Desinstalar.bat" "%stalkerPath%" /y
-echo --------------------------------------------------
 if not exist "%stalkerPath%\bin\msvcr80.dll" (goto :version10003)
 echo ##################################################
 echo Instala‡Æo finalizada.
@@ -43,18 +39,19 @@ pause > nul
 exit
 
 :version10003
+echo --------------------------------------------------
 ren "%stalkerPath%\gamedata\config\ui\ui_movies10003.xml" "ui_movies.xml"
 echo --------------------------------------------------
 xcopy "files\gamedata\config\ui\ui_movies10003.xml" "%stalkerPath%\gamedata\config\ui" /y
 echo ##################################################
 echo Instala‡Æo finalizada.
-echo Se vocˆ atualizar para v1.0004 ou uma versÆo posterior, lembre-se de reinstalar a tradu‡Æo ou executar o "InGameCC_v10004.bat".
+echo Se vocˆ atualizar para v1.0004 ou uma versÆo posterior, lembre-se de reinstalar a tradu‡Æo ou executar o "v10004.bat".
 echo.
 echo Precione qualquer tecla para sair...
 pause > nul
 exit
 
-:errNoStalker
+:noStalker
 echo A pasta do S.T.A.L.K.E.R. nÆo foi encontrada no registro.
 echo Mas vocˆ pode especificar a pasta do jogo editando a linha "@set stalkerPath=." no instalador.
 echo Ex.: @set stalkerPath=C:\Pasta do Jogo
@@ -63,11 +60,9 @@ echo Precione qualquer tecla para sair...
 pause > nul
 exit
 
-:errStillNoStalker
-echo O executavel do S.T.A.L.K.E.R. nÆo pode ser encontrado em: "%stalkerPath%\bin\XR_3DA.exe"
-echo No entanto, a instala‡Æo pode ser feita extraindo todos os arquivos do arquivo "traducao-stalker-soc-mods.zip" para a pasta do jogo instalado.
-echo Se vocˆ usa a versÆo do jogo 1.0003 ou anterior, deve executar o arquivo em lote chamado "v10003.bat" para permitir que as legendas tamb‚m apare‡am nas cenas.
-echo Infelizmente v1.0004 e versäes posteriores do jogo nÆo tem este recurso.
+:noFiles
+echo NÆo foi possivel encontrar os arquivos dos mods em: "%cd%\traducao-stalker-soc-mods.zip"
+echo Baixe novamenete em: https://github.com/KaioHSG/traducao-stalker-soc/tree/mods
 echo.
 echo Precione qualquer tecla para sair...
 pause > nul

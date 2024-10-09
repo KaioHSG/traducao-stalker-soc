@@ -8,11 +8,11 @@ for /f "tokens=2*" %%a in ('reg query "HKLM\SOFTWARE\GSC Game World\STALKER-SHOC
 if not "%stalkerPath%"=="." (goto :checkPath)
 for /f "tokens=2*" %%a in ('reg query "HKLM\SOFTWARE\WOW6432Node\GSC Game World\STALKER-SHOC" /v InstallPath 2^>nul') do (set stalkerPath=%%b)
 if not "%stalkerPath%"=="." (goto :checkPath)
-goto :errNoStalker
+goto :noStalker
 
 :checkPath
 if not exist "%stalkerPath%\gamedata\scripts\closecaption.script" (goto :noFileList)
-if not exist "InGameCC_files.lst" (goto :noFileList)
+pushd "%stalkerPath%"
 echo Desinstalador Traduá∆o STALKER SoC v%version%
 echo.
 echo O S.T.A.L.K.E.R. est† instalado em: "%stalkerPath%"
@@ -22,39 +22,26 @@ choice /c sn  /m "Desinstalar traduá∆o"
 if %errorLevel%==2 (exit)
 echo --------------------------------------------------
 echo Deletando arquivos...
-rd "%stalkerPath%\gamedata" /s
-del "%stalkerPath%\InGameCC_files.lst"
-del "%stalkerPath%\v10003.bat"
-del "%stalkerPath%\v10004.bat"
-del "%stalkerPath%\Desinstalar.bat"
+rd "gamedata" /s /q
+del "InGameCC_files.lst" /q
+del "v10003.bat" /q
+del "v10004.bat" /q
+del "Desinstalar.bat" /q
 echo --------------------------------------------------
-
-:: Fazer sistema de backup com arquivo ".tar".
-
-if exist "%stalkerPath%\gamedata-backup.tar" (
-    echo Restaurando "gamedata"...
-    tar
-    del "%stalkerPath%\gamedata-backup.tar"
+if exist "gamedata-backup.tar" (
+    tar -xf "gamedata-backup.tar"
+    del "gamedata-backup.tar" /q
 )
 echo ##################################################
-echo Traduá∆o e InGameCC removidos.
+echo Traduá∆o removida.
 echo.
 echo Precione qualquer tecla para sair...
 pause > nul
 exit
 
-:errNoStalker
+:noStalker
 echo A pasta do S.T.A.L.K.E.R. n∆o foi encontrada no registro.
 echo Vocà pode especificar a pasta do jogo editando a linha "@set stalkerPath=." no instalador.
-echo.
-echo Ex.: @set stalkerPath=C:\Pasta do Jogo
-echo Precione qualquer tecla para sair...
-pause > nul
-exit
-
-:noFileList
-echo Aquivos do InGameCC n∆o encontados.
-echo Vocà pode especificar a pasta do jogo editando a linha "@set stalkerPath=." no desinstalador.
 echo.
 echo Ex.: @set stalkerPath=C:\Pasta do Jogo
 echo Precione qualquer tecla para sair...
