@@ -15,7 +15,7 @@ Pronto! A tradução já está instalada.
 
 ## Como desinstalar
 
-1. Execute o arquivo **`Desintalar.bat`** (ele pode ser encotrado dento da pasta do jogou, ou se preferir execute o do arquivo `Traducao-STALKER-SoC.zip`).
+1. Execute o arquivo **`Desintalar.bat`** (ele pode ser encotrado dento da pasta do jogo, ou se preferir execute o do arquivo `Traducao-STALKER-SoC.zip`).
 
 ## Créditos
 
