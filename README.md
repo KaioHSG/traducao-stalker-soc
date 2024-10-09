@@ -1,6 +1,6 @@
 [![Release](https://img.shields.io/github/v/release/KaioHSG/traducao-stalker-soc)](https://github.com/KaioHSG/traducao-stalker-soc/releases/latest)
 [![Downloads](https://img.shields.io/github/downloads/KaioHSG/traducao-stalker-soc/total)](https://github.com/KaioHSG/traducao-stalker-soc/releases)
-[![VirusTotal](https://img.shields.io/badge/virustotal-status-navy)](https://www.virustotal.com/gui/file/8d4a7d0802c0a28247424511d0217ca87b3f43067ecb5b8ee03534b5e5912438/community)
+[![VirusTotal](https://img.shields.io/badge/virustotal-status-navy)](https://www.virustotal.com/gui/file/8d4a7d0802c0a28247424511d0217ca87b3f43067ecb5b8ee03534b5e5912438)
 
 # Tradução STALKER SoC
 
