@@ -37,4 +37,3 @@ Pronto! A tradução já está instalada.
 
 * Conteúdo (transcrição e conceito): Mr. Fusion
 * Programação Lua: TSL16b
-* Transcrição e tradução russa: Macron
