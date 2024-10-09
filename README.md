@@ -26,7 +26,6 @@ Pronto! A tradução já está instalada.
 * Tradutores: Kev2k, NimbleVintar
 * Revisores: NimbleVintar, PascallDoom
 * Tests-ingame: Kev2k, NimbleVintar
-* Instalador:  H3rdell
 
 #### [Tradução CloseCaption](https://tribogamer.com/downloads/1818_baixar-closecaption-e-legendas-ingame-pt-br-s-t-a-l-k-e-r-shadow-of-chernobyl.html)
 
