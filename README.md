@@ -8,6 +8,8 @@ Tradução do jogo S.T.A.L.K.E.R.: Shadow of Chernobyl e a adição de legendas 
 
 ## Como instalar
 
+**(Sem suporte para a versão Enhanced Edition, por enquato.)**
+
 1. Baixe o arquivo [**Traducao-STALKER-SoC.zip**](https://github.com/kaiohsg/traducao-stalker-soc/releases/latest), e extraia.
 2. Execute o arquivo **`Instalar.bat`**.
 
